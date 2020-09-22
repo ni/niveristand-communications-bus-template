@@ -1,7 +1,5 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
 <Library LVVersion="20008000">
-	<Property Name="NI.Lib.ContainingLib" Type="Str">Communication Bus Template Interfaces.lvlib</Property>
-	<Property Name="NI.Lib.ContainingLibPath" Type="Str">../../../Interfaces/Communication Bus Template Interfaces.lvlib</Property>
 	<Property Name="NI.Lib.HelpPath" Type="Str"></Property>
 	<Property Name="NI.Lib.Icon" Type="Bin">)!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!*&amp;!!!*Q(C=\&gt;5^&lt;B.2&amp;-8R![+A^1[Q&amp;Z$G&lt;-&amp;&lt;]!\1J;+A=BP2Y!)BCD289A("7`!7\B;]"7`"`/@ZRD%3CBN!#/6.XM2TXN=P&lt;]94;:48UCM&gt;LZ8X4Z&lt;20HK&gt;[H2[O$ZW_ZDCV(![(@PS=@TZ[H(]2@P&amp;U)@RF_U`L@3,^K@^6YK?SX0ZP]PNV3`"(`]?P.$U)K)7.;F"N;:FDU6?Z%6?Z%6?Z%G?Z%G?Z%G?Z%%?Z%%?Z%%?Z#9XO=F.&lt;H+4DY.=Z#)8/;2C]7+B9N*CAK)T&amp;"7HQF.Y#E`BY6+&amp;J`!5HM*4?/CCQF.Y#E`B+4Q-5_%J0)7H]"1?JBK3'A=ZHM,$^%I]C3@R**\%QZ*+0!EA73S:/*E%BJ,'Z%0C34S*BY^+0)EH]33?R%/T%E`C34S**`%Q:/R+$MVUE/.B'A7?Q".Y!E`A97I&amp;HM!4?!*0Y'%Z":\!%S##"90*)3A9&amp;(1),A*0Y/'8!E`A#4S"*`$1./Z1D*W:..."DM&gt;YD-&gt;YD-&gt;YG%,'9TT'9TT'Q\1S(O-R(O-R(J;3]2C0]2C)7:4F:39T!UUH%RA00_.J]&lt;B,/31?B^10L`KB6$^M[I&gt;)`8#I&lt;\L[:KJPEHLTV:OKXCTV*KD`/$6;D6%PIBY]&gt;&gt;3"]Z[[IW[J'_K;OK)OK1PK&lt;"L[GTM?$A@N^XPN&gt;DNNNVNN.BONVWON6CMNFUMN&amp;AP.:L0T;_!.R`G&amp;=(IPX@,ZS\O&lt;$V`PPM]`@\K:@\S\HX^\?T_@]L`Q``E@?$@KJ3\89)^_!%][B&amp;Y!!!!!</Property>
 	<Property Name="NI.Lib.LocalName" Type="Str">Communication Bus Template Scripting</Property>

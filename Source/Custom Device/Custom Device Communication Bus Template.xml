@@ -52,7 +52,16 @@
       </Source>
     </SourceDistribution>
   </CustomDeviceVI>
-  <Dependencies />
+  <Dependencies>
+    <Dependency>
+      <SupportedTarget>Linux_x64</SupportedTarget>
+      <Source>
+        <Type>To Common Doc Dir</Type>
+        <Path>Custom Devices\Communication Bus Template\Linux_x64\Communication Bus Engine.lvlibp</Path>
+      </Source>
+      <RealTimeSystemDestination>c:\ni-rt\VeriStand\Custom Devices\Communication Bus Template\Communication Bus Engine.lvlibp</RealTimeSystemDestination>
+    </Dependency>
+  </Dependencies>
 <Pages>
 	<Page>
       <Name>
