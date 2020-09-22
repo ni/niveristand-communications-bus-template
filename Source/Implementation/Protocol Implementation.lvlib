@@ -11,4 +11,5 @@
 </Property>
 	<Item Name="Execution Unit Factory Implementation.lvclass" Type="LVClass" URL="../Execution Unit Factory Implementation/Execution Unit Factory Implementation.lvclass"/>
 	<Item Name="Execution Unit Implementation.lvclass" Type="LVClass" URL="../Execution Unit Implementation/Execution Unit Implementation.lvclass"/>
+	<Item Name="System Explorer Dispatcher Implementation.lvclass" Type="LVClass" URL="../System Explorer Dispatcher Implementation/System Explorer Dispatcher Implementation.lvclass"/>
 </Library>
