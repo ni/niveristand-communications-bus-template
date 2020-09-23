@@ -38,6 +38,5 @@
 		<Item Name="Database.ctl" Type="VI" URL="../Types/Database.ctl"/>
 		<Item Name="Path Control.ctl" Type="VI" URL="../Types/Path Control.ctl"/>
 	</Item>
-	<Item Name="Constants.vi" Type="VI" URL="../Constants.vi"/>
 	<Item Name="System Explorer Dispatcher Implementation.lvclass" Type="LVClass" URL="../../System Explorer Dispatcher Implementation/System Explorer Dispatcher Implementation.lvclass"/>
 </Library>
