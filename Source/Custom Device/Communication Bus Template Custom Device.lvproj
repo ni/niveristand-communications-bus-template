@@ -532,12 +532,12 @@
 				<Property Name="Destination[0].destName" Type="Str">Destination Directory</Property>
 				<Property Name="Destination[0].path" Type="Path">../Built/Communication Bus Template</Property>
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
-				<Property Name="Destination[1].path" Type="Path">../Built/Communication Bus Template/Windows/Data</Property>
+				<Property Name="Destination[1].path" Type="Path">../Built/Communication Bus Template/Windows</Property>
 				<Property Name="Destination[2].destName" Type="Str">Communication Bus Template Configuration LLB</Property>
 				<Property Name="Destination[2].path" Type="Path">../Built/Communication Bus Template/Windows/Communication Bus Template Configuration.llb</Property>
 				<Property Name="Destination[2].type" Type="Str">LLB</Property>
 				<Property Name="DestinationCount" Type="Int">3</Property>
-				<Property Name="Source[0].itemID" Type="Str">{08BECEEA-C2C4-4262-8351-7D8564FF9CB1}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{786E0FC0-CAEE-449F-96A6-38A061AFD3CB}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Custom Device Communication Bus Template.xml</Property>
@@ -565,12 +565,12 @@
 				<Property Name="Destination[0].destName" Type="Str">Destination Directory</Property>
 				<Property Name="Destination[0].path" Type="Path">../Built/Communication Bus Template</Property>
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
-				<Property Name="Destination[1].path" Type="Path">../Built/Communication Bus Template/Windows/Data</Property>
+				<Property Name="Destination[1].path" Type="Path">../Built/Communication Bus Template/Windows</Property>
 				<Property Name="Destination[2].destName" Type="Str">Communication Bus Template Configuration LLB</Property>
 				<Property Name="Destination[2].path" Type="Path">../Built/Communication Bus Template/Windows/Communication Bus Template Configuration.llb</Property>
 				<Property Name="Destination[2].type" Type="Str">LLB</Property>
 				<Property Name="DestinationCount" Type="Int">3</Property>
-				<Property Name="Source[0].itemID" Type="Str">{08BECEEA-C2C4-4262-8351-7D8564FF9CB1}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{786E0FC0-CAEE-449F-96A6-38A061AFD3CB}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Custom Device Communication Bus Template.xml</Property>
