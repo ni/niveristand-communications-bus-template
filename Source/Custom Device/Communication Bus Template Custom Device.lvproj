@@ -31,7 +31,7 @@
 				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="../../../Includes/Communication Bus Engine.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Error Cluster From Error Code.vi"/>
 				<Item Name="Get LV Class Name.vi" Type="VI" URL="../../../Includes/Communication Bus Engine.lvlibp/1abvi3w/vi.lib/Utility/LVClass/Get LV Class Name.vi"/>
 				<Item Name="Implementation.lvlib" Type="Library" URL="../../../Includes/Communication Bus Engine.lvlibp/Implementation/Implementation.lvlib"/>
-				<Item Name="Interface.lvlib" Type="Library" URL="../../../Includes/Communication Bus Engine.lvlibp/Interfaces/Execution Unit/Interface.lvlib"/>
+				<Item Name="Interfaces.lvlib" Type="Library" URL="../../../Includes/Communication Bus Engine.lvlibp/Interfaces/Interfaces.lvlib"/>
 				<Item Name="LV Config Read String.vi" Type="VI" URL="../../../Includes/Communication Bus Engine.lvlibp/1abvi3w/resource/dialog/lvconfig.llb/LV Config Read String.vi"/>
 				<Item Name="NI_SystemLogging.lvlib" Type="Library" URL="../../../Includes/Communication Bus Engine.lvlibp/1abvi3w/vi.lib/Utility/SystemLogging/NI_SystemLogging.lvlib"/>
 			</Item>
@@ -40,7 +40,7 @@
 				<Item Name="BuildHelpPath.vi" Type="VI" URL="../../../Includes/Communication Bus System Explorer.lvlibp/1abvi3w/vi.lib/Utility/error.llb/BuildHelpPath.vi"/>
 				<Item Name="Check Special Tags.vi" Type="VI" URL="../../../Includes/Communication Bus System Explorer.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Check Special Tags.vi"/>
 				<Item Name="Clear Errors.vi" Type="VI" URL="../../../Includes/Communication Bus System Explorer.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Clear Errors.vi"/>
-				<Item Name="Communication Bus Template Scripting.lvlib" Type="Library" URL="../../../Includes/Communication Bus System Explorer.lvlibp/Implementation/Scripting/Communication Bus Template Scripting.lvlib"/>
+				<Item Name="Communication Bus Template Scripting.lvlib" Type="Library" URL="../../../Includes/Communication Bus System Explorer.lvlibp/Scripting/Communication Bus Template Scripting.lvlib"/>
 				<Item Name="Convert property node font to graphics font.vi" Type="VI" URL="../../../Includes/Communication Bus System Explorer.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Convert property node font to graphics font.vi"/>
 				<Item Name="Custom Device API.lvlib" Type="Library" URL="../../../Includes/Communication Bus System Explorer.lvlibp/1abvi3w/vi.lib/NI VeriStand/Custom Device API/Custom Device API.lvlib"/>
 				<Item Name="Custom Device Utility Library.lvlib" Type="Library" URL="../../../Includes/Communication Bus System Explorer.lvlibp/1abvi3w/vi.lib/NI VeriStand/Custom Device Tools/Custom Device Utility Library/Custom Device Utility Library.lvlib"/>
@@ -61,9 +61,9 @@
 				<Item Name="Get Text Rect.vi" Type="VI" URL="../../../Includes/Communication Bus System Explorer.lvlibp/1abvi3w/vi.lib/picture/picture.llb/Get Text Rect.vi"/>
 				<Item Name="GetHelpDir.vi" Type="VI" URL="../../../Includes/Communication Bus System Explorer.lvlibp/1abvi3w/vi.lib/Utility/error.llb/GetHelpDir.vi"/>
 				<Item Name="GetRTHostConnectedProp.vi" Type="VI" URL="../../../Includes/Communication Bus System Explorer.lvlibp/1abvi3w/vi.lib/Utility/error.llb/GetRTHostConnectedProp.vi"/>
-				<Item Name="Implementation.lvlib" Type="Library" URL="../../../Includes/Communication Bus System Explorer.lvlibp/Implementation/System Explorer/Implementation.lvlib"/>
+				<Item Name="Implementation.lvlib" Type="Library" URL="../../../Includes/Communication Bus System Explorer.lvlibp/System Explorer/Implementation/Implementation.lvlib"/>
 				<Item Name="ImportExport.lvlib" Type="Library" URL="../../../Includes/Communication Bus System Explorer.lvlibp/1abvi3w/vi.lib/NI/NI VeriStand Custom Device Import and Export Tool/ImportExport.lvlib"/>
-				<Item Name="Interface.lvlib" Type="Library" URL="../../../Includes/Communication Bus System Explorer.lvlibp/Interfaces/User Interface/Interface.lvlib"/>
+				<Item Name="Interfaces.lvlib" Type="Library" URL="../../../Includes/Communication Bus System Explorer.lvlibp/System Explorer/Interfaces/Interfaces.lvlib"/>
 				<Item Name="Longest Line Length in Pixels.vi" Type="VI" URL="../../../Includes/Communication Bus System Explorer.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Longest Line Length in Pixels.vi"/>
 				<Item Name="LVBoundsTypeDef.ctl" Type="VI" URL="../../../Includes/Communication Bus System Explorer.lvlibp/1abvi3w/vi.lib/Utility/miscctls.llb/LVBoundsTypeDef.ctl"/>
 				<Item Name="LVRectTypeDef.ctl" Type="VI" URL="../../../Includes/Communication Bus System Explorer.lvlibp/1abvi3w/vi.lib/Utility/miscctls.llb/LVRectTypeDef.ctl"/>
@@ -490,9 +490,13 @@
 				<Item Name="Waveform Subtype Enum__ogtk__jki_vi_tester.ctl" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/VI Tester/_support/Support.llb/Waveform Subtype Enum__ogtk__jki_vi_tester.ctl"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
+			<Item Name="Communication Bus Template Scripting.lvlib" Type="Library" URL="../../../Includes/Communication Bus System Explorer.lvlibp/Implementation/Scripting/Communication Bus Template Scripting.lvlib"/>
 			<Item Name="DOMUserDefRef.dll" Type="Document" URL="DOMUserDefRef.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="Execution Unit Factory.lvclass" Type="LVClass" URL="../../../Includes/Communication Bus Engine.lvlibp/Interfaces/Execution Unit/Execution Unit Factory/Execution Unit Factory.lvclass"/>
+			<Item Name="Execution Unit.lvclass" Type="LVClass" URL="../../../Includes/Communication Bus Engine.lvlibp/Interfaces/Execution Unit/Execution Unit/Execution Unit.lvclass"/>
+			<Item Name="Implementation.lvlib" Type="Library" URL="../../../Includes/Communication Bus System Explorer.lvlibp/Implementation/System Explorer/Implementation.lvlib"/>
 			<Item Name="LV Config Read String.vi" Type="VI" URL="/&lt;resource&gt;/dialog/lvconfig.llb/LV Config Read String.vi"/>
 			<Item Name="mscorlib" Type="VI" URL="mscorlib">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
@@ -512,6 +516,7 @@
 			<Item Name="NationalInstruments.VeriStand.XMLReader" Type="Document" URL="NationalInstruments.VeriStand.XMLReader">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="System Explorer Dispatcher.lvclass" Type="LVClass" URL="../../../Includes/Communication Bus System Explorer.lvlibp/Interfaces/User Interface/System Explorer Dispatcher/System Explorer Dispatcher.lvclass"/>
 			<Item Name="systemLogging.dll" Type="Document" URL="systemLogging.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
@@ -828,10 +833,11 @@
 				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="../../../Includes/Communication Bus Engine.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Error Cluster From Error Code.vi"/>
 				<Item Name="Get LV Class Name.vi" Type="VI" URL="../../../Includes/Communication Bus Engine.lvlibp/1abvi3w/vi.lib/Utility/LVClass/Get LV Class Name.vi"/>
 				<Item Name="Implementation.lvlib" Type="Library" URL="../../../Includes/Communication Bus Engine.lvlibp/Implementation/Implementation.lvlib"/>
-				<Item Name="Interface.lvlib" Type="Library" URL="../../../Includes/Communication Bus Engine.lvlibp/Interfaces/Execution Unit/Interface.lvlib"/>
+				<Item Name="Interfaces.lvlib" Type="Library" URL="../../../Includes/Communication Bus Engine.lvlibp/Interfaces/Interfaces.lvlib"/>
 				<Item Name="LV Config Read String.vi" Type="VI" URL="../../../Includes/Communication Bus Engine.lvlibp/1abvi3w/resource/dialog/lvconfig.llb/LV Config Read String.vi"/>
 				<Item Name="NI_SystemLogging.lvlib" Type="Library" URL="../../../Includes/Communication Bus Engine.lvlibp/1abvi3w/vi.lib/Utility/SystemLogging/NI_SystemLogging.lvlib"/>
 			</Item>
+			<Item Name="Execution Unit.lvclass" Type="LVClass" URL="../../../Includes/Communication Bus Engine.lvlibp/Interfaces/Execution Unit/Execution Unit/Execution Unit.lvclass"/>
 			<Item Name="LV Config Read String.vi" Type="VI" URL="/&lt;resource&gt;/dialog/lvconfig.llb/LV Config Read String.vi"/>
 			<Item Name="NationalInstruments.VeriStand.SystemStorage" Type="Document" URL="NationalInstruments.VeriStand.SystemStorage">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
@@ -1050,10 +1056,11 @@
 				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="../../../Includes/Communication Bus Engine.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Error Cluster From Error Code.vi"/>
 				<Item Name="Get LV Class Name.vi" Type="VI" URL="../../../Includes/Communication Bus Engine.lvlibp/1abvi3w/vi.lib/Utility/LVClass/Get LV Class Name.vi"/>
 				<Item Name="Implementation.lvlib" Type="Library" URL="../../../Includes/Communication Bus Engine.lvlibp/Implementation/Implementation.lvlib"/>
-				<Item Name="Interface.lvlib" Type="Library" URL="../../../Includes/Communication Bus Engine.lvlibp/Interfaces/Execution Unit/Interface.lvlib"/>
+				<Item Name="Interfaces.lvlib" Type="Library" URL="../../../Includes/Communication Bus Engine.lvlibp/Interfaces/Interfaces.lvlib"/>
 				<Item Name="LV Config Read String.vi" Type="VI" URL="../../../Includes/Communication Bus Engine.lvlibp/1abvi3w/resource/dialog/lvconfig.llb/LV Config Read String.vi"/>
 				<Item Name="NI_SystemLogging.lvlib" Type="Library" URL="../../../Includes/Communication Bus Engine.lvlibp/1abvi3w/vi.lib/Utility/SystemLogging/NI_SystemLogging.lvlib"/>
 			</Item>
+			<Item Name="Execution Unit.lvclass" Type="LVClass" URL="../../../Includes/Communication Bus Engine.lvlibp/Interfaces/Execution Unit/Execution Unit/Execution Unit.lvclass"/>
 			<Item Name="LV Config Read String.vi" Type="VI" URL="/&lt;resource&gt;/dialog/lvconfig.llb/LV Config Read String.vi"/>
 			<Item Name="NationalInstruments.VeriStand.SystemStorage" Type="Document" URL="NationalInstruments.VeriStand.SystemStorage">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
@@ -1273,10 +1280,11 @@
 				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="../../../Includes/Communication Bus Engine.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Error Cluster From Error Code.vi"/>
 				<Item Name="Get LV Class Name.vi" Type="VI" URL="../../../Includes/Communication Bus Engine.lvlibp/1abvi3w/vi.lib/Utility/LVClass/Get LV Class Name.vi"/>
 				<Item Name="Implementation.lvlib" Type="Library" URL="../../../Includes/Communication Bus Engine.lvlibp/Implementation/Implementation.lvlib"/>
-				<Item Name="Interface.lvlib" Type="Library" URL="../../../Includes/Communication Bus Engine.lvlibp/Interfaces/Execution Unit/Interface.lvlib"/>
+				<Item Name="Interfaces.lvlib" Type="Library" URL="../../../Includes/Communication Bus Engine.lvlibp/Interfaces/Interfaces.lvlib"/>
 				<Item Name="LV Config Read String.vi" Type="VI" URL="../../../Includes/Communication Bus Engine.lvlibp/1abvi3w/resource/dialog/lvconfig.llb/LV Config Read String.vi"/>
 				<Item Name="NI_SystemLogging.lvlib" Type="Library" URL="../../../Includes/Communication Bus Engine.lvlibp/1abvi3w/vi.lib/Utility/SystemLogging/NI_SystemLogging.lvlib"/>
 			</Item>
+			<Item Name="Execution Unit.lvclass" Type="LVClass" URL="../../../Includes/Communication Bus Engine.lvlibp/Interfaces/Execution Unit/Execution Unit/Execution Unit.lvclass"/>
 			<Item Name="LV Config Read String.vi" Type="VI" URL="/&lt;resource&gt;/dialog/lvconfig.llb/LV Config Read String.vi"/>
 			<Item Name="NationalInstruments.VeriStand.SystemStorage" Type="Document" URL="NationalInstruments.VeriStand.SystemStorage">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>

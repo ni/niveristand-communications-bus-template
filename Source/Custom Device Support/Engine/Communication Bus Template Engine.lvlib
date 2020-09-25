@@ -10,5 +10,5 @@
 
 </Property>
 	<Item Name="Implementation.lvlib" Type="Library" URL="../Implementation/Implementation.lvlib"/>
-	<Item Name="Interface.lvlib" Type="Library" URL="../Interfaces/Interface.lvlib"/>
+	<Item Name="Interfaces.lvlib" Type="Library" URL="../Interfaces/Interfaces.lvlib"/>
 </Library>
