@@ -32,7 +32,11 @@ This separation enables a user of the template to work in a single project to im
 
 ### Interfaces
 
-`System Explorer Dispatcher.lvclass` is the interface used by VIs in `Communication Bus Template System Explorer.lvlib` to call into the UI implementations in `Communication Bus Template Support System Explorer.lvlib`. Any new interaction defined in required by the custom device defined in `Communication Bus Template Custom Device.xml` will require and interface method for the dispatcher.
+`System Explorer Dispatcher.lvclass` is the interface used by VIs in `Communication Bus Template System Explorer.lvlib` to call into the UI implementations in `Communication Bus Template Support System Explorer.lvlib`. Any new interaction required by the custom device defined in `Communication Bus Template Custom Device.xml` will require an interface method for the dispatcher.
+
+Pages are loaded through the Dispatcher interface using `Get Page VI.vi`, as shown below. Right-click menus are populated in a similar way using `Get Menu Item.vi` and `Get Menu Items.vi`.
+
+![Page Dispatcher](Resources/PageDispatcher.png)
 
 ### Example Implementation
 
