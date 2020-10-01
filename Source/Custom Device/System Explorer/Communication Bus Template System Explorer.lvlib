@@ -18,6 +18,8 @@
 			<Item Name="RunTimeMenu Wrapper.vi" Type="VI" URL="../RunTimeMenu Wrapper.vi"/>
 		</Item>
 		<Item Name="SubVIs" Type="Folder">
+			<Item Name="Compile Asynchronous Execution Units.vi" Type="VI" URL="../Compile Asynchronous Execution Units.vi"/>
+			<Item Name="Compile Inline Execution Units.vi" Type="VI" URL="../Compile Inline Execution Units.vi"/>
 			<Item Name="Get Item GUID.vi" Type="VI" URL="../Get Item GUID.vi"/>
 		</Item>
 		<Item Name="Types" Type="Folder"/>

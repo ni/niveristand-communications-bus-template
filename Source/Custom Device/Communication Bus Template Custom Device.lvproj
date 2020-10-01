@@ -76,12 +76,10 @@
 				<Item Name="BuildHelpPath.vi" Type="VI" URL="../../../Includes/Communication Bus System Explorer.lvlibp/1abvi3w/vi.lib/Utility/error.llb/BuildHelpPath.vi"/>
 				<Item Name="Check Special Tags.vi" Type="VI" URL="../../../Includes/Communication Bus System Explorer.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Check Special Tags.vi"/>
 				<Item Name="Clear Errors.vi" Type="VI" URL="../../../Includes/Communication Bus System Explorer.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Clear Errors.vi"/>
-				<Item Name="Communication Bus Template Engine.lvlib" Type="Library" URL="../../../Includes/Communication Bus System Explorer.lvlibp/Engine/Communication Bus Template Engine.lvlib"/>
 				<Item Name="Communication Bus Template Scripting.lvlib" Type="Library" URL="../../../Includes/Communication Bus System Explorer.lvlibp/Scripting/Communication Bus Template Scripting.lvlib"/>
 				<Item Name="Convert property node font to graphics font.vi" Type="VI" URL="../../../Includes/Communication Bus System Explorer.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Convert property node font to graphics font.vi"/>
 				<Item Name="Custom Device API.lvlib" Type="Library" URL="../../../Includes/Communication Bus System Explorer.lvlibp/1abvi3w/vi.lib/NI VeriStand/Custom Device API/Custom Device API.lvlib"/>
 				<Item Name="Custom Device Utility Library.lvlib" Type="Library" URL="../../../Includes/Communication Bus System Explorer.lvlibp/1abvi3w/vi.lib/NI VeriStand/Custom Device Tools/Custom Device Utility Library/Custom Device Utility Library.lvlib"/>
-				<Item Name="Data Access System Explorer.lvlib" Type="Library" URL="../../../Includes/Communication Bus System Explorer.lvlibp/1abvi3w/vi.lib/NI/NIVS Inline Async API/_Data Access System Explorer/Data Access System Explorer.lvlib"/>
 				<Item Name="Details Display Dialog.vi" Type="VI" URL="../../../Includes/Communication Bus System Explorer.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Details Display Dialog.vi"/>
 				<Item Name="DialogType.ctl" Type="VI" URL="../../../Includes/Communication Bus System Explorer.lvlibp/1abvi3w/vi.lib/Utility/error.llb/DialogType.ctl"/>
 				<Item Name="DialogTypeEnum.ctl" Type="VI" URL="../../../Includes/Communication Bus System Explorer.lvlibp/1abvi3w/vi.lib/Utility/error.llb/DialogTypeEnum.ctl"/>
@@ -95,7 +93,6 @@
 				<Item Name="General Error Handler Core CORE.vi" Type="VI" URL="../../../Includes/Communication Bus System Explorer.lvlibp/1abvi3w/vi.lib/Utility/error.llb/General Error Handler Core CORE.vi"/>
 				<Item Name="General Error Handler.vi" Type="VI" URL="../../../Includes/Communication Bus System Explorer.lvlibp/1abvi3w/vi.lib/Utility/error.llb/General Error Handler.vi"/>
 				<Item Name="Get File Extension.vi" Type="VI" URL="../../../Includes/Communication Bus System Explorer.lvlibp/1abvi3w/vi.lib/Utility/libraryn.llb/Get File Extension.vi"/>
-				<Item Name="Get LV Class Name.vi" Type="VI" URL="../../../Includes/Communication Bus System Explorer.lvlibp/1abvi3w/vi.lib/Utility/LVClass/Get LV Class Name.vi"/>
 				<Item Name="Get String Text Bounds.vi" Type="VI" URL="../../../Includes/Communication Bus System Explorer.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Get String Text Bounds.vi"/>
 				<Item Name="Get Text Rect.vi" Type="VI" URL="../../../Includes/Communication Bus System Explorer.lvlibp/1abvi3w/vi.lib/picture/picture.llb/Get Text Rect.vi"/>
 				<Item Name="GetHelpDir.vi" Type="VI" URL="../../../Includes/Communication Bus System Explorer.lvlibp/1abvi3w/vi.lib/Utility/error.llb/GetHelpDir.vi"/>
@@ -104,10 +101,8 @@
 				<Item Name="ImportExport.lvlib" Type="Library" URL="../../../Includes/Communication Bus System Explorer.lvlibp/1abvi3w/vi.lib/NI/NI VeriStand Custom Device Import and Export Tool/ImportExport.lvlib"/>
 				<Item Name="Interfaces.lvlib" Type="Library" URL="../../../Includes/Communication Bus System Explorer.lvlibp/System Explorer/Interfaces/Interfaces.lvlib"/>
 				<Item Name="Longest Line Length in Pixels.vi" Type="VI" URL="../../../Includes/Communication Bus System Explorer.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Longest Line Length in Pixels.vi"/>
-				<Item Name="LV Config Read String.vi" Type="VI" URL="../../../Includes/Communication Bus System Explorer.lvlibp/1abvi3w/resource/dialog/lvconfig.llb/LV Config Read String.vi"/>
 				<Item Name="LVBoundsTypeDef.ctl" Type="VI" URL="../../../Includes/Communication Bus System Explorer.lvlibp/1abvi3w/vi.lib/Utility/miscctls.llb/LVBoundsTypeDef.ctl"/>
 				<Item Name="LVRectTypeDef.ctl" Type="VI" URL="../../../Includes/Communication Bus System Explorer.lvlibp/1abvi3w/vi.lib/Utility/miscctls.llb/LVRectTypeDef.ctl"/>
-				<Item Name="NI_SystemLogging.lvlib" Type="Library" URL="../../../Includes/Communication Bus System Explorer.lvlibp/1abvi3w/vi.lib/Utility/SystemLogging/NI_SystemLogging.lvlib"/>
 				<Item Name="Not Found Dialog.vi" Type="VI" URL="../../../Includes/Communication Bus System Explorer.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Not Found Dialog.vi"/>
 				<Item Name="Search and Replace Pattern.vi" Type="VI" URL="../../../Includes/Communication Bus System Explorer.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Search and Replace Pattern.vi"/>
 				<Item Name="Set Bold Text.vi" Type="VI" URL="../../../Includes/Communication Bus System Explorer.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Set Bold Text.vi"/>
@@ -239,6 +234,7 @@
 				<Item Name="Convert property node font to graphics font.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Convert property node font to graphics font.vi"/>
 				<Item Name="Create File with Incrementing Suffix.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Create File with Incrementing Suffix.vi"/>
 				<Item Name="Data Access Engine.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/NIVS Inline Async API/_Data Access Engine/Data Access Engine.lvlib"/>
+				<Item Name="Data Access System Explorer.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/NIVS Inline Async API/_Data Access System Explorer/Data Access System Explorer.lvlib"/>
 				<Item Name="Delete Elements from 1D Array (Boolean)__ogtk__jki_vi_tester.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/VI Tester/_support/Support.llb/Delete Elements from 1D Array (Boolean)__ogtk__jki_vi_tester.vi"/>
 				<Item Name="Delete Elements from 1D Array (CDB)__ogtk__jki_vi_tester.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/VI Tester/_support/Support.llb/Delete Elements from 1D Array (CDB)__ogtk__jki_vi_tester.vi"/>
 				<Item Name="Delete Elements from 1D Array (CSG)__ogtk__jki_vi_tester.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/VI Tester/_support/Support.llb/Delete Elements from 1D Array (CSG)__ogtk__jki_vi_tester.vi"/>
@@ -533,6 +529,9 @@
 			<Item Name="DOMUserDefRef.dll" Type="Document" URL="DOMUserDefRef.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="Execution Unit Factory.lvclass" Type="LVClass" URL="../../../Includes/Communication Bus Engine.lvlibp/Implementation/Execution Unit Factory/Execution Unit Factory.lvclass"/>
+			<Item Name="Execution Unit Factory.lvclass" Type="LVClass" URL="../../../Includes/Communication Bus Engine.lvlibp/Interfaces/Execution Unit Factory/Execution Unit Factory.lvclass"/>
+			<Item Name="Execution Unit.lvclass" Type="LVClass" URL="../../../Includes/Communication Bus Engine.lvlibp/Interfaces/Execution Unit/Execution Unit.lvclass"/>
 			<Item Name="Initialize.vi" Type="VI" URL="../../../Includes/Communication Bus System Explorer.lvlibp/Implementation/System Explorer/Initialize.vi"/>
 			<Item Name="LV Config Read String.vi" Type="VI" URL="/&lt;resource&gt;/dialog/lvconfig.llb/LV Config Read String.vi"/>
 			<Item Name="mscorlib" Type="VI" URL="mscorlib">
