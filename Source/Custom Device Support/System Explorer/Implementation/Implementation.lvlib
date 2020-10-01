@@ -7,6 +7,7 @@
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Item Name="Dynamically Called" Type="Folder">
+		<Item Name="ActionVIOnCompile.vi" Type="VI" URL="../System Explorer/ActionVIOnCompile.vi"/>
 		<Item Name="Initialize.vi" Type="VI" URL="../System Explorer/Initialize.vi"/>
 	</Item>
 	<Item Name="Pages" Type="Folder">
@@ -30,6 +31,8 @@
 		<Item Name="Import Frames RTM.vi" Type="VI" URL="../System Explorer/RTM/Import Frames RTM.vi"/>
 	</Item>
 	<Item Name="SubVIs" Type="Folder">
+		<Item Name="Compile Asynchronous Execution Units.vi" Type="VI" URL="../System Explorer/Compile Asynchronous Execution Units.vi"/>
+		<Item Name="Compile Inline Execution Units.vi" Type="VI" URL="../System Explorer/Compile Inline Execution Units.vi"/>
 		<Item Name="Load Help File.vi" Type="VI" URL="../System Explorer/Load Help File.vi"/>
 		<Item Name="Read Database.vi" Type="VI" URL="../System Explorer/Read Database.vi"/>
 		<Item Name="Write Database.vi" Type="VI" URL="../System Explorer/Write Database.vi"/>
