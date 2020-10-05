@@ -8,7 +8,7 @@
 	<Version>1.0.0</Version>
 	<Type>Inline HW Interface</Type>
 	<MaxOccurrence>-1</MaxOccurrence>
-	<MainPageGUID>6d83d852-1383-4c81-9895-38ca2655dae3</MainPageGUID>
+	<MainPageGUID>C72D5B6D-3963-4AD1-9D29-96A9031A1018</MainPageGUID>
 	<InitializationVI>
 		<Type>Action</Type>
 		<Item2Launch>
@@ -68,7 +68,7 @@
 				<eng>Communication Bus Template</eng>
 				<loc>Communication Bus Template</loc>
 			</Name>
-			<GUID>6d83d852-1383-4c81-9895-38ca2655dae3</GUID>
+			<GUID>C72D5B6D-3963-4AD1-9D29-96A9031A1018</GUID>
 			<Glyph>
 				<Type>To Application Data Dir</Type>
 				<Path>System Explorer\Glyphs\default fpga category.png</Path>
@@ -79,7 +79,7 @@
 			</Item2Launch>
 			<RunTimeMenu>
 				<MenuItem>
-					<GUID>c90d1b42-9eb1-4e89-92b6-6c073196ade9</GUID>
+					<GUID>9AA48C3B-F4C8-4B60-AA5A-3FDC910D5856</GUID>
 					<Type>Action</Type>
 					<Execution>silent</Execution>
 					<Name>
@@ -92,7 +92,7 @@
 					</Item2Launch>
 				</MenuItem>
 				<MenuItem>
-					<GUID>089728fe-9b2f-4073-8646-572ad1172b32</GUID>
+					<GUID>23F8FDE3-8D57-4BC2-9F66-9F619ACC4CEF</GUID>
 					<Type>Action</Type>
 					<Execution>silent</Execution>
 					<Name>
@@ -113,7 +113,7 @@
 						<Path>System Explorer\Glyphs\Export.png</Path>
 					</Glyph>
 					<Type>Action</Type>
-					<ReferencedGUID>c90d1b42-9eb1-4e89-92b6-6c073196ade9</ReferencedGUID>
+					<ReferencedGUID>9AA48C3B-F4C8-4B60-AA5A-3FDC910D5856</ReferencedGUID>
 					<ButtonText>
 						<eng>Export Configuration</eng>
 						<loc>Export Configuration</loc>
@@ -138,7 +138,7 @@
 						<Path>System Explorer\Glyphs\Import.png</Path>
 					</Glyph>
 					<Type>Action</Type>
-					<ReferencedGUID>089728fe-9b2f-4073-8646-572ad1172b32</ReferencedGUID>
+					<ReferencedGUID>23F8FDE3-8D57-4BC2-9F66-9F619ACC4CEF</ReferencedGUID>
 					<ButtonText>
 						<eng>Import Configuration</eng>
 						<loc>Import Configuration</loc>
@@ -167,7 +167,7 @@
 				<eng>Databases</eng>
 				<loc>Databases</loc>
 			</Name>
-			<GUID>0ea00ee9-bf24-4f89-bc82-a2a280190e7b</GUID>
+			<GUID>58C336B3-40B3-421A-8EEB-6E95EEBD9B1B</GUID>
 			<Glyph>
 				<Type>To Application Data Dir</Type>
 				<Path>System Explorer\Glyphs\databases.png</Path>
@@ -178,7 +178,7 @@
 			</Item2Launch>
 			<RunTimeMenu>
 				<MenuItem>
-					<GUID>4a264cda-93bf-4d77-92b0-38d997c67151</GUID>
+					<GUID>104AC1EE-C2DB-40A5-A54B-7387C885E22F</GUID>
 					<Type>Custom</Type>
 					<Name>
 						<eng />
@@ -200,7 +200,7 @@
 				<eng>Ports</eng>
 				<loc>Ports</loc>
 			</Name>
-			<GUID>54d3c231-5bbc-41bd-84f0-cbf6c48b59d0</GUID>
+			<GUID>D8965308-23F8-4DBB-9C5F-692C5B27B3A0</GUID>
 			<Glyph>
 				<Type>To Application Data Dir</Type>
 				<Path>System Explorer\Glyphs\NI-XNET Port.png</Path>
@@ -211,7 +211,7 @@
 			</Item2Launch>
 			<RunTimeMenu>
 				<MenuItem>
-					<GUID>4a264cda-93bf-4d77-92b0-38d997c67151</GUID>
+					<GUID>104AC1EE-C2DB-40A5-A54B-7387C885E22F</GUID>
 					<Type>Custom</Type>
 					<Name>
 						<eng />
@@ -234,7 +234,7 @@
 				<loc>Port %d</loc>
 			</Name>
 			<Copy>Copy</Copy>
-			<GUID>c33f961b-5445-4ca2-95c0-8ffbb92313cb</GUID>
+			<GUID>6899957C-D24C-4307-AEEE-8A9642F89740</GUID>
 			<Glyph>
 				<Type>To Application Data Dir</Type>
 				<Path>System Explorer\Glyphs\NI-XNET Port.png</Path>
@@ -245,7 +245,7 @@
 			</Item2Launch>
 			<RunTimeMenu>
 				<MenuItem>
-					<GUID>4a264cda-93bf-4d77-92b0-38d997c67151</GUID>
+					<GUID>104AC1EE-C2DB-40A5-A54B-7387C885E22F</GUID>
 					<Type>Custom</Type>
 					<Name>
 						<eng />
@@ -268,7 +268,7 @@
 				<loc>Database</loc>
 			</Name>
 			<Copy>Copy</Copy>
-			<GUID>93c42860-b6b1-49e2-82f1-7f71f23907bd</GUID>
+			<GUID>E126D1F8-7E0D-4A60-8F8C-A91D1972D0FD</GUID>
 			<Glyph>
 				<Type>To Application Data Dir</Type>
 				<Path>System Explorer\Glyphs\Database.png</Path>
@@ -279,7 +279,7 @@
 			</Item2Launch>
 			<RunTimeMenu>
 				<MenuItem>
-					<GUID>4a264cda-93bf-4d77-92b0-38d997c67151</GUID>
+					<GUID>104AC1EE-C2DB-40A5-A54B-7387C885E22F</GUID>
 					<Type>Custom</Type>
 					<Name>
 						<eng />
@@ -301,7 +301,7 @@
 				<eng>Incoming</eng>
 				<loc>Incoming</loc>
 			</Name>
-			<GUID>0806d046-d172-41c6-923a-ea2f0a033aaf</GUID>
+			<GUID>0EBDC493-90A3-4BAB-9A6B-CB55847246F0</GUID>
 			<Glyph>
 				<Type>To Application Data Dir</Type>
 				<Path>System Explorer\Glyphs\NI-XNET Incoming.png</Path>
@@ -312,7 +312,7 @@
 			</Item2Launch>
 			<RunTimeMenu>
 				<MenuItem>
-					<GUID>4a264cda-93bf-4d77-92b0-38d997c67151</GUID>
+					<GUID>104AC1EE-C2DB-40A5-A54B-7387C885E22F</GUID>
 					<Type>Custom</Type>
 					<Name>
 						<eng />
@@ -334,7 +334,7 @@
 				<eng>Outgoing</eng>
 				<loc>Outgoing</loc>
 			</Name>
-			<GUID>4a2a8cff-0efe-4d8d-9297-6d7b1461b132</GUID>
+			<GUID>A2A47833-9D19-44C9-8008-85E9D90A567A</GUID>
 			<Glyph>
 				<Type>To Application Data Dir</Type>
 				<Path>System Explorer\Glyphs\NI-XNET Outgoing.png</Path>
@@ -345,7 +345,7 @@
 			</Item2Launch>
 			<RunTimeMenu>
 				<MenuItem>
-					<GUID>4a264cda-93bf-4d77-92b0-38d997c67151</GUID>
+					<GUID>104AC1EE-C2DB-40A5-A54B-7387C885E22F</GUID>
 					<Type>Custom</Type>
 					<Name>
 						<eng />
@@ -367,7 +367,7 @@
 				<eng>Frame</eng>
 				<loc>Frame</loc>
 			</Name>
-			<GUID>12b029fd-7aaa-4aa7-9f3a-279e0ce107c0</GUID>
+			<GUID>8779778C-5B86-45AE-B374-A8521C7B36F3</GUID>
 			<Glyph>
 				<Type>To Application Data Dir</Type>
 				<Path>System Explorer\Glyphs\NI-XNET SignalFrame.png</Path>
@@ -378,7 +378,7 @@
 			</Item2Launch>
 			<RunTimeMenu>
 				<MenuItem>
-					<GUID>4a264cda-93bf-4d77-92b0-38d997c67151</GUID>
+					<GUID>104AC1EE-C2DB-40A5-A54B-7387C885E22F</GUID>
 					<Type>Custom</Type>
 					<Name>
 						<eng />
@@ -400,7 +400,7 @@
 				<eng>Channel</eng>
 				<loc>Channel</loc>
 			</Name>
-			<GUID>0675c943-5444-47d6-a732-30e8170ca818</GUID>
+			<GUID>2708C25E-A480-446A-A881-D9A596811F4B</GUID>
 			<Glyph>
 				<Type>To Application Data Dir</Type>
 				<Path>System Explorer\Glyphs\NI-XNET Signal.png</Path>
@@ -411,7 +411,7 @@
 			</Item2Launch>
 			<RunTimeMenu>
 				<MenuItem>
-					<GUID>4a264cda-93bf-4d77-92b0-38d997c67151</GUID>
+					<GUID>104AC1EE-C2DB-40A5-A54B-7387C885E22F</GUID>
 					<Type>Custom</Type>
 					<Name>
 						<eng />
@@ -433,7 +433,7 @@
 				<eng>Vendor</eng>
 				<loc>Vendor</loc>
 			</Name>
-			<GUID>350f1f90-dede-4c86-9a3d-8bedbf3ddc34</GUID>
+			<GUID>79AD626E-4899-4485-898C-9E851BA8C761</GUID>
 			<Glyph>
 				<Type>To Application Data Dir</Type>
 				<Path>System Explorer\Glyphs\default fpga category.png</Path>
@@ -444,7 +444,7 @@
 			</Item2Launch>
 			<RunTimeMenu>
 				<MenuItem>
-					<GUID>4a264cda-93bf-4d77-92b0-38d997c67151</GUID>
+					<GUID>104AC1EE-C2DB-40A5-A54B-7387C885E22F</GUID>
 					<Type>Custom</Type>
 					<Name>
 						<eng />
@@ -466,7 +466,7 @@
 				<eng>Protocol</eng>
 				<loc>Protocol</loc>
 			</Name>
-			<GUID>936f3d3d-57f9-4ae0-ac61-b0abf738573d</GUID>
+			<GUID>E87C701F-9D9D-45DD-9650-0A2EE2930B15</GUID>
 			<Glyph>
 				<Type>To Application Data Dir</Type>
 				<Path>System Explorer\Glyphs\default fpga category.png</Path>
@@ -477,7 +477,7 @@
 			</Item2Launch>
 			<RunTimeMenu>
 				<MenuItem>
-					<GUID>4a264cda-93bf-4d77-92b0-38d997c67151</GUID>
+					<GUID>104AC1EE-C2DB-40A5-A54B-7387C885E22F</GUID>
 					<Type>Custom</Type>
 					<Name>
 						<eng />
