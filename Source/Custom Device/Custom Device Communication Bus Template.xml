@@ -2,8 +2,8 @@
 <CustomDevice xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Custom Device.xsd">
 	<XSDVersion Major="2010" Minor="0" Fix="0" Build="0" />
 	<AddMenu>
-		<eng>National Instruments::Communication Bus Template</eng>
-		<loc>National Instruments::Communication Bus Template</loc>
+		<eng>National Instruments::XNET</eng>
+		<loc>National Instruments::XNET</loc>
 	</AddMenu>
 	<Version>1.0.0</Version>
 	<Type>Inline HW Interface</Type>
@@ -65,8 +65,8 @@
 	<Pages>
 		<Page>
 			<Name>
-				<eng>Communication Bus Template</eng>
-				<loc>Communication Bus Template</loc>
+				<eng>XNET</eng>
+				<loc>XNET</loc>
 			</Name>
 			<GUID>C72D5B6D-3963-4AD1-9D29-96A9031A1018</GUID>
 			<Glyph>
