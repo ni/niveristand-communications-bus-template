@@ -57,9 +57,9 @@
 			<SupportedTarget>Linux_x64</SupportedTarget>
 			<Source>
 				<Type>To Common Doc Dir</Type>
-				<Path>Custom Devices\XNET\Linux_x64\Communication Bus Engine.lvlibp</Path>
+				<Path>Custom Devices\XNET\Linux_x64\XNET Engine.lvlibp</Path>
 			</Source>
-			<RealTimeSystemDestination>c:\ni-rt\VeriStand\Custom Devices\XNET\Communication Bus Engine.lvlibp</RealTimeSystemDestination>
+			<RealTimeSystemDestination>c:\ni-rt\VeriStand\Custom Devices\XNET\XNET Engine.lvlibp</RealTimeSystemDestination>
 		</Dependency>
 	</Dependencies>
 	<Pages>
