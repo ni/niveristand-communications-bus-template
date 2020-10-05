@@ -20,14 +20,14 @@ name = 'System Explorer PPL'
 type = 'lvBuildSpec'
 project = '{support}'
 target = 'My Computer'
-build_spec = 'Communication Bus System Explorer'
+build_spec = 'System Explorer'
 
 [[build.steps]]
 name = 'Engine PPL'
 type = 'lvBuildSpec'
 project = '{support}'
 target = 'My Computer'
-build_spec = 'Communication Bus Engine'
+build_spec = 'Engine'
 
 [[build.steps]]
 name = 'Configuration Library'
@@ -48,7 +48,7 @@ name = 'Linux x64 Engine PPL'
 type = 'lvBuildSpec'
 project = '{support}'
 target = 'RT CompactRIO Target - Linux x64'
-build_spec = 'Communication Bus Engine'
+build_spec = 'Engine'
 
 [[build.steps]]
 name = 'Linux x64 Engine Library'
@@ -60,7 +60,7 @@ build_spec = 'Engine Release'
 [[package]]
 type = 'nipkg'
 payload_dir = 'Built'
-install_destination = 'documents\National Instruments\NI VeriStand {veristand_version}\Custom Devices\Communication Bus Template'
+install_destination = 'documents\National Instruments\NI VeriStand {veristand_version}\Custom Devices\XNET'
 control_file = 'control_custom_device'
 package_output_dir = 'Source\Built'
 
