@@ -60,7 +60,7 @@ build_spec = 'Engine Release'
 [[package]]
 type = 'nipkg'
 payload_dir = 'Built'
-install_destination = 'documents\National Instruments\NI VeriStand {veristand_version}\Custom Devices\Communication Bus Template'
+install_destination = 'documents\National Instruments\NI VeriStand {veristand_version}\Custom Devices\XNET'
 control_file = 'control_custom_device'
 package_output_dir = 'Source\Built'
 
