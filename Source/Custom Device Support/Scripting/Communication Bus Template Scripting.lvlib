@@ -23,6 +23,10 @@
 		<Item Name="Get Frame Port Reference.vi" Type="VI" URL="../Frame/Get Frame Port Reference.vi"/>
 		<Item Name="Set Frame Id.vi" Type="VI" URL="../Frame/Set Frame Id.vi"/>
 	</Item>
+	<Item Name="Incoming Outgoing" Type="Folder">
+		<Item Name="Get Execution Mode.vi" Type="VI" URL="../Incoming Outgoing/Get Execution Mode.vi"/>
+		<Item Name="Set Execution Mode.vi" Type="VI" URL="../Incoming Outgoing/Set Execution Mode.vi"/>
+	</Item>
 	<Item Name="Port" Type="Folder">
 		<Item Name="Add Port Incoming Section.vi" Type="VI" URL="../Port/Add Port Incoming Section.vi"/>
 		<Item Name="Add Port Outgoing Section.vi" Type="VI" URL="../Port/Add Port Outgoing Section.vi"/>
@@ -38,6 +42,4 @@
 		<Item Name="Set Port Interface Name.vi" Type="VI" URL="../Port/Set Port Interface Name.vi"/>
 	</Item>
 	<Item Name="Constants.vi" Type="VI" URL="../Constants.vi"/>
-	<Item Name="Get Execution Mode.vi" Type="VI" URL="../Get Execution Mode.vi"/>
-	<Item Name="Set Execution Mode.vi" Type="VI" URL="../Set Execution Mode.vi"/>
 </Library>
