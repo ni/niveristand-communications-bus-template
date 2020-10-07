@@ -35,9 +35,13 @@
 		<Item Name="Write Database.vi" Type="VI" URL="../System Explorer/Write Database.vi"/>
 	</Item>
 	<Item Name="Types" Type="Folder">
+		<Item Name="Add Port RTM Properties.ctl" Type="VI" URL="../System Explorer/Types/Add Port RTM Properties.ctl"/>
 		<Item Name="Browse Button.ctl" Type="VI" URL="../System Explorer/Types/Browse Button.ctl"/>
 		<Item Name="Database.ctl" Type="VI" URL="../System Explorer/Types/Database.ctl"/>
+		<Item Name="Execution Mode.ctl" Type="VI" URL="../System Explorer/Types/Execution Mode.ctl"/>
 		<Item Name="Path Control.ctl" Type="VI" URL="../System Explorer/Types/Path Control.ctl"/>
+		<Item Name="Port Properties.ctl" Type="VI" URL="../System Explorer/Types/Port Properties.ctl"/>
+		<Item Name="XNET Interface Name.ctl" Type="VI" URL="../System Explorer/Types/XNET Interface Name.ctl"/>
 	</Item>
 	<Item Name="System Explorer Dispatcher.lvclass" Type="LVClass" URL="../System Explorer Dispatcher/System Explorer Dispatcher.lvclass"/>
 </Library>

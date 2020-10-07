@@ -23,15 +23,23 @@
 		<Item Name="Get Frame Port Reference.vi" Type="VI" URL="../Frame/Get Frame Port Reference.vi"/>
 		<Item Name="Set Frame Id.vi" Type="VI" URL="../Frame/Set Frame Id.vi"/>
 	</Item>
+	<Item Name="Incoming Outgoing" Type="Folder">
+		<Item Name="Get Execution Mode.vi" Type="VI" URL="../Incoming Outgoing/Get Execution Mode.vi"/>
+		<Item Name="Set Execution Mode.vi" Type="VI" URL="../Incoming Outgoing/Set Execution Mode.vi"/>
+	</Item>
 	<Item Name="Port" Type="Folder">
 		<Item Name="Add Port Incoming Section.vi" Type="VI" URL="../Port/Add Port Incoming Section.vi"/>
 		<Item Name="Add Port Outgoing Section.vi" Type="VI" URL="../Port/Add Port Outgoing Section.vi"/>
 		<Item Name="Add Port.vi" Type="VI" URL="../Port/Add Port.vi"/>
 		<Item Name="Add Ports Section.vi" Type="VI" URL="../Port/Add Ports Section.vi"/>
 		<Item Name="Get Port Baud Rate.vi" Type="VI" URL="../Port/Get Port Baud Rate.vi"/>
+		<Item Name="Get Port CAN Cluster.vi" Type="VI" URL="../Port/Get Port CAN Cluster.vi"/>
 		<Item Name="Get Port Database.vi" Type="VI" URL="../Port/Get Port Database.vi"/>
+		<Item Name="Get Port Interface Name.vi" Type="VI" URL="../Port/Get Port Interface Name.vi"/>
 		<Item Name="Set Port Baud Rate.vi" Type="VI" URL="../Port/Set Port Baud Rate.vi"/>
+		<Item Name="Set Port CAN Cluster.vi" Type="VI" URL="../Port/Set Port CAN Cluster.vi"/>
 		<Item Name="Set Port Database.vi" Type="VI" URL="../Port/Set Port Database.vi"/>
+		<Item Name="Set Port Interface Name.vi" Type="VI" URL="../Port/Set Port Interface Name.vi"/>
 	</Item>
 	<Item Name="Constants.vi" Type="VI" URL="../Constants.vi"/>
 </Library>
