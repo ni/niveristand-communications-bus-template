@@ -11,4 +11,5 @@
 </Property>
 	<Item Name="Execution Unit Factory.lvclass" Type="LVClass" URL="../Execution Unit Factory/Execution Unit Factory.lvclass"/>
 	<Item Name="Execution Unit.lvclass" Type="LVClass" URL="../Execution Unit/Execution Unit.lvclass"/>
+	<Item Name="NI-XNET CAN Writer Execution Unit.lvclass" Type="LVClass" URL="../NI-XNET CAN Writer Execution Unit/NI-XNET CAN Writer Execution Unit.lvclass"/>
 </Library>
