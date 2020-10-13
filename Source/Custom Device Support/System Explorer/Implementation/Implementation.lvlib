@@ -34,7 +34,6 @@
 		<Item Name="Load Help File.vi" Type="VI" URL="../System Explorer/Load Help File.vi"/>
 		<Item Name="Populate CAN Interface Name Menu.vi" Type="VI" URL="../System Explorer/Populate CAN Interface Name Menu.vi"/>
 		<Item Name="Read Database.vi" Type="VI" URL="../System Explorer/Read Database.vi"/>
-		<Item Name="Write Database.vi" Type="VI" URL="../System Explorer/Write Database.vi"/>
 	</Item>
 	<Item Name="Types" Type="Folder">
 		<Item Name="Add Port RTM Properties.ctl" Type="VI" URL="../System Explorer/Types/Add Port RTM Properties.ctl"/>
