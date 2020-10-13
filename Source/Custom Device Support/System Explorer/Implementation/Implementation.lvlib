@@ -30,9 +30,10 @@
 		<Item Name="Import Frames RTM.vi" Type="VI" URL="../System Explorer/RTM/Import Frames RTM.vi"/>
 	</Item>
 	<Item Name="SubVIs" Type="Folder">
+		<Item Name="CAN Interface Name Menu Item Count.vi" Type="VI" URL="../System Explorer/CAN Interface Name Menu Item Count.vi"/>
 		<Item Name="Load Help File.vi" Type="VI" URL="../System Explorer/Load Help File.vi"/>
+		<Item Name="Populate CAN Interface Name Menu.vi" Type="VI" URL="../System Explorer/Populate CAN Interface Name Menu.vi"/>
 		<Item Name="Read Database.vi" Type="VI" URL="../System Explorer/Read Database.vi"/>
-		<Item Name="Write Database.vi" Type="VI" URL="../System Explorer/Write Database.vi"/>
 	</Item>
 	<Item Name="Types" Type="Folder">
 		<Item Name="Add Port RTM Properties.ctl" Type="VI" URL="../System Explorer/Types/Add Port RTM Properties.ctl"/>
@@ -41,6 +42,7 @@
 		<Item Name="Execution Mode.ctl" Type="VI" URL="../System Explorer/Types/Execution Mode.ctl"/>
 		<Item Name="Path Control.ctl" Type="VI" URL="../System Explorer/Types/Path Control.ctl"/>
 		<Item Name="Port Properties.ctl" Type="VI" URL="../System Explorer/Types/Port Properties.ctl"/>
+		<Item Name="Signal.ctl" Type="VI" URL="../System Explorer/Types/Signal.ctl"/>
 		<Item Name="XNET Interface Name.ctl" Type="VI" URL="../System Explorer/Types/XNET Interface Name.ctl"/>
 	</Item>
 	<Item Name="System Explorer Dispatcher.lvclass" Type="LVClass" URL="../System Explorer Dispatcher/System Explorer Dispatcher.lvclass"/>
