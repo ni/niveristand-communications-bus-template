@@ -40,6 +40,7 @@
 		<Item Name="Browse Button.ctl" Type="VI" URL="../System Explorer/Types/Browse Button.ctl"/>
 		<Item Name="Database.ctl" Type="VI" URL="../System Explorer/Types/Database.ctl"/>
 		<Item Name="Execution Mode.ctl" Type="VI" URL="../System Explorer/Types/Execution Mode.ctl"/>
+		<Item Name="Frame.ctl" Type="VI" URL="../System Explorer/Types/Frame.ctl"/>
 		<Item Name="Path Control.ctl" Type="VI" URL="../System Explorer/Types/Path Control.ctl"/>
 		<Item Name="Port Properties.ctl" Type="VI" URL="../System Explorer/Types/Port Properties.ctl"/>
 		<Item Name="Signal.ctl" Type="VI" URL="../System Explorer/Types/Signal.ctl"/>
