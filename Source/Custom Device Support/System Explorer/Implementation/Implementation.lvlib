@@ -7,6 +7,7 @@
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Item Name="Dynamically Called" Type="Folder">
+		<Item Name="ActionVIOnDownload.vi" Type="VI" URL="../System Explorer/ActionVIOnDownload.vi"/>
 		<Item Name="Initialize.vi" Type="VI" URL="../System Explorer/Initialize.vi"/>
 	</Item>
 	<Item Name="Pages" Type="Folder">
