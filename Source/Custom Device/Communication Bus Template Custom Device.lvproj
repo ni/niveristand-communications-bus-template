@@ -27,10 +27,14 @@
 		</Item>
 		<Item Name="Includes" Type="Folder">
 			<Item Name="XNET Engine.lvlibp" Type="LVLibp" URL="../../../Includes/XNET Engine.lvlibp">
+				<Item Name="_XNET Convert List From Array To Comma.vi" Type="VI" URL="../../../Includes/XNET Engine.lvlibp/1abvi3w/vi.lib/xnet/xnet.llb/_XNET Convert List From Array To Comma.vi"/>
+				<Item Name="_XNET Create Session.vi" Type="VI" URL="../../../Includes/XNET Engine.lvlibp/1abvi3w/vi.lib/xnet/xnet.llb/_XNET Create Session.vi"/>
+				<Item Name="_XNET Split Database Cluster.vi" Type="VI" URL="../../../Includes/XNET Engine.lvlibp/1abvi3w/vi.lib/xnet/xnet.llb/_XNET Split Database Cluster.vi"/>
 				<Item Name="BuildHelpPath.vi" Type="VI" URL="../../../Includes/XNET Engine.lvlibp/1abvi3w/vi.lib/Utility/error.llb/BuildHelpPath.vi"/>
 				<Item Name="Check Special Tags.vi" Type="VI" URL="../../../Includes/XNET Engine.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Check Special Tags.vi"/>
 				<Item Name="Clear Errors.vi" Type="VI" URL="../../../Includes/XNET Engine.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Clear Errors.vi"/>
 				<Item Name="Communication Bus Template Scripting.lvlib" Type="Library" URL="../../../Includes/XNET Engine.lvlibp/Scripting/Communication Bus Template Scripting.lvlib"/>
+				<Item Name="Communication Bus Template System Explorer.lvlib" Type="Library" URL="../../../Includes/XNET Engine.lvlibp/System Explorer/Implementation/System Explorer/Communication Bus Template System Explorer.lvlib"/>
 				<Item Name="Convert property node font to graphics font.vi" Type="VI" URL="../../../Includes/XNET Engine.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Convert property node font to graphics font.vi"/>
 				<Item Name="Custom Device API.lvlib" Type="Library" URL="../../../Includes/XNET Engine.lvlibp/1abvi3w/vi.lib/NI VeriStand/Custom Device API/Custom Device API.lvlib"/>
 				<Item Name="Custom Device Utility Library.lvlib" Type="Library" URL="../../../Includes/XNET Engine.lvlibp/1abvi3w/vi.lib/NI VeriStand/Custom Device Tools/Custom Device Utility Library/Custom Device Utility Library.lvlib"/>
@@ -70,6 +74,16 @@
 				<Item Name="Trim Whitespace.vi" Type="VI" URL="../../../Includes/XNET Engine.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Trim Whitespace.vi"/>
 				<Item Name="VS Inline Async API.lvlib" Type="Library" URL="../../../Includes/XNET Engine.lvlibp/1abvi3w/vi.lib/NI/NIVS Inline Async API/_VS Inline Async API/VS Inline Async API.lvlib"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="../../../Includes/XNET Engine.lvlibp/1abvi3w/vi.lib/Utility/error.llb/whitespace.ctl"/>
+				<Item Name="XNET Clear.vi" Type="VI" URL="../../../Includes/XNET Engine.lvlibp/1abvi3w/vi.lib/xnet/xnet.llb/XNET Clear.vi"/>
+				<Item Name="XNET Control Scope.ctl" Type="VI" URL="../../../Includes/XNET Engine.lvlibp/1abvi3w/vi.lib/xnet/xnet.llb/XNET Control Scope.ctl"/>
+				<Item Name="XNET Create Session (Signal Input Single-point).vi" Type="VI" URL="../../../Includes/XNET Engine.lvlibp/1abvi3w/vi.lib/xnet/xnet.llb/XNET Create Session (Signal Input Single-point).vi"/>
+				<Item Name="XNET Create Session (Signal Output Single-point).vi" Type="VI" URL="../../../Includes/XNET Engine.lvlibp/1abvi3w/vi.lib/xnet/xnet.llb/XNET Create Session (Signal Output Single-point).vi"/>
+				<Item Name="XNET Fill In Error Info.vi" Type="VI" URL="../../../Includes/XNET Engine.lvlibp/1abvi3w/vi.lib/xnet/xnet.llb/XNET Fill In Error Info.vi"/>
+				<Item Name="XNET Mode.ctl" Type="VI" URL="../../../Includes/XNET Engine.lvlibp/1abvi3w/vi.lib/xnet/xnet.llb/XNET Mode.ctl"/>
+				<Item Name="XNET Read (Signal Single-point).vi" Type="VI" URL="../../../Includes/XNET Engine.lvlibp/1abvi3w/vi.lib/xnet/xnet.llb/XNET Read (Signal Single-point).vi"/>
+				<Item Name="XNET Start.vi" Type="VI" URL="../../../Includes/XNET Engine.lvlibp/1abvi3w/vi.lib/xnet/xnet.llb/XNET Start.vi"/>
+				<Item Name="XNET Stop.vi" Type="VI" URL="../../../Includes/XNET Engine.lvlibp/1abvi3w/vi.lib/xnet/xnet.llb/XNET Stop.vi"/>
+				<Item Name="XNET Write (Signal Single-point).vi" Type="VI" URL="../../../Includes/XNET Engine.lvlibp/1abvi3w/vi.lib/xnet/xnet.llb/XNET Write (Signal Single-point).vi"/>
 			</Item>
 			<Item Name="XNET System Explorer.lvlibp" Type="LVLibp" URL="../../../Includes/XNET System Explorer.lvlibp">
 				<Item Name="Advanced System Definition.lvlib" Type="Library" URL="../../../Includes/XNET System Explorer.lvlibp/1abvi3w/vi.lib/NI/NI VeriStand Advanced SysDef API/SysDef API/Advanced System Definition.lvlib"/>
@@ -545,6 +559,9 @@
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="NIVeriStand_DataServices.dll" Type="Document" URL="../../../Includes/NIVeriStand_DataServices.dll"/>
+			<Item Name="nixlvapi.dll" Type="Document" URL="nixlvapi.dll">
+				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+			</Item>
 			<Item Name="systemLogging.dll" Type="Document" URL="systemLogging.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
@@ -842,14 +859,21 @@
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="NIVeriStand_DataServices.dll" Type="Document" URL="../../../Includes/NIVeriStand_DataServices.dll"/>
+			<Item Name="nixlvapi.dll" Type="Document" URL="nixlvapi.dll">
+				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+			</Item>
 			<Item Name="systemLogging.dll" Type="Document" URL="systemLogging.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="XNET Engine.lvlibp" Type="LVLibp" URL="../../../Includes/XNET Engine.lvlibp">
+				<Item Name="_XNET Convert List From Array To Comma.vi" Type="VI" URL="../../../Includes/XNET Engine.lvlibp/1abvi3w/vi.lib/xnet/xnet.llb/_XNET Convert List From Array To Comma.vi"/>
+				<Item Name="_XNET Create Session.vi" Type="VI" URL="../../../Includes/XNET Engine.lvlibp/1abvi3w/vi.lib/xnet/xnet.llb/_XNET Create Session.vi"/>
+				<Item Name="_XNET Split Database Cluster.vi" Type="VI" URL="../../../Includes/XNET Engine.lvlibp/1abvi3w/vi.lib/xnet/xnet.llb/_XNET Split Database Cluster.vi"/>
 				<Item Name="BuildHelpPath.vi" Type="VI" URL="../../../Includes/XNET Engine.lvlibp/1abvi3w/vi.lib/Utility/error.llb/BuildHelpPath.vi"/>
 				<Item Name="Check Special Tags.vi" Type="VI" URL="../../../Includes/XNET Engine.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Check Special Tags.vi"/>
 				<Item Name="Clear Errors.vi" Type="VI" URL="../../../Includes/XNET Engine.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Clear Errors.vi"/>
 				<Item Name="Communication Bus Template Scripting.lvlib" Type="Library" URL="../../../Includes/XNET Engine.lvlibp/Scripting/Communication Bus Template Scripting.lvlib"/>
+				<Item Name="Communication Bus Template System Explorer.lvlib" Type="Library" URL="../../../Includes/XNET Engine.lvlibp/System Explorer/Implementation/System Explorer/Communication Bus Template System Explorer.lvlib"/>
 				<Item Name="Convert property node font to graphics font.vi" Type="VI" URL="../../../Includes/XNET Engine.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Convert property node font to graphics font.vi"/>
 				<Item Name="Custom Device API.lvlib" Type="Library" URL="../../../Includes/XNET Engine.lvlibp/1abvi3w/vi.lib/NI VeriStand/Custom Device API/Custom Device API.lvlib"/>
 				<Item Name="Custom Device Utility Library.lvlib" Type="Library" URL="../../../Includes/XNET Engine.lvlibp/1abvi3w/vi.lib/NI VeriStand/Custom Device Tools/Custom Device Utility Library/Custom Device Utility Library.lvlib"/>
@@ -889,6 +913,16 @@
 				<Item Name="Trim Whitespace.vi" Type="VI" URL="../../../Includes/XNET Engine.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Trim Whitespace.vi"/>
 				<Item Name="VS Inline Async API.lvlib" Type="Library" URL="../../../Includes/XNET Engine.lvlibp/1abvi3w/vi.lib/NI/NIVS Inline Async API/_VS Inline Async API/VS Inline Async API.lvlib"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="../../../Includes/XNET Engine.lvlibp/1abvi3w/vi.lib/Utility/error.llb/whitespace.ctl"/>
+				<Item Name="XNET Clear.vi" Type="VI" URL="../../../Includes/XNET Engine.lvlibp/1abvi3w/vi.lib/xnet/xnet.llb/XNET Clear.vi"/>
+				<Item Name="XNET Control Scope.ctl" Type="VI" URL="../../../Includes/XNET Engine.lvlibp/1abvi3w/vi.lib/xnet/xnet.llb/XNET Control Scope.ctl"/>
+				<Item Name="XNET Create Session (Signal Input Single-point).vi" Type="VI" URL="../../../Includes/XNET Engine.lvlibp/1abvi3w/vi.lib/xnet/xnet.llb/XNET Create Session (Signal Input Single-point).vi"/>
+				<Item Name="XNET Create Session (Signal Output Single-point).vi" Type="VI" URL="../../../Includes/XNET Engine.lvlibp/1abvi3w/vi.lib/xnet/xnet.llb/XNET Create Session (Signal Output Single-point).vi"/>
+				<Item Name="XNET Fill In Error Info.vi" Type="VI" URL="../../../Includes/XNET Engine.lvlibp/1abvi3w/vi.lib/xnet/xnet.llb/XNET Fill In Error Info.vi"/>
+				<Item Name="XNET Mode.ctl" Type="VI" URL="../../../Includes/XNET Engine.lvlibp/1abvi3w/vi.lib/xnet/xnet.llb/XNET Mode.ctl"/>
+				<Item Name="XNET Read (Signal Single-point).vi" Type="VI" URL="../../../Includes/XNET Engine.lvlibp/1abvi3w/vi.lib/xnet/xnet.llb/XNET Read (Signal Single-point).vi"/>
+				<Item Name="XNET Start.vi" Type="VI" URL="../../../Includes/XNET Engine.lvlibp/1abvi3w/vi.lib/xnet/xnet.llb/XNET Start.vi"/>
+				<Item Name="XNET Stop.vi" Type="VI" URL="../../../Includes/XNET Engine.lvlibp/1abvi3w/vi.lib/xnet/xnet.llb/XNET Stop.vi"/>
+				<Item Name="XNET Write (Signal Single-point).vi" Type="VI" URL="../../../Includes/XNET Engine.lvlibp/1abvi3w/vi.lib/xnet/xnet.llb/XNET Write (Signal Single-point).vi"/>
 			</Item>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
@@ -1082,14 +1116,21 @@
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="NIVeriStand_DataServices.dll" Type="Document" URL="../../../Includes/NIVeriStand_DataServices.dll"/>
+			<Item Name="nixlvapi.dll" Type="Document" URL="nixlvapi.dll">
+				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+			</Item>
 			<Item Name="systemLogging.dll" Type="Document" URL="systemLogging.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="XNET Engine.lvlibp" Type="LVLibp" URL="../../../Includes/XNET Engine.lvlibp">
+				<Item Name="_XNET Convert List From Array To Comma.vi" Type="VI" URL="../../../Includes/XNET Engine.lvlibp/1abvi3w/vi.lib/xnet/xnet.llb/_XNET Convert List From Array To Comma.vi"/>
+				<Item Name="_XNET Create Session.vi" Type="VI" URL="../../../Includes/XNET Engine.lvlibp/1abvi3w/vi.lib/xnet/xnet.llb/_XNET Create Session.vi"/>
+				<Item Name="_XNET Split Database Cluster.vi" Type="VI" URL="../../../Includes/XNET Engine.lvlibp/1abvi3w/vi.lib/xnet/xnet.llb/_XNET Split Database Cluster.vi"/>
 				<Item Name="BuildHelpPath.vi" Type="VI" URL="../../../Includes/XNET Engine.lvlibp/1abvi3w/vi.lib/Utility/error.llb/BuildHelpPath.vi"/>
 				<Item Name="Check Special Tags.vi" Type="VI" URL="../../../Includes/XNET Engine.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Check Special Tags.vi"/>
 				<Item Name="Clear Errors.vi" Type="VI" URL="../../../Includes/XNET Engine.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Clear Errors.vi"/>
 				<Item Name="Communication Bus Template Scripting.lvlib" Type="Library" URL="../../../Includes/XNET Engine.lvlibp/Scripting/Communication Bus Template Scripting.lvlib"/>
+				<Item Name="Communication Bus Template System Explorer.lvlib" Type="Library" URL="../../../Includes/XNET Engine.lvlibp/System Explorer/Implementation/System Explorer/Communication Bus Template System Explorer.lvlib"/>
 				<Item Name="Convert property node font to graphics font.vi" Type="VI" URL="../../../Includes/XNET Engine.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Convert property node font to graphics font.vi"/>
 				<Item Name="Custom Device API.lvlib" Type="Library" URL="../../../Includes/XNET Engine.lvlibp/1abvi3w/vi.lib/NI VeriStand/Custom Device API/Custom Device API.lvlib"/>
 				<Item Name="Custom Device Utility Library.lvlib" Type="Library" URL="../../../Includes/XNET Engine.lvlibp/1abvi3w/vi.lib/NI VeriStand/Custom Device Tools/Custom Device Utility Library/Custom Device Utility Library.lvlib"/>
@@ -1129,6 +1170,16 @@
 				<Item Name="Trim Whitespace.vi" Type="VI" URL="../../../Includes/XNET Engine.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Trim Whitespace.vi"/>
 				<Item Name="VS Inline Async API.lvlib" Type="Library" URL="../../../Includes/XNET Engine.lvlibp/1abvi3w/vi.lib/NI/NIVS Inline Async API/_VS Inline Async API/VS Inline Async API.lvlib"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="../../../Includes/XNET Engine.lvlibp/1abvi3w/vi.lib/Utility/error.llb/whitespace.ctl"/>
+				<Item Name="XNET Clear.vi" Type="VI" URL="../../../Includes/XNET Engine.lvlibp/1abvi3w/vi.lib/xnet/xnet.llb/XNET Clear.vi"/>
+				<Item Name="XNET Control Scope.ctl" Type="VI" URL="../../../Includes/XNET Engine.lvlibp/1abvi3w/vi.lib/xnet/xnet.llb/XNET Control Scope.ctl"/>
+				<Item Name="XNET Create Session (Signal Input Single-point).vi" Type="VI" URL="../../../Includes/XNET Engine.lvlibp/1abvi3w/vi.lib/xnet/xnet.llb/XNET Create Session (Signal Input Single-point).vi"/>
+				<Item Name="XNET Create Session (Signal Output Single-point).vi" Type="VI" URL="../../../Includes/XNET Engine.lvlibp/1abvi3w/vi.lib/xnet/xnet.llb/XNET Create Session (Signal Output Single-point).vi"/>
+				<Item Name="XNET Fill In Error Info.vi" Type="VI" URL="../../../Includes/XNET Engine.lvlibp/1abvi3w/vi.lib/xnet/xnet.llb/XNET Fill In Error Info.vi"/>
+				<Item Name="XNET Mode.ctl" Type="VI" URL="../../../Includes/XNET Engine.lvlibp/1abvi3w/vi.lib/xnet/xnet.llb/XNET Mode.ctl"/>
+				<Item Name="XNET Read (Signal Single-point).vi" Type="VI" URL="../../../Includes/XNET Engine.lvlibp/1abvi3w/vi.lib/xnet/xnet.llb/XNET Read (Signal Single-point).vi"/>
+				<Item Name="XNET Start.vi" Type="VI" URL="../../../Includes/XNET Engine.lvlibp/1abvi3w/vi.lib/xnet/xnet.llb/XNET Start.vi"/>
+				<Item Name="XNET Stop.vi" Type="VI" URL="../../../Includes/XNET Engine.lvlibp/1abvi3w/vi.lib/xnet/xnet.llb/XNET Stop.vi"/>
+				<Item Name="XNET Write (Signal Single-point).vi" Type="VI" URL="../../../Includes/XNET Engine.lvlibp/1abvi3w/vi.lib/xnet/xnet.llb/XNET Write (Signal Single-point).vi"/>
 			</Item>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
@@ -1323,14 +1374,21 @@
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="NIVeriStand_DataServices.dll" Type="Document" URL="../../../Includes/NIVeriStand_DataServices.dll"/>
+			<Item Name="nixlvapi.dll" Type="Document" URL="nixlvapi.dll">
+				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+			</Item>
 			<Item Name="systemLogging.dll" Type="Document" URL="systemLogging.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="XNET Engine.lvlibp" Type="LVLibp" URL="../../../Includes/XNET Engine.lvlibp">
+				<Item Name="_XNET Convert List From Array To Comma.vi" Type="VI" URL="../../../Includes/XNET Engine.lvlibp/1abvi3w/vi.lib/xnet/xnet.llb/_XNET Convert List From Array To Comma.vi"/>
+				<Item Name="_XNET Create Session.vi" Type="VI" URL="../../../Includes/XNET Engine.lvlibp/1abvi3w/vi.lib/xnet/xnet.llb/_XNET Create Session.vi"/>
+				<Item Name="_XNET Split Database Cluster.vi" Type="VI" URL="../../../Includes/XNET Engine.lvlibp/1abvi3w/vi.lib/xnet/xnet.llb/_XNET Split Database Cluster.vi"/>
 				<Item Name="BuildHelpPath.vi" Type="VI" URL="../../../Includes/XNET Engine.lvlibp/1abvi3w/vi.lib/Utility/error.llb/BuildHelpPath.vi"/>
 				<Item Name="Check Special Tags.vi" Type="VI" URL="../../../Includes/XNET Engine.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Check Special Tags.vi"/>
 				<Item Name="Clear Errors.vi" Type="VI" URL="../../../Includes/XNET Engine.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Clear Errors.vi"/>
 				<Item Name="Communication Bus Template Scripting.lvlib" Type="Library" URL="../../../Includes/XNET Engine.lvlibp/Scripting/Communication Bus Template Scripting.lvlib"/>
+				<Item Name="Communication Bus Template System Explorer.lvlib" Type="Library" URL="../../../Includes/XNET Engine.lvlibp/System Explorer/Implementation/System Explorer/Communication Bus Template System Explorer.lvlib"/>
 				<Item Name="Convert property node font to graphics font.vi" Type="VI" URL="../../../Includes/XNET Engine.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Convert property node font to graphics font.vi"/>
 				<Item Name="Custom Device API.lvlib" Type="Library" URL="../../../Includes/XNET Engine.lvlibp/1abvi3w/vi.lib/NI VeriStand/Custom Device API/Custom Device API.lvlib"/>
 				<Item Name="Custom Device Utility Library.lvlib" Type="Library" URL="../../../Includes/XNET Engine.lvlibp/1abvi3w/vi.lib/NI VeriStand/Custom Device Tools/Custom Device Utility Library/Custom Device Utility Library.lvlib"/>
@@ -1370,6 +1428,16 @@
 				<Item Name="Trim Whitespace.vi" Type="VI" URL="../../../Includes/XNET Engine.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Trim Whitespace.vi"/>
 				<Item Name="VS Inline Async API.lvlib" Type="Library" URL="../../../Includes/XNET Engine.lvlibp/1abvi3w/vi.lib/NI/NIVS Inline Async API/_VS Inline Async API/VS Inline Async API.lvlib"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="../../../Includes/XNET Engine.lvlibp/1abvi3w/vi.lib/Utility/error.llb/whitespace.ctl"/>
+				<Item Name="XNET Clear.vi" Type="VI" URL="../../../Includes/XNET Engine.lvlibp/1abvi3w/vi.lib/xnet/xnet.llb/XNET Clear.vi"/>
+				<Item Name="XNET Control Scope.ctl" Type="VI" URL="../../../Includes/XNET Engine.lvlibp/1abvi3w/vi.lib/xnet/xnet.llb/XNET Control Scope.ctl"/>
+				<Item Name="XNET Create Session (Signal Input Single-point).vi" Type="VI" URL="../../../Includes/XNET Engine.lvlibp/1abvi3w/vi.lib/xnet/xnet.llb/XNET Create Session (Signal Input Single-point).vi"/>
+				<Item Name="XNET Create Session (Signal Output Single-point).vi" Type="VI" URL="../../../Includes/XNET Engine.lvlibp/1abvi3w/vi.lib/xnet/xnet.llb/XNET Create Session (Signal Output Single-point).vi"/>
+				<Item Name="XNET Fill In Error Info.vi" Type="VI" URL="../../../Includes/XNET Engine.lvlibp/1abvi3w/vi.lib/xnet/xnet.llb/XNET Fill In Error Info.vi"/>
+				<Item Name="XNET Mode.ctl" Type="VI" URL="../../../Includes/XNET Engine.lvlibp/1abvi3w/vi.lib/xnet/xnet.llb/XNET Mode.ctl"/>
+				<Item Name="XNET Read (Signal Single-point).vi" Type="VI" URL="../../../Includes/XNET Engine.lvlibp/1abvi3w/vi.lib/xnet/xnet.llb/XNET Read (Signal Single-point).vi"/>
+				<Item Name="XNET Start.vi" Type="VI" URL="../../../Includes/XNET Engine.lvlibp/1abvi3w/vi.lib/xnet/xnet.llb/XNET Start.vi"/>
+				<Item Name="XNET Stop.vi" Type="VI" URL="../../../Includes/XNET Engine.lvlibp/1abvi3w/vi.lib/xnet/xnet.llb/XNET Stop.vi"/>
+				<Item Name="XNET Write (Signal Single-point).vi" Type="VI" URL="../../../Includes/XNET Engine.lvlibp/1abvi3w/vi.lib/xnet/xnet.llb/XNET Write (Signal Single-point).vi"/>
 			</Item>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
