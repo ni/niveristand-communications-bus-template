@@ -157,6 +157,10 @@
 					</Documentation>
 				</Button>
 			</ButtonList>
+			<ActionVIOnLoad>
+				<Type>To Common Doc Dir</Type>
+				<Path>Custom Devices\Communication Bus Template\Windows\Communication Bus Template Configuration.llb\ActionVIOnLoad.vi</Path>
+			</ActionVIOnLoad>
 			<ActionVIOnCompile>
 				<Type>To Common Doc Dir</Type>
 				<Path>Custom Devices\Communication Bus Template\Windows\Communication Bus Template Configuration.llb\ActionVIOnCompile.vi</Path>
