@@ -6,8 +6,9 @@
 	<Property Name="NI.Lib.SourceVersion" Type="Int">536903680</Property>
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
-	<Item Name="Dynamically Called" Type="Folder">
-		<Item Name="Initialize.vi" Type="VI" URL="../System Explorer/Initialize.vi"/>
+	<Item Name="Action VIs" Type="Folder">
+		<Item Name="ActionVIOnLoad.vi" Type="VI" URL="../System Explorer/Action VIs/ActionVIOnLoad.vi"/>
+		<Item Name="Initialize.vi" Type="VI" URL="../System Explorer/Action VIs/Initialize.vi"/>
 	</Item>
 	<Item Name="Pages" Type="Folder">
 		<Item Name="Channel.vi" Type="VI" URL="../System Explorer/Pages/Channel.vi"/>
