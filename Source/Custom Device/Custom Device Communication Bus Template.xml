@@ -54,6 +54,22 @@
 	</CustomDeviceVI>
 	<Dependencies>
 		<Dependency>
+			<SupportedTarget>Pharlap</SupportedTarget>
+			<Source>
+				<Type>To Common Doc Dir</Type>
+				<Path>Custom Devices\Communication Bus Template\PharLap\Communication Bus Engine.lvlibp</Path>
+			</Source>
+			<RealTimeSystemDestination>c:\ni-rt\VeriStand\Custom Devices\Communication Bus Template\Communication Bus Engine.lvlibp</RealTimeSystemDestination>
+		</Dependency>
+		<Dependency>
+			<SupportedTarget>Linux_32_ARM</SupportedTarget>
+			<Source>
+				<Type>To Common Doc Dir</Type>
+				<Path>Custom Devices\Communication Bus Template\Linux_32_ARM\Communication Bus Engine.lvlibp</Path>
+			</Source>
+			<RealTimeSystemDestination>c:\ni-rt\VeriStand\Custom Devices\Communication Bus Template\Communication Bus Engine.lvlibp</RealTimeSystemDestination>
+		</Dependency>
+		<Dependency>
 			<SupportedTarget>Linux_x64</SupportedTarget>
 			<Source>
 				<Type>To Common Doc Dir</Type>
