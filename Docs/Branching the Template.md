@@ -21,9 +21,8 @@ You will then want to create a new development branch for the remaining work, wh
 
 ## Change GUIDs
 
-1. Open `Source\Utility\Replace All GUIDs.vi`, and select `Source\Custom Device Support\Scripting\Constants.vi` and `Source\Custom Device\Custom Device Communication Bus Template.xml`. Run the VI.
+1. Open `Source\Utility\Replace All GUIDs.vi`, and select `Source\Custom Device\Shared\Constants.vi`, `Source\Custom Device Support\Scripting\Constants.vi` and `Source\Custom Device\Custom Device Communication Bus Template.xml`. Run the VI.
 1. Open `Source\Custom Device\System Explorer\RunTimeMenu Custom Population.vi`.
-1. Replace the GUID in the loop with the GUID from the Custom Device XML corresponding to `RunTimeMenu Custom Population.vi`. <!-- We should move this GUID to a Constants.vi. We might want to update `Replace All GUIDs.vi` to allow for multiple Constants.vi paths. -->
 
 ## Update installation directory
 
