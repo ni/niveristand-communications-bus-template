@@ -16,6 +16,8 @@
 		<Item Name="Add Database.vi" Type="VI" URL="../Database/Add Database.vi"/>
 		<Item Name="Add Databases Section.vi" Type="VI" URL="../Database/Add Databases Section.vi"/>
 		<Item Name="Get Database List of Names and Paths.vi" Type="VI" URL="../Database/Get Database List of Names and Paths.vi"/>
+		<Item Name="Get Database Path.vi" Type="VI" URL="../Database/Get Database Path.vi"/>
+		<Item Name="Set Database Path.vi" Type="VI" URL="../Database/Set Database Path.vi"/>
 	</Item>
 	<Item Name="Frame" Type="Folder">
 		<Item Name="Add Frame.vi" Type="VI" URL="../Frame/Add Frame.vi"/>
@@ -39,6 +41,7 @@
 		<Item Name="Get Port Baud Rate.vi" Type="VI" URL="../Port/Get Port Baud Rate.vi"/>
 		<Item Name="Get Port CAN Cluster.vi" Type="VI" URL="../Port/Get Port CAN Cluster.vi"/>
 		<Item Name="Get Port Database.vi" Type="VI" URL="../Port/Get Port Database.vi"/>
+		<Item Name="Get Port Frames.vi" Type="VI" URL="../Port/Get Port Frames.vi"/>
 		<Item Name="Get Port Incoming and Outgoing Sections.vi" Type="VI" URL="../Port/Get Port Incoming and Outgoing Sections.vi"/>
 		<Item Name="Get Port Interface Name.vi" Type="VI" URL="../Port/Get Port Interface Name.vi"/>
 		<Item Name="Set Port Baud Rate.vi" Type="VI" URL="../Port/Set Port Baud Rate.vi"/>
@@ -47,4 +50,5 @@
 		<Item Name="Set Port Interface Name.vi" Type="VI" URL="../Port/Set Port Interface Name.vi"/>
 	</Item>
 	<Item Name="Constants.vi" Type="VI" URL="../Constants.vi"/>
+	<Item Name="Get Item Name.vi" Type="VI" URL="../Frame/Get Item Name.vi"/>
 </Library>

@@ -32,6 +32,7 @@
 		<Item Name="Export Configuration RTM.vi" Type="VI" URL="../System Explorer/RTM/Export Configuration RTM.vi"/>
 		<Item Name="Import Configuration RTM.vi" Type="VI" URL="../System Explorer/RTM/Import Configuration RTM.vi"/>
 		<Item Name="Import Frames RTM.vi" Type="VI" URL="../System Explorer/RTM/Import Frames RTM.vi"/>
+		<Item Name="Refresh Database RTM.vi" Type="VI" URL="../System Explorer/RTM/Refresh Database RTM.vi"/>
 	</Item>
 	<Item Name="SubVIs" Type="Folder">
 		<Item Name="CAN Cluster Menu From Database.vi" Type="VI" URL="../System Explorer/CAN Cluster Menu From Database.vi"/>
@@ -42,6 +43,10 @@
 		<Item Name="Populate CAN Interface Name Menu.vi" Type="VI" URL="../System Explorer/Populate CAN Interface Name Menu.vi"/>
 		<Item Name="Read Database.vi" Type="VI" URL="../System Explorer/Read Database.vi"/>
 		<Item Name="Read Frame Data.vi" Type="VI" URL="../System Explorer/Read Frame Data.vi"/>
+		<Item Name="Refresh Create Listbox Row.vi" Type="VI" URL="../System Explorer/Refresh Create Listbox Row.vi"/>
+		<Item Name="Refresh Database Cluster Comparison.vi" Type="VI" URL="../System Explorer/Refresh Database Cluster Comparison.vi"/>
+		<Item Name="Refresh Database Ports.vi" Type="VI" URL="../System Explorer/Refresh Database Ports.vi"/>
+		<Item Name="Refresh Listbox Data to Sysdef Data.vi" Type="VI" URL="../System Explorer/Refresh Listbox Data to Sysdef Data.vi"/>
 		<Item Name="Remove Frames From Port Dialog.vi" Type="VI" URL="../System Explorer/Remove Frames From Port Dialog.vi"/>
 	</Item>
 	<Item Name="Types" Type="Folder">
@@ -56,6 +61,10 @@
 		<Item Name="Path Control.ctl" Type="VI" URL="../System Explorer/Types/Path Control.ctl"/>
 		<Item Name="Port Page Properties.ctl" Type="VI" URL="../System Explorer/Types/Port Page Properties.ctl"/>
 		<Item Name="Port Properties.ctl" Type="VI" URL="../System Explorer/Types/Port Properties.ctl"/>
+		<Item Name="Refresh Database RTM Properties.ctl" Type="VI" URL="../System Explorer/Types/Refresh Database RTM Properties.ctl"/>
+		<Item Name="Refresh Listbox.ctl" Type="VI" URL="../System Explorer/Types/Refresh Listbox.ctl"/>
+		<Item Name="Refresh Symbols.ctl" Type="VI" URL="../System Explorer/Types/Refresh Symbols.ctl"/>
+		<Item Name="Refresh.ctl" Type="VI" URL="../System Explorer/Types/Refresh.ctl"/>
 		<Item Name="Signal.ctl" Type="VI" URL="../System Explorer/Types/Signal.ctl"/>
 		<Item Name="XNET Interface Name.ctl" Type="VI" URL="../System Explorer/Types/XNET Interface Name.ctl"/>
 	</Item>
