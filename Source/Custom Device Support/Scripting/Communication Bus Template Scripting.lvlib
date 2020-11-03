@@ -25,11 +25,14 @@
 		<Item Name="Get Frame Id.vi" Type="VI" URL="../Frame/Get Frame Id.vi"/>
 		<Item Name="Get Frame Port Reference.vi" Type="VI" URL="../Frame/Get Frame Port Reference.vi"/>
 		<Item Name="Get Signals.vi" Type="VI" URL="../Frame/Get Signals.vi"/>
+		<Item Name="Remove Frame.vi" Type="VI" URL="../Frame/Remove Frame.vi"/>
 		<Item Name="Set Frame ECU.vi" Type="VI" URL="../Frame/Set Frame ECU.vi"/>
 		<Item Name="Set Frame Id.vi" Type="VI" URL="../Frame/Set Frame Id.vi"/>
 	</Item>
 	<Item Name="Incoming Outgoing" Type="Folder">
 		<Item Name="Get Execution Mode.vi" Type="VI" URL="../Incoming Outgoing/Get Execution Mode.vi"/>
+		<Item Name="Get Frames.vi" Type="VI" URL="../Incoming Outgoing/Get Frames.vi"/>
+		<Item Name="Remove All Frames.vi" Type="VI" URL="../Incoming Outgoing/Remove All Frames.vi"/>
 		<Item Name="Set Execution Mode.vi" Type="VI" URL="../Incoming Outgoing/Set Execution Mode.vi"/>
 	</Item>
 	<Item Name="Port" Type="Folder">
@@ -37,7 +40,6 @@
 		<Item Name="Add Port Outgoing Section.vi" Type="VI" URL="../Port/Add Port Outgoing Section.vi"/>
 		<Item Name="Add Port.vi" Type="VI" URL="../Port/Add Port.vi"/>
 		<Item Name="Add Ports Section.vi" Type="VI" URL="../Port/Add Ports Section.vi"/>
-		<Item Name="Get Frames.vi" Type="VI" URL="../Incoming Outgoing/Get Frames.vi"/>
 		<Item Name="Get Port Baud Rate.vi" Type="VI" URL="../Port/Get Port Baud Rate.vi"/>
 		<Item Name="Get Port CAN Cluster.vi" Type="VI" URL="../Port/Get Port CAN Cluster.vi"/>
 		<Item Name="Get Port Database.vi" Type="VI" URL="../Port/Get Port Database.vi"/>
