@@ -10,17 +10,17 @@
 		<Item Name="Initialize.vi" Type="VI" URL="../System Explorer/Initialize.vi"/>
 	</Item>
 	<Item Name="Pages" Type="Folder">
-		<Item Name="Channel.vi" Type="VI" URL="../System Explorer/Pages/Channel.vi"/>
 		<Item Name="Database.vi" Type="VI" URL="../System Explorer/Pages/Database.vi"/>
 		<Item Name="Databases.vi" Type="VI" URL="../System Explorer/Pages/Databases.vi"/>
-		<Item Name="Frame.vi" Type="VI" URL="../System Explorer/Pages/Frame.vi"/>
 		<Item Name="Incoming.vi" Type="VI" URL="../System Explorer/Pages/Incoming.vi"/>
 		<Item Name="Main Page.vi" Type="VI" URL="../System Explorer/Pages/Main Page.vi"/>
 		<Item Name="Outgoing.vi" Type="VI" URL="../System Explorer/Pages/Outgoing.vi"/>
+		<Item Name="Parameter (Channel).vi" Type="VI" URL="../System Explorer/Pages/Parameter (Channel).vi"/>
 		<Item Name="Port.vi" Type="VI" URL="../System Explorer/Pages/Port.vi"/>
 		<Item Name="Ports.vi" Type="VI" URL="../System Explorer/Pages/Ports.vi"/>
 		<Item Name="Protocol.vi" Type="VI" URL="../System Explorer/Pages/Protocol.vi"/>
 		<Item Name="Vendor.vi" Type="VI" URL="../System Explorer/Pages/Vendor.vi"/>
+		<Item Name="Word (Frame).vi" Type="VI" URL="../System Explorer/Pages/Word (Frame).vi"/>
 	</Item>
 	<Item Name="RTM" Type="Folder">
 		<Item Name="Add Database RTM.vi" Type="VI" URL="../System Explorer/RTM/Add Database RTM.vi"/>
@@ -39,5 +39,7 @@
 		<Item Name="Database.ctl" Type="VI" URL="../System Explorer/Types/Database.ctl"/>
 		<Item Name="Path Control.ctl" Type="VI" URL="../System Explorer/Types/Path Control.ctl"/>
 	</Item>
+	<Item Name="Get Parameter Bit Encoding.vi" Type="VI" URL="../../../Scripting/Channel/Get Parameter Bit Encoding.vi"/>
+	<Item Name="Get Parameter Scaling.vi" Type="VI" URL="../../../Scripting/Channel/Get Parameter Scaling.vi"/>
 	<Item Name="System Explorer Dispatcher.lvclass" Type="LVClass" URL="../System Explorer Dispatcher/System Explorer Dispatcher.lvclass"/>
 </Library>
