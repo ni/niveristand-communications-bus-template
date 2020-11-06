@@ -39,6 +39,7 @@
 		<Item Name="CAN Interface Name Menu Item Count.vi" Type="VI" URL="../System Explorer/CAN Interface Name Menu Item Count.vi"/>
 		<Item Name="Choose Next XNET Interface Value.vi" Type="VI" URL="../System Explorer/Choose Next XNET Interface Value.vi"/>
 		<Item Name="Get ECU Frame Indices.vi" Type="VI" URL="../System Explorer/Get ECU Frame Indices.vi"/>
+		<Item Name="Get ECU Name.vi" Type="VI" URL="../System Explorer/Get ECU Name.vi"/>
 		<Item Name="Load Help File.vi" Type="VI" URL="../System Explorer/Load Help File.vi"/>
 		<Item Name="Populate CAN Interface Name Menu.vi" Type="VI" URL="../System Explorer/Populate CAN Interface Name Menu.vi"/>
 		<Item Name="Read Database.vi" Type="VI" URL="../System Explorer/Read Database.vi"/>
@@ -48,6 +49,9 @@
 		<Item Name="Refresh Data to Sysdef Data.vi" Type="VI" URL="../System Explorer/Refresh Data to Sysdef Data.vi"/>
 		<Item Name="Refresh Database Port Compare.vi" Type="VI" URL="../System Explorer/Refresh Database Port Compare.vi"/>
 		<Item Name="Refresh Database Ports.vi" Type="VI" URL="../System Explorer/Refresh Database Ports.vi"/>
+		<Item Name="Refresh ECUs.vi" Type="VI" URL="../System Explorer/Refresh ECUs.vi"/>
+		<Item Name="Refresh Get ECU Name.vi" Type="VI" URL="../System Explorer/Refresh Get ECU Name.vi"/>
+		<Item Name="Refresh Is Frame in ECU.vi" Type="VI" URL="../System Explorer/Refresh Is Frame in ECU.vi"/>
 		<Item Name="Remove Frames From Port Dialog.vi" Type="VI" URL="../System Explorer/Remove Frames From Port Dialog.vi"/>
 	</Item>
 	<Item Name="Types" Type="Folder">

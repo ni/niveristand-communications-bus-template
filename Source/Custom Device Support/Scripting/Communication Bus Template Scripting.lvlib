@@ -51,6 +51,8 @@
 		<Item Name="Set Port Database.vi" Type="VI" URL="../Port/Set Port Database.vi"/>
 		<Item Name="Set Port Interface Name.vi" Type="VI" URL="../Port/Set Port Interface Name.vi"/>
 	</Item>
+	<Item Name="Utility" Type="Folder">
+		<Item Name="Get Item Name.vi" Type="VI" URL="../Utility/Get Item Name.vi"/>
+	</Item>
 	<Item Name="Constants.vi" Type="VI" URL="../Constants.vi"/>
-	<Item Name="Get Item Name.vi" Type="VI" URL="../Frame/Get Item Name.vi"/>
 </Library>
