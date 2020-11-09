@@ -50,8 +50,10 @@
 		<Item Name="Refresh Database Port Compare.vi" Type="VI" URL="../System Explorer/Refresh Database Port Compare.vi"/>
 		<Item Name="Refresh Database Ports.vi" Type="VI" URL="../System Explorer/Refresh Database Ports.vi"/>
 		<Item Name="Refresh ECUs.vi" Type="VI" URL="../System Explorer/Refresh ECUs.vi"/>
+		<Item Name="Refresh Frames to Sysdef Frames.vi" Type="VI" URL="../System Explorer/Refresh Frames to Sysdef Frames.vi"/>
 		<Item Name="Refresh Get ECU Name.vi" Type="VI" URL="../System Explorer/Refresh Get ECU Name.vi"/>
 		<Item Name="Refresh Is Frame in ECU.vi" Type="VI" URL="../System Explorer/Refresh Is Frame in ECU.vi"/>
+		<Item Name="Refresh Listbox Changes.vi" Type="VI" URL="../System Explorer/Refresh Listbox Changes.vi"/>
 		<Item Name="Remove Frames From Port Dialog.vi" Type="VI" URL="../System Explorer/Remove Frames From Port Dialog.vi"/>
 	</Item>
 	<Item Name="Types" Type="Folder">
