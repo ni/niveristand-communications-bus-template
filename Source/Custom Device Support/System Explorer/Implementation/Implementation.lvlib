@@ -44,6 +44,7 @@
 		<Item Name="Populate CAN Interface Name Menu.vi" Type="VI" URL="../System Explorer/Populate CAN Interface Name Menu.vi"/>
 		<Item Name="Read Database.vi" Type="VI" URL="../System Explorer/Read Database.vi"/>
 		<Item Name="Read Frame Data.vi" Type="VI" URL="../System Explorer/Read Frame Data.vi"/>
+		<Item Name="Refresh Add New Signals.vi" Type="VI" URL="../System Explorer/Refresh Add New Signals.vi"/>
 		<Item Name="Refresh Create Listbox Row.vi" Type="VI" URL="../System Explorer/Refresh Create Listbox Row.vi"/>
 		<Item Name="Refresh Data to Listbox Format.vi" Type="VI" URL="../System Explorer/Refresh Data to Listbox Format.vi"/>
 		<Item Name="Refresh Data to Sysdef Data.vi" Type="VI" URL="../System Explorer/Refresh Data to Sysdef Data.vi"/>
@@ -52,8 +53,10 @@
 		<Item Name="Refresh ECUs.vi" Type="VI" URL="../System Explorer/Refresh ECUs.vi"/>
 		<Item Name="Refresh Frames to Sysdef Frames.vi" Type="VI" URL="../System Explorer/Refresh Frames to Sysdef Frames.vi"/>
 		<Item Name="Refresh Get ECU Name.vi" Type="VI" URL="../System Explorer/Refresh Get ECU Name.vi"/>
-		<Item Name="Refresh Is Frame in ECU.vi" Type="VI" URL="../System Explorer/Refresh Is Frame in ECU.vi"/>
+		<Item Name="Refresh is Frame Not in ECU.vi" Type="VI" URL="../System Explorer/Refresh is Frame Not in ECU.vi"/>
 		<Item Name="Refresh Listbox Changes.vi" Type="VI" URL="../System Explorer/Refresh Listbox Changes.vi"/>
+		<Item Name="Refresh Mark Signals To Remove.vi" Type="VI" URL="../System Explorer/Refresh Mark Signals To Remove.vi"/>
+		<Item Name="Refresh Signals Compare To Existing.vi" Type="VI" URL="../System Explorer/Refresh Signals Compare To Existing.vi"/>
 		<Item Name="Remove Frames From Port Dialog.vi" Type="VI" URL="../System Explorer/Remove Frames From Port Dialog.vi"/>
 	</Item>
 	<Item Name="Types" Type="Folder">
