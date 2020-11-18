@@ -9,9 +9,12 @@
 	<Item Name="BCD Encode Integer.vim" Type="VI" URL="../BCD Encode Integer.vim"/>
 	<Item Name="BCD Encode.vim" Type="VI" URL="../BCD Encode.vim"/>
 	<Item Name="BNR Decode.vim" Type="VI" URL="../BNR Decode.vim"/>
+	<Item Name="BNR Encode Integer.vim" Type="VI" URL="../BNR Encode Integer.vim"/>
 	<Item Name="BNR Encode.vim" Type="VI" URL="../BNR Encode.vim"/>
 	<Item Name="Encoding.ctl" Type="VI" URL="../Encoding.ctl"/>
 	<Item Name="Get Bits Per Digit from Base.vim" Type="VI" URL="../Get Bits Per Digit from Base.vim"/>
+	<Item Name="Parity.ctl" Type="VI" URL="../Parity.ctl"/>
 	<Item Name="Scale.vim" Type="VI" URL="../Scale.vim"/>
 	<Item Name="Unscale.vim" Type="VI" URL="../Unscale.vim"/>
+	<Item Name="Write Parity.vim" Type="VI" URL="../Write Parity.vim"/>
 </Library>
