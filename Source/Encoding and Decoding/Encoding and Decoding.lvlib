@@ -16,5 +16,6 @@
 	<Item Name="Parity.ctl" Type="VI" URL="../Parity.ctl"/>
 	<Item Name="Scale.vim" Type="VI" URL="../Scale.vim"/>
 	<Item Name="Unscale.vim" Type="VI" URL="../Unscale.vim"/>
+	<Item Name="Update Bit Field.vim" Type="VI" URL="../Update Bit Field.vim"/>
 	<Item Name="Write Parity.vim" Type="VI" URL="../Write Parity.vim"/>
 </Library>
