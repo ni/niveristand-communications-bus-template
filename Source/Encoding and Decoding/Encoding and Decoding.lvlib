@@ -8,6 +8,7 @@
 	<Item Name="BCD Decode.vim" Type="VI" URL="../BCD Decode.vim"/>
 	<Item Name="BCD Encode Integer.vim" Type="VI" URL="../BCD Encode Integer.vim"/>
 	<Item Name="BCD Encode.vim" Type="VI" URL="../BCD Encode.vim"/>
+	<Item Name="BNR Decode Integer.vim" Type="VI" URL="../BNR Decode Integer.vim"/>
 	<Item Name="BNR Decode.vim" Type="VI" URL="../BNR Decode.vim"/>
 	<Item Name="BNR Encode Integer.vim" Type="VI" URL="../BNR Encode Integer.vim"/>
 	<Item Name="BNR Encode.vim" Type="VI" URL="../BNR Encode.vim"/>
