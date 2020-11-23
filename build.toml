@@ -98,3 +98,6 @@ payload_dir = 'Source\Built\Scripting'
 install_destination = 'ni-paths-LV{veristand_version}DIR\vi.lib\addons\VeriStand Custom Device Scripting APIs\Communication Bus Template'
 control_file = 'control_scripting'
 package_output_dir = 'Source\Built'
+
+[notification]
+type = 'teams'
