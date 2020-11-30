@@ -10,6 +10,7 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
+		<Item Name="ARINC 429.lvclass" Type="LVClass" URL="../Implementations/ARINC429/ARINC 429.lvclass"/>
 		<Item Name="32-bit Word.lvclass" Type="LVClass" URL="../Implementations/ARINC429/ARINC429-32bit/32-bit Word.lvclass"/>
 		<Item Name="Tests.lvclass" Type="LVClass" URL="../Implementations/ARINC429/ARINC429-32bit/Tests/Tests.lvclass"/>
 		<Item Name="Dependencies" Type="Dependencies">
@@ -301,7 +302,6 @@
 				<Item Name="VITesterUtilities.lvlib" Type="Library" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/VI Tester/_support/VITesterUtilities.lvlib"/>
 				<Item Name="Waveform Subtype Enum__ogtk__jki_vi_tester.ctl" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/VI Tester/_support/Support.llb/Waveform Subtype Enum__ogtk__jki_vi_tester.ctl"/>
 			</Item>
-			<Item Name="ARINC 429.lvclass" Type="LVClass" URL="../Implementations/ARINC429/ARINC 429.lvclass"/>
 			<Item Name="Encoding and Decoding.lvlib" Type="Library" URL="../../Encoding and Decoding/Encoding and Decoding.lvlib"/>
 			<Item Name="Protocol.lvclass" Type="LVClass" URL="../Interfaces/Protocol.lvclass"/>
 		</Item>
