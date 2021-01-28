@@ -46,5 +46,5 @@ copy the output files to the directory required by VeriStand.
 
 (taken from [developercertificate.org](https://developercertificate.org/))
 
-See [LICENSE](https://github.com/ni/niveristand-communications-bus-template/blob/master/LICENSE)
+See [LICENSE](https://github.com/ni/niveristand-communications-bus-template/blob/main/LICENSE)
 for details about how niveristand-communications-bus-template is licensed.
