@@ -1,12 +1,12 @@
 ## Overview
 
-The Communications Bus Template is intended to increase the rate at which new protocols can be implemented for use in VeriStand by providing a better starting point than the generic custom device templates.
+The Communications Bus Template is intended to increase the rate at which new communication protocols can be implemented for use in VeriStand by providing a better starting point than the generic custom device templates.
 
 To accomplish this, most of the custom device code is implemented through calls to G Interfaces defining the entry points a user will override to get the desired behavior.
 
 The template engine is designed to encourage simply implementing the defined interfaces instead of designing and programming a complete `RT Driver.vi`.
 
-The System Explorer code is almost entirely contained within LabVIEW packed project libraries, and implemented using G Interfaces and LabVIEW Classes. The code contained within the Custom Device project is primarily composed of wrappers that interface with the Custom Device XML and should not require frequent modification by the implementer of a specific bus protocol.
+The System Explorer code is almost entirely contained within LabVIEW packed project libraries and implemented using G Interfaces and LabVIEW Classes. The code contained within the Custom Device project is primarily composed of wrappers that interface with the Custom Device XML and should not require frequent modification by the implementer of a specific bus protocol.
 
 ## File Layout
 
@@ -16,13 +16,13 @@ The `Source/Custom Device` directory is primarily scaffolding for the interface 
 
 ### Custom Device Support
 
-The majority of the custom device implementation lives in `Source/Custom Device Support`. Both the G Interfaces and concrete implementations of these interfaces live in this directory and are built `Communication Bus Template Support.lvproj`. Template developers should make every effort to keep code contained to the libraries included in this project instead of `Communication Bus Template Custom Device.lvproj`.
+The majority of the custom device implementation lives in `Source/Custom Device Support`. Both the G Interfaces and concrete implementations of these interfaces live in this directory and are built in `Communication Bus Template Support.lvproj`. Template developers should make every effort to keep code contained to the libraries included in this project instead of `Communication Bus Template Custom Device.lvproj`.
 
 ## Scripting API
 
 All code interacting with the system definition through the LabVIEW Custom Device API, or the .NET API directly, should go through VIs contained in `Communication Bus Template Scripting.lvlib`. This library is the single source of truth for defining anything existing in the system definition XML. The exception to this rule is if the VeriStand API already provides a VI for doing exactly what is required, i.e. `NI VeriStand - Set Item Description.vi`.
 
-This layer enables users to access the system definition from within System Explorer and directly through LabVIEW, while going through a single code path. If you are writing anything to the system definition through a VI not contained in this library, you're probably doing it incorrectly.
+This layer enables users to access the system definition from within System Explorer and directly through LabVIEW, while going through a single code path. If any code is touching the system definition through a VI not contained in this library, that functionality should be moved into this API.
 
 ## System Explorer
 
@@ -38,8 +38,6 @@ Pages are loaded through the Dispatcher interface using `Get Page VI.vi`, as sho
 
 ![Page Dispatcher](Resources/PageDispatcher.png)
 
-### Example Implementation
-
 ## Engine
 
 Engine code should reside in `Source/Custom Device Support/Communication Bus Template Support Engine.lvlib`. The execution of the engine is defined by code pieces known as **Execution Units**. The Execution Unit interface, described below, enables the custom device engine code to remain static while enabling users to create completely custom code executing within the engine.
@@ -48,7 +46,7 @@ Engine code should reside in `Source/Custom Device Support/Communication Bus Tem
 
 #### Execution Unit
 
-The **Execution Unit** is the fundamental piece of the engine in the template. The entry points for this interface are called from well-defined locations in `RT Driver.vi` so the top-level engine code does not require modification by the template user. The user can focus on just writing the code required for their bus protocol by implementing the interface methods.
+The **Execution Unit** is the fundamental piece of the engine in the template. The entry points for this interface are called from well-defined locations in `RT Driver.vi` so the top-level engine code does not require modification by the template user. The user can focus on just writing the code required for the bus protocol by implementing the interface methods.
 
 All bus- and hardware-specific code should be written as implementations of the **Execution Unit** interface.
 
@@ -56,4 +54,14 @@ All bus- and hardware-specific code should be written as implementations of the 
 
 The **Execution Unit Factory** is the interface used for defining how to create the individual **Execution Units** to be consumed by the engine. It constructs the required **Execution Units** and is responsible for defnining which VeriStand channels are available to each **Execution Unit**.
 
-### Example Implementation
+## Example Implementation
+
+An example implementation for both the System Explorer and Engine interfaces is provided in this template. This implementation simply writes trace information to the VeriStand system log, but is intended to show how all code for a specific implementation is contained within `Communication Bus Template Support.lvproj` libraries with little to no change required in the libraries built by `Communication Bus Template Custom Device.lvproj`.
+
+## Building the Template
+
+The build specifications in `Communication Bus Template Support.lvproj` must be built prior to building the specifications in `Communication Bus Template Custom Device.lvproj`. After the builds from both projects have been built once, only libraries containing code changes must be built again to test. If no changes have been made to the libraries in `Communication Bus Template Custom Device.lvproj`, those build specs do not need to be rebuilt.
+
+## Creating a New Custom Device From the Template
+
+Steps for creating a copy of the template for a new custom device are provided in [Branching the Template.md](https://github.com/ni/niveristand-communications-bus-template/blob/main/Docs/Branching%20the%20Template.md). Following this process results in a fully functional, unique custom device for use in VeriStand.
