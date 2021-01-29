@@ -52,7 +52,7 @@ All bus- and hardware-specific code should be written as implementations of the 
 
 #### Execution Unit Factory
 
-The **Execution Unit Factory** is the interface used for defining how to create the individual **Execution Units** to be consumed by the engine. It constructs the required **Execution Units** and is responsible for defnining which VeriStand channels are available to each **Execution Unit**.
+The **Execution Unit Factory** is the interface used for defining how to create the individual **Execution Units** to be consumed by the engine. It constructs the required **Execution Units** and is responsible for defining which VeriStand channels are available to each **Execution Unit**.
 
 ## Example Implementation
 
