@@ -10,8 +10,10 @@
 	<Item Name="Clone Template Main.vi" Type="VI" URL="../Clone Template Main.vi"/>
 	<Item Name="Copy Template Source to New Location.vi" Type="VI" URL="../Copy Template Source to New Location.vi"/>
 	<Item Name="Edit Paths in XML File.vi" Type="VI" URL="../Edit Paths in XML File.vi"/>
+	<Item Name="Edit Project File Build Spec Destinations.vi" Type="VI" URL="../Edit Project File Build Spec Destinations.vi"/>
 	<Item Name="Edit VI Constants.vi" Type="VI" URL="../Edit VI Constants.vi"/>
 	<Item Name="File Extension and New Name.vi" Type="VI" URL="../File Extension and New Name.vi"/>
+	<Item Name="Remove Test Folder From lvproj Temporarily.vi" Type="VI" URL="../Remove Test Folder From lvproj Temporarily.vi"/>
 	<Item Name="Replace VI and XML GUIDs.vi" Type="VI" URL="../Replace VI and XML GUIDs.vi"/>
 	<Item Name="Template Tool Global.vi" Type="VI" URL="../Template Tool Global.vi"/>
 	<Item Name="Update CD Name in XML File.vi" Type="VI" URL="../Update CD Name in XML File.vi"/>
