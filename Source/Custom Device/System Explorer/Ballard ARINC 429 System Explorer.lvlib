@@ -21,7 +21,11 @@
 			<Item Name="Compile Asynchronous Execution Units.vi" Type="VI" URL="../Compile Asynchronous Execution Units.vi"/>
 			<Item Name="Compile Inline Execution Units.vi" Type="VI" URL="../Compile Inline Execution Units.vi"/>
 			<Item Name="Get Item GUID.vi" Type="VI" URL="../Get Item GUID.vi"/>
+			<Item Name="On Compile - Get Asynchronous Channels Status Block Refs.vi" Type="VI" URL="../On Compile - Get Asynchronous Channels Status Block Refs.vi"/>
+			<Item Name="On Compile - Group Hardware Channels by Message Type.vi" Type="VI" URL="../On Compile - Group Hardware Channels by Message Type.vi"/>
+			<Item Name="On Compile - Parse System Definition and Initialize Data Refs.vi" Type="VI" URL="../On Compile - Parse System Definition and Initialize Data Refs.vi"/>
 		</Item>
 		<Item Name="Types" Type="Folder"/>
+		<Item Name="Data Access System Explorer.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/NIVS Inline Async API/_Data Access System Explorer/Data Access System Explorer.lvlib"/>
 	</Item>
 </Library>
