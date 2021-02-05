@@ -440,6 +440,9 @@
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="Encoding and Decoding.lvlib" Type="Library" URL="../../Encoding and Decoding/Encoding and Decoding.lvlib"/>
+			<Item Name="Export Configuration RTM.vi" Type="VI" URL="../../../Includes/Ballard ARINC 429 System Explorer.lvlibp/System Explorer/Implementation/System Explorer/RTM/Export Configuration RTM.vi"/>
+			<Item Name="Import Configuration RTM.vi" Type="VI" URL="../../../Includes/Ballard ARINC 429 System Explorer.lvlibp/System Explorer/Implementation/System Explorer/RTM/Import Configuration RTM.vi"/>
+			<Item Name="Initialize.vi" Type="VI" URL="../../../Includes/Ballard ARINC 429 System Explorer.lvlibp/System Explorer/Implementation/System Explorer/Initialize.vi"/>
 			<Item Name="mscorlib" Type="VI" URL="mscorlib">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
@@ -460,6 +463,8 @@
 			</Item>
 			<Item Name="NIVeriStand_DataServices.dll" Type="Document" URL="../../../Includes/NIVeriStand_DataServices.dll"/>
 			<Item Name="Protocol.lvclass" Type="LVClass" URL="../../Protocol/Interfaces/Protocol.lvclass"/>
+			<Item Name="System Explorer Dispatcher.lvclass" Type="LVClass" URL="../../../Includes/Ballard ARINC 429 System Explorer.lvlibp/System Explorer/Implementation/System Explorer Dispatcher/System Explorer Dispatcher.lvclass"/>
+			<Item Name="System Explorer Dispatcher.lvclass" Type="LVClass" URL="../../../Includes/Ballard ARINC 429 System Explorer.lvlibp/System Explorer/Interfaces/System Explorer Dispatcher/System Explorer Dispatcher.lvclass"/>
 			<Item Name="systemLogging.dll" Type="Document" URL="systemLogging.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>

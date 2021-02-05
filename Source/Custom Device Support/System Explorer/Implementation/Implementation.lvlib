@@ -31,6 +31,9 @@
 	</Item>
 	<Item Name="SubVIs" Type="Folder">
 		<Item Name="Load Help File.vi" Type="VI" URL="../System Explorer/Load Help File.vi"/>
+		<Item Name="On Compile - Get Asynchronous Channels Status Block Refs.vi" Type="VI" URL="../System Explorer/subVIs/On Compile - Get Asynchronous Channels Status Block Refs.vi"/>
+		<Item Name="On Compile - Group Hardware Channels by Message Type.vi" Type="VI" URL="../System Explorer/subVIs/On Compile - Group Hardware Channels by Message Type.vi"/>
+		<Item Name="On Compile - Parse System Definition and Initialize Data Refs.vi" Type="VI" URL="../System Explorer/subVIs/On Compile - Parse System Definition and Initialize Data Refs.vi"/>
 		<Item Name="Read Database.vi" Type="VI" URL="../System Explorer/Read Database.vi"/>
 		<Item Name="Write Database.vi" Type="VI" URL="../System Explorer/Write Database.vi"/>
 	</Item>

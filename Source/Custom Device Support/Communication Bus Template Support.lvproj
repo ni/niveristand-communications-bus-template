@@ -76,8 +76,6 @@
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
 			<Item Name="32-bit Word.lvclass" Type="LVClass" URL="../../Protocol/Implementations/ARINC429/ARINC429-32bit/32-bit Word.lvclass"/>
-			<Item Name="Add Databases Section.vi" Type="VI" URL="../../Built/Scripting/Custom Device Support/Scripting/Database/Add Databases Section.vi"/>
-			<Item Name="Add Ports Section.vi" Type="VI" URL="../../Built/Scripting/Custom Device Support/Scripting/Port/Add Ports Section.vi"/>
 			<Item Name="ARINC 429.lvclass" Type="LVClass" URL="../../Protocol/Implementations/ARINC429/ARINC 429.lvclass"/>
 			<Item Name="Ballard Arinc-429 Shared.lvlib" Type="Library" URL="../../../../Ballard-Arinc-429-Custom-Device/Source/Shared/Ballard Arinc-429 Shared.lvlib"/>
 			<Item Name="Constants.vi" Type="VI" URL="../../Built/Scripting/Constants.vi"/>

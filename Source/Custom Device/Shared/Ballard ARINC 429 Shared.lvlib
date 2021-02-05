@@ -10,14 +10,8 @@
 			<Item Name="Compiled.Settings.ctl" Type="VI" URL="../Compiled.Settings.ctl"/>
 			<Item Name="Direction.ctl" Type="VI" URL="../Direction.ctl"/>
 			<Item Name="Inline Execution Unit Compiled Information.ctl" Type="VI" URL="../Inline Execution Unit Compiled Information.ctl"/>
-			<Item Name="Label.ctl" Type="VI" URL="../Label.ctl"/>
-			<Item Name="RT Hardware Channel Settings.ctl" Type="VI" URL="../RT Hardware Channel Settings.ctl"/>
-			<Item Name="RT Label Settings.ctl" Type="VI" URL="../RT Label Settings.ctl"/>
-			<Item Name="RT Parameters.ctl" Type="VI" URL="../RT Parameters.ctl"/>
 			<Item Name="Transfer Type.ctl" Type="VI" URL="../Transfer Type.ctl"/>
 		</Item>
 		<Item Name="Constants.vi" Type="VI" URL="../Constants.vi"/>
-		<Item Name="Get Hardware Channel Data (Rx or Tx).vi" Type="VI" URL="../Get Hardware Channel Data (Rx or Tx).vi"/>
 	</Item>
-	<Item Name="Get Label Settings for RT.vi" Type="VI" URL="../Get Label Settings for RT.vi"/>
 </Library>
