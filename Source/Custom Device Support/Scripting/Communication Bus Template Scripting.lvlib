@@ -35,6 +35,8 @@
 		<Item Name="Get Default Word.vi" Type="VI" URL="../Frame/Get Default Word.vi"/>
 		<Item Name="Get Frame Id.vi" Type="VI" URL="../Frame/Get Frame Id.vi"/>
 		<Item Name="Get Frame Port Reference.vi" Type="VI" URL="../Frame/Get Frame Port Reference.vi"/>
+		<Item Name="Get Frames on Port.vi" Type="VI" URL="../Frame/Get Frames on Port.vi"/>
+		<Item Name="Get Label Properties.vi" Type="VI" URL="../Frame/Get Label Properties.vi"/>
 		<Item Name="Get Parameters in Frame.vi" Type="VI" URL="../Frame/Get Parameters in Frame.vi"/>
 		<Item Name="Set Frame Id.vi" Type="VI" URL="../Frame/Set Frame Id.vi"/>
 	</Item>
