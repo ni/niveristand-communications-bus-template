@@ -43,6 +43,8 @@
 		<Item Name="Add Port Outgoing Section.vi" Type="VI" URL="../Port/Add Port Outgoing Section.vi"/>
 		<Item Name="Add Port.vi" Type="VI" URL="../Port/Add Port.vi"/>
 		<Item Name="Add Ports Section.vi" Type="VI" URL="../Port/Add Ports Section.vi"/>
+		<Item Name="Get All Rx Ports.vi" Type="VI" URL="../Port/Get All Rx Ports.vi"/>
+		<Item Name="Get All Tx Ports.vi" Type="VI" URL="../Port/Get All Tx Ports.vi"/>
 		<Item Name="Get Port Baud Rate.vi" Type="VI" URL="../Port/Get Port Baud Rate.vi"/>
 		<Item Name="Get Port Database.vi" Type="VI" URL="../Port/Get Port Database.vi"/>
 		<Item Name="Set Port Baud Rate.vi" Type="VI" URL="../Port/Set Port Baud Rate.vi"/>
