@@ -51,4 +51,5 @@
 		<Item Name="Set Port Database.vi" Type="VI" URL="../Port/Set Port Database.vi"/>
 	</Item>
 	<Item Name="Constants.vi" Type="VI" URL="../Constants.vi"/>
+	<Item Name="Find Ballard ARINC-429 Custom Devices.vi" Type="VI" URL="../Find Ballard ARINC-429 Custom Devices.vi"/>
 </Library>
