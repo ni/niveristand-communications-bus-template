@@ -95,84 +95,22 @@
 			</Item2Launch>
 			<RunTimeMenu>
 				<MenuItem>
-					<GUID>c90d1b42-9eb1-4e89-92b6-6c073196ade9</GUID>
-					<Type>Action</Type>
-					<Execution>silent</Execution>
+					<GUID>4a264cda-93bf-4d77-92b0-38d997c67151</GUID>
+					<Type>Custom</Type>
 					<Name>
-						<eng>Export Configuration</eng>
-						<loc>Export Configuration</loc>
+						<eng />
+						<loc />
 					</Name>
 					<Item2Launch>
 						<Type>To Common Doc Dir</Type>
-						<Path>Custom Devices\Communication Bus Template\Windows\Communication Bus Template Configuration.llb\Export Configuration RTM.vi</Path>
+						<Path>Custom Devices\Communication Bus Template\Windows\Communication Bus Template Configuration.llb\RunTimeMenu Wrapper.vi</Path>
 					</Item2Launch>
-				</MenuItem>
-				<MenuItem>
-					<GUID>089728fe-9b2f-4073-8646-572ad1172b32</GUID>
-					<Type>Action</Type>
-					<Execution>silent</Execution>
-					<Name>
-						<eng>Import Configuration</eng>
-						<loc>Import Configuration</loc>
-					</Name>
-					<Item2Launch>
+					<CustomPopulation>
 						<Type>To Common Doc Dir</Type>
-						<Path>Custom Devices\Communication Bus Template\Windows\Communication Bus Template Configuration.llb\Import Configuration RTM.vi</Path>
-					</Item2Launch>
+						<Path>Custom Devices\Communication Bus Template\Windows\Communication Bus Template Configuration.llb\RunTimeMenu Custom Population.vi</Path>
+					</CustomPopulation>
 				</MenuItem>
 			</RunTimeMenu>
-			<ButtonList>
-				<Button>
-					<ID>c90d1b42-9eb1-4e89-92b6-6c073196ade9-Button</ID>
-					<Glyph>
-						<Type>To Application Data Dir</Type>
-						<Path>System Explorer\Glyphs\Export.png</Path>
-					</Glyph>
-					<Type>Action</Type>
-					<ReferencedGUID>c90d1b42-9eb1-4e89-92b6-6c073196ade9</ReferencedGUID>
-					<ButtonText>
-						<eng>Export Configuration</eng>
-						<loc>Export Configuration</loc>
-					</ButtonText>
-					<Caption>
-						<eng>Export Configuration</eng>
-						<loc>Export Configuration</loc>
-					</Caption>
-					<TipStrip>
-						<eng>Export Custom Device Configuration</eng>
-						<loc>Export Custom Device Configuration</loc>
-					</TipStrip>
-					<Documentation>
-						<eng>Export Custom Device Configuration</eng>
-						<loc>Export Custom Device Configuration</loc>
-					</Documentation>
-				</Button>
-				<Button>
-					<ID>089728fe-9b2f-4073-8646-572ad1172b32-Button</ID>
-					<Glyph>
-						<Type>To Application Data Dir</Type>
-						<Path>System Explorer\Glyphs\Import.png</Path>
-					</Glyph>
-					<Type>Action</Type>
-					<ReferencedGUID>089728fe-9b2f-4073-8646-572ad1172b32</ReferencedGUID>
-					<ButtonText>
-						<eng>Import Configuration</eng>
-						<loc>Import Configuration</loc>
-					</ButtonText>
-					<Caption>
-						<eng>Import Configuration</eng>
-						<loc>Import Configuration</loc>
-					</Caption>
-					<TipStrip>
-						<eng>Import Custom Device Configuration</eng>
-						<loc>Import Custom Device Configuration</loc>
-					</TipStrip>
-					<Documentation>
-						<eng>Import Custom Device Configuration</eng>
-						<loc>Import Custom Device Configuration</loc>
-					</Documentation>
-				</Button>
-			</ButtonList>
 			<ActionVIOnLoad>
 				<Type>To Common Doc Dir</Type>
 				<Path>Custom Devices\Communication Bus Template\Windows\Communication Bus Template Configuration.llb\ActionVIOnLoad.vi</Path>
