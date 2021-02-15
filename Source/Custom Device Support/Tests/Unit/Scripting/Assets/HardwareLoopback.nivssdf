@@ -228,10 +228,10 @@
 									<BinaryString>YTE1ZDM5NTkyZDc1NTViMmQwOTk4ZjRjNTU2MDE2MmE=</BinaryString>
 								</Property>
 								<Property Name="user.CD.Win File Path">
-									<String>C:\Git\Ballard-Arinc-429-Custom-Device\Example Database\Physical_Loopback_hw_dsb.XML</String>
+									<String>Physical_Loopback_hw.xml</String>
 								</Property>
 								<Property Name="Dependency_1">
-									<DependentFile Type="Absolute" Path="C:\Git\Ballard-Arinc-429-Custom-Device\Example Database\Physical_Loopback_hw_dsb.XML">
+									<DependentFile Type="Relative" Path="Physical_Loopback_hw.xml">
 										<Version>1.0</Version>
 										<ForceDownload>false</ForceDownload>
 										<RTDestination>c:\ni-rt\VeriStand\Custom Devices\Ballard - Arinc-429\Board_0__Core_0__.xml</RTDestination>
@@ -243,7 +243,7 @@
 									<BinaryString>YTg5YWQyZTAwNWQ2NDI4MzE1YTg3NDFmMmUyOGVmNjI=</BinaryString>
 								</Property>
 								<Property Name="user.CD.Win Parameters File Path">
-									<String>C:\Git\Ballard-Arinc-429-Custom-Device\Example Database\Physical_Loopback_param_dsb.xml</String>
+									<String>Physical_Loopback_param.xml</String>
 								</Property>
 							</Properties>
 							<Errors />
@@ -425,16 +425,16 @@
 												<Description />
 												<Properties>
 													<Property Name="user.CD.Encoding Type">
-														<U16>0</U16>
+														<U16>1</U16>
 													</Property>
 													<Property Name="user.CD.Start Bit">
-														<I32>18</I32>
-													</Property>
-													<Property Name="user.CD.Num Bits">
 														<I32>10</I32>
 													</Property>
+													<Property Name="user.CD.Num Bits">
+														<I32>19</I32>
+													</Property>
 													<Property Name="user.CD.ScaleFac">
-														<Double>16</Double>
+														<Double>1</Double>
 													</Property>
 													<Property Name="user.CD.ScaleOffset">
 														<Double>0</Double>
@@ -549,10 +549,10 @@
 														<U16>0</U16>
 													</Property>
 													<Property Name="user.CD.Start Bit">
-														<I32>18</I32>
+														<I32>13</I32>
 													</Property>
 													<Property Name="user.CD.Num Bits">
-														<I32>10</I32>
+														<I32>16</I32>
 													</Property>
 													<Property Name="user.CD.ScaleFac">
 														<Double>16</Double>
@@ -562,6 +562,72 @@
 													</Property>
 													<Property Name="user.CD.Signed?">
 														<Boolean>true</Boolean>
+													</Property>
+													<Property Name="user.CD.RawData Bits">
+														<U32>0</U32>
+													</Property>
+													<Property Name="user.CD.Unit">
+														<BinaryString>cHNp</BinaryString>
+													</Property>
+												</Properties>
+												<Errors />
+												<DefaultValue>
+													<Elem>0</Elem>
+												</DefaultValue>
+											</Channel>
+											<Channel Name="Valid_Rx" TypeGUID="7862A4D1-00AD-42C2-8A9F-4C525861A8AC" Identifier="b83a588e-9504-4d8c-aeea-5963f9a917ed" RowDim="1" ColDim="1" Units="psi" BitFields="5">
+												<Description />
+												<Properties>
+													<Property Name="user.CD.Encoding Type">
+														<U16>2</U16>
+													</Property>
+													<Property Name="user.CD.Start Bit">
+														<I32>10</I32>
+													</Property>
+													<Property Name="user.CD.Num Bits">
+														<I32>1</I32>
+													</Property>
+													<Property Name="user.CD.ScaleFac">
+														<Double>1</Double>
+													</Property>
+													<Property Name="user.CD.ScaleOffset">
+														<Double>0</Double>
+													</Property>
+													<Property Name="user.CD.Signed?">
+														<Boolean>false</Boolean>
+													</Property>
+													<Property Name="user.CD.RawData Bits">
+														<U32>0</U32>
+													</Property>
+													<Property Name="user.CD.Unit">
+														<BinaryString>cHNp</BinaryString>
+													</Property>
+												</Properties>
+												<Errors />
+												<DefaultValue>
+													<Elem>0</Elem>
+												</DefaultValue>
+											</Channel>
+											<Channel Name="current_Rx" TypeGUID="7862A4D1-00AD-42C2-8A9F-4C525861A8AC" Identifier="b83a588e-9504-4d8c-aeea-5963f9a917ed" RowDim="1" ColDim="1" Units="psi" BitFields="5">
+												<Description />
+												<Properties>
+													<Property Name="user.CD.Encoding Type">
+														<U16>2</U16>
+													</Property>
+													<Property Name="user.CD.Start Bit">
+														<I32>11</I32>
+													</Property>
+													<Property Name="user.CD.Num Bits">
+														<I32>1</I32>
+													</Property>
+													<Property Name="user.CD.ScaleFac">
+														<Double>1</Double>
+													</Property>
+													<Property Name="user.CD.ScaleOffset">
+														<Double>0</Double>
+													</Property>
+													<Property Name="user.CD.Signed?">
+														<Boolean>false</Boolean>
 													</Property>
 													<Property Name="user.CD.RawData Bits">
 														<U32>0</U32>
