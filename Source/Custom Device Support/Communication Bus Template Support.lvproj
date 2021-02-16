@@ -30,6 +30,8 @@
 				<Item Name="Scripting" Type="Folder">
 					<Item Name="Assets" Type="Folder">
 						<Item Name="HardwareLoopback.nivssdf" Type="Document" URL="../Tests/Unit/Scripting/Assets/HardwareLoopback.nivssdf"/>
+						<Item Name="Physical_Loopback_hw.xml" Type="Document" URL="../Tests/Unit/Scripting/Assets/Physical_Loopback_hw.xml"/>
+						<Item Name="Physical_Loopback_param.xml" Type="Document" URL="../Tests/Unit/Scripting/Assets/Physical_Loopback_param.xml"/>
 					</Item>
 					<Item Name="Scripting.lvclass" Type="LVClass" URL="../Tests/Unit/Scripting/Scripting.lvclass"/>
 				</Item>

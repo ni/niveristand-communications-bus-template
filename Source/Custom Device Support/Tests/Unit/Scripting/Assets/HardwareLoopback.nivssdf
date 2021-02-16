@@ -555,7 +555,7 @@
 														<I32>16</I32>
 													</Property>
 													<Property Name="user.CD.ScaleFac">
-														<Double>16</Double>
+														<Double>1</Double>
 													</Property>
 													<Property Name="user.CD.ScaleOffset">
 														<Double>0</Double>
@@ -834,16 +834,16 @@ NOTE: actual  SDI content may differ based on Label Settings.</Description>
 												<Description />
 												<Properties>
 													<Property Name="user.CD.Encoding Type">
-														<U16>0</U16>
+														<U16>1</U16>
 													</Property>
 													<Property Name="user.CD.Start Bit">
-														<I32>18</I32>
-													</Property>
-													<Property Name="user.CD.Num Bits">
 														<I32>10</I32>
 													</Property>
+													<Property Name="user.CD.Num Bits">
+														<I32>19</I32>
+													</Property>
 													<Property Name="user.CD.ScaleFac">
-														<Double>16</Double>
+														<Double>1</Double>
 													</Property>
 													<Property Name="user.CD.ScaleOffset">
 														<Double>0</Double>
@@ -926,13 +926,13 @@ NOTE: actual  SDI content may differ based on Label Settings.</Description>
 												<Description />
 												<Properties>
 													<Property Name="user.CD.Encoding Type">
-														<U16>1</U16>
+														<U16>0</U16>
 													</Property>
 													<Property Name="user.CD.Start Bit">
-														<I32>10</I32>
+														<I32>13</I32>
 													</Property>
 													<Property Name="user.CD.Num Bits">
-														<I32>19</I32>
+														<I32>16</I32>
 													</Property>
 													<Property Name="user.CD.ScaleFac">
 														<Double>1</Double>
@@ -942,6 +942,72 @@ NOTE: actual  SDI content may differ based on Label Settings.</Description>
 													</Property>
 													<Property Name="user.CD.Signed?">
 														<Boolean>true</Boolean>
+													</Property>
+													<Property Name="user.CD.RawData Bits">
+														<U32>0</U32>
+													</Property>
+													<Property Name="user.CD.Unit">
+														<BinaryString>cHNp</BinaryString>
+													</Property>
+												</Properties>
+												<Errors />
+												<DefaultValue>
+													<Elem>0</Elem>
+												</DefaultValue>
+											</Channel>
+											<Channel Name="Valid_Tx" TypeGUID="7862A4D1-00AD-42C2-8A9F-4C525861A8AC" Identifier="b83a588e-9504-4d8c-aeea-5963f9a917ed" RowDim="1" ColDim="1" Units="psi" BitFields="5">
+												<Description />
+												<Properties>
+													<Property Name="user.CD.Encoding Type">
+														<U16>2</U16>
+													</Property>
+													<Property Name="user.CD.Start Bit">
+														<I32>10</I32>
+													</Property>
+													<Property Name="user.CD.Num Bits">
+														<I32>1</I32>
+													</Property>
+													<Property Name="user.CD.ScaleFac">
+														<Double>1</Double>
+													</Property>
+													<Property Name="user.CD.ScaleOffset">
+														<Double>0</Double>
+													</Property>
+													<Property Name="user.CD.Signed?">
+														<Boolean>false</Boolean>
+													</Property>
+													<Property Name="user.CD.RawData Bits">
+														<U32>0</U32>
+													</Property>
+													<Property Name="user.CD.Unit">
+														<BinaryString>cHNp</BinaryString>
+													</Property>
+												</Properties>
+												<Errors />
+												<DefaultValue>
+													<Elem>0</Elem>
+												</DefaultValue>
+											</Channel>
+											<Channel Name="current_Tx" TypeGUID="7862A4D1-00AD-42C2-8A9F-4C525861A8AC" Identifier="b83a588e-9504-4d8c-aeea-5963f9a917ed" RowDim="1" ColDim="1" Units="psi" BitFields="5">
+												<Description />
+												<Properties>
+													<Property Name="user.CD.Encoding Type">
+														<U16>2</U16>
+													</Property>
+													<Property Name="user.CD.Start Bit">
+														<I32>11</I32>
+													</Property>
+													<Property Name="user.CD.Num Bits">
+														<I32>1</I32>
+													</Property>
+													<Property Name="user.CD.ScaleFac">
+														<Double>1</Double>
+													</Property>
+													<Property Name="user.CD.ScaleOffset">
+														<Double>0</Double>
+													</Property>
+													<Property Name="user.CD.Signed?">
+														<Boolean>false</Boolean>
 													</Property>
 													<Property Name="user.CD.RawData Bits">
 														<U32>0</U32>
