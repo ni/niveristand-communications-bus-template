@@ -10,6 +10,7 @@
 
 </Property>
 	<Item Name="Channel" Type="Folder">
+		<Item Name="Add Channel.vi" Type="VI" URL="../Channel/Add Channel.vi"/>
 		<Item Name="Get Parameter Bit Encoding.vi" Type="VI" URL="../Channel/Get Parameter Bit Encoding.vi"/>
 		<Item Name="Get Parameter Definition.vi" Type="VI" URL="../Channel/Get Parameter Definition.vi"/>
 		<Item Name="Get Parameter Scaling.vi" Type="VI" URL="../Channel/Get Parameter Scaling.vi"/>
