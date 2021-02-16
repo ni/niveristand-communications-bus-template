@@ -20,7 +20,6 @@
 		<Item Name="Get Parameter Bit Encoding.vi" Type="VI" URL="../Channel/Get Parameter Bit Encoding.vi"/>
 		<Item Name="Get Parameter Definition.vi" Type="VI" URL="../Channel/Get Parameter Definition.vi"/>
 		<Item Name="Get Parameter Scaling.vi" Type="VI" URL="../Channel/Get Parameter Scaling.vi"/>
-		<Item Name="Set Default Word.vi" Type="VI" URL="../Channel/Set Default Word.vi"/>
 		<Item Name="Set Parameter Bit Encoding.vi" Type="VI" URL="../Channel/Set Parameter Bit Encoding.vi"/>
 		<Item Name="Set Parameter Scaling.vi" Type="VI" URL="../Channel/Set Parameter Scaling.vi"/>
 	</Item>
@@ -38,6 +37,7 @@
 		<Item Name="Get Frames on Port.vi" Type="VI" URL="../Frame/Get Frames on Port.vi"/>
 		<Item Name="Get Label Properties.vi" Type="VI" URL="../Frame/Get Label Properties.vi"/>
 		<Item Name="Get Parameters in Frame.vi" Type="VI" URL="../Frame/Get Parameters in Frame.vi"/>
+		<Item Name="Set Default Word.vi" Type="VI" URL="../Frame/Set Default Word.vi"/>
 		<Item Name="Set Frame Id.vi" Type="VI" URL="../Frame/Set Frame Id.vi"/>
 	</Item>
 	<Item Name="Port" Type="Folder">
@@ -54,4 +54,5 @@
 	</Item>
 	<Item Name="Constants.vi" Type="VI" URL="../Constants.vi"/>
 	<Item Name="Find Ballard ARINC-429 Custom Devices.vi" Type="VI" URL="../Find Ballard ARINC-429 Custom Devices.vi"/>
+	<Item Name="Set Parameter Definition.vi" Type="VI" URL="../Channel/Set Parameter Definition.vi"/>
 </Library>
