@@ -10,19 +10,9 @@
 
 </Property>
 	<Item Name="Channel" Type="Folder">
-		<Item Name="Add Channel.vi" Type="VI" URL="../Channel/Add Channel.vi"/>
-		<Item Name="Add Hardware Channels.vi" Type="VI" URL="../Channel/Add Hardware Channels.vi"/>
-		<Item Name="Add Label Parameters as Channels.vi" Type="VI" URL="../Channel/Add Label Parameters as Channels.vi"/>
-		<Item Name="Add Parameter Channels for SDI SSM Parity.vi" Type="VI" URL="../Channel/Add Parameter Channels for SDI SSM Parity.vi"/>
-		<Item Name="Channel Index to Channel Type.vi" Type="VI" URL="../Channel/Channel Index to Channel Type.vi"/>
-		<Item Name="Convert Channel Parameter to Channel and Properties.vi" Type="VI" URL="../Channel/Convert Channel Parameter to Channel and Properties.vi"/>
-		<Item Name="Find Channel.vi" Type="VI" URL="../Channel/Find Channel.vi"/>
 		<Item Name="Get Parameter Bit Encoding.vi" Type="VI" URL="../Channel/Get Parameter Bit Encoding.vi"/>
 		<Item Name="Get Parameter Definition.vi" Type="VI" URL="../Channel/Get Parameter Definition.vi"/>
 		<Item Name="Get Parameter Scaling.vi" Type="VI" URL="../Channel/Get Parameter Scaling.vi"/>
-		<Item Name="Set Default Word.vi" Type="VI" URL="../Channel/Set Default Word.vi"/>
-		<Item Name="Set Parameter Bit Encoding.vi" Type="VI" URL="../Channel/Set Parameter Bit Encoding.vi"/>
-		<Item Name="Set Parameter Scaling.vi" Type="VI" URL="../Channel/Set Parameter Scaling.vi"/>
 	</Item>
 	<Item Name="Database" Type="Folder">
 		<Item Name="Add Database.vi" Type="VI" URL="../Database/Add Database.vi"/>
