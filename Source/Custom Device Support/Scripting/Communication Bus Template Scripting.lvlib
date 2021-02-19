@@ -11,12 +11,6 @@
 </Property>
 	<Item Name="Channel" Type="Folder">
 		<Item Name="Add Channel.vi" Type="VI" URL="../Channel/Add Channel.vi"/>
-		<Item Name="Add Hardware Channels.vi" Type="VI" URL="../Channel/Add Hardware Channels.vi"/>
-		<Item Name="Add Label Parameters as Channels.vi" Type="VI" URL="../Channel/Add Label Parameters as Channels.vi"/>
-		<Item Name="Add Parameter Channels for SDI SSM Parity.vi" Type="VI" URL="../Channel/Add Parameter Channels for SDI SSM Parity.vi"/>
-		<Item Name="Channel Index to Channel Type.vi" Type="VI" URL="../Channel/Channel Index to Channel Type.vi"/>
-		<Item Name="Convert Channel Parameter to Channel and Properties.vi" Type="VI" URL="../Channel/Convert Channel Parameter to Channel and Properties.vi"/>
-		<Item Name="Find Channel.vi" Type="VI" URL="../Channel/Find Channel.vi"/>
 		<Item Name="Get Parameter Bit Encoding.vi" Type="VI" URL="../Channel/Get Parameter Bit Encoding.vi"/>
 		<Item Name="Get Parameter Definition.vi" Type="VI" URL="../Channel/Get Parameter Definition.vi"/>
 		<Item Name="Get Parameter Scaling.vi" Type="VI" URL="../Channel/Get Parameter Scaling.vi"/>
@@ -31,7 +25,6 @@
 	</Item>
 	<Item Name="Frame" Type="Folder">
 		<Item Name="Add Frame.vi" Type="VI" URL="../Frame/Add Frame.vi"/>
-		<Item Name="Find Label References.vi" Type="VI" URL="../Frame/Find Label References.vi"/>
 		<Item Name="Get Default Word.vi" Type="VI" URL="../Frame/Get Default Word.vi"/>
 		<Item Name="Get Frame Id.vi" Type="VI" URL="../Frame/Get Frame Id.vi"/>
 		<Item Name="Get Frame Port Reference.vi" Type="VI" URL="../Frame/Get Frame Port Reference.vi"/>
