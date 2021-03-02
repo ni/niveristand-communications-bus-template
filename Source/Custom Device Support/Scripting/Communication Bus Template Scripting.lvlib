@@ -14,7 +14,6 @@
 		<Item Name="Get Parameter Bit Encoding.vi" Type="VI" URL="../Channel/Get Parameter Bit Encoding.vi"/>
 		<Item Name="Get Parameter Definition.vi" Type="VI" URL="../Channel/Get Parameter Definition.vi"/>
 		<Item Name="Get Parameter Scaling.vi" Type="VI" URL="../Channel/Get Parameter Scaling.vi"/>
-		<Item Name="Get Port Number.vi" Type="VI" URL="../Port/Get Port Number.vi"/>
 		<Item Name="Set Parameter Bit Encoding.vi" Type="VI" URL="../Channel/Set Parameter Bit Encoding.vi"/>
 		<Item Name="Set Parameter Definition.vi" Type="VI" URL="../Channel/Set Parameter Definition.vi"/>
 		<Item Name="Set Parameter Scaling.vi" Type="VI" URL="../Channel/Set Parameter Scaling.vi"/>
@@ -44,6 +43,7 @@
 		<Item Name="Get All Tx Ports.vi" Type="VI" URL="../Port/Get All Tx Ports.vi"/>
 		<Item Name="Get Port Baud Rate.vi" Type="VI" URL="../Port/Get Port Baud Rate.vi"/>
 		<Item Name="Get Port Database.vi" Type="VI" URL="../Port/Get Port Database.vi"/>
+		<Item Name="Get Port Number.vi" Type="VI" URL="../Port/Get Port Number.vi"/>
 		<Item Name="Set Port Baud Rate.vi" Type="VI" URL="../Port/Set Port Baud Rate.vi"/>
 		<Item Name="Set Port Database.vi" Type="VI" URL="../Port/Set Port Database.vi"/>
 	</Item>
