@@ -1,12 +1,32 @@
 # Creating a new instance of the template
 
+There are two ways to create a new instance of the template. You can use the automated VI that does all the work for you, or you can create a new instance using a step-by-step method. The automated method is fastest and easiest. The step-by-step method gives you full control and is useful if you need to understand any part of the process. The results are nearly identical.
+
+# Creating a new instance of the template automatically
+
+These steps will create a completely new template that will work side-by-side with the existing template.
+
+1. Open `Template Generator\Template Tool\Clone Template Main.vi`.
+1. Run the VI.
+1. Enter a **Custom Device Name**.
+1. Choose a **Destination Directory** and press the Start button.
+
+The progress bar, along with messages, will keep you updated as the process proceeds.
+
+Upon completion you will find a folder with your Custom Device Name in the Destination Directory location.
+
+This tool also copies all files needed for your new Custom Device to show up in the VeriStand System Explorer. These files will be located in a folder with your Custom Device Name located in your public documents directory under National Instruments\NI VeriStand [YEAR]\Custom Devices. For example if your new custom device was named My New Comms for VeriStand 2020, you will find `C:\Users\Public\Documents\National Instruments\NI VeriStand 2020\Custom Devices\My New Comms`.
+
+
+# Creating a new instance of the template step-by-step
+
 These steps can be followed to create a new instance of the template. At the end of each major subsection the custom device should remain usable, although it won't work side-by-side with the template until the end.
 
 Committing your changes after each major subsection is recommended, to allow you to partially restart if mistakes are made.
 
 It is recommended that you close LabVIEW after each section involving renaming items. Issues with LabVIEW not handling renames properly have been observed after it has been open for multiple operations.
 
-## Create a base branch for new development
+### Create a base branch for new development
 
 The following will create a new branch for custom device development, without actually creating any new commits. This lets you use pull requests into the branch for all development.
 
