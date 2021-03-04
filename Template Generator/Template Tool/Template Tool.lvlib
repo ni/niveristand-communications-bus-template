@@ -21,7 +21,7 @@
 		<Item Name="Edit Pre Build Help VI Constant.vi" Type="VI" URL="../Edit Pre Build Help VI Constant.vi"/>
 		<Item Name="Edit Project File Build Spec Destinations.vi" Type="VI" URL="../Edit Project File Build Spec Destinations.vi"/>
 		<Item Name="Edit Support lvproj PPL Names.vi" Type="VI" URL="../Edit Support lvproj PPL Names.vi"/>
-		<Item Name="Edit VI Constants.vi" Type="VI" URL="../Edit VI Constants.vi"/>
+		<Item Name="Edit VI String Constant.vi" Type="VI" URL="../Edit VI String Constant.vi"/>
 		<Item Name="File Extension and New Name.vi" Type="VI" URL="../File Extension and New Name.vi"/>
 		<Item Name="Find and Replace in Text File.vi" Type="VI" URL="../Find and Replace in Text File.vi"/>
 		<Item Name="Get Common Path.vi" Type="VI" URL="../Get Common Path.vi"/>
@@ -29,7 +29,6 @@
 		<Item Name="Milliseconds to Minutes Seconds.vi" Type="VI" URL="../Milliseconds to Minutes Seconds.vi"/>
 		<Item Name="Remove Test Folder From lvproj Temporarily.vi" Type="VI" URL="../Remove Test Folder From lvproj Temporarily.vi"/>
 		<Item Name="Rename Configuration LLB in LVPROJ.vi" Type="VI" URL="../Rename Configuration LLB in LVPROJ.vi"/>
-		<Item Name="Rename Help Files.vi" Type="VI" URL="../Rename Help Files.vi"/>
 		<Item Name="Rename LLBs in XML File.vi" Type="VI" URL="../Rename LLBs in XML File.vi"/>
 		<Item Name="Rename LVLIBs in LVPROJ XML File.vi" Type="VI" URL="../Rename LVLIBs in LVPROJ XML File.vi"/>
 		<Item Name="Replace Project PPLs.vi" Type="VI" URL="../Replace Project PPLs.vi"/>
