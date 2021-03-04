@@ -2,9 +2,11 @@
 
 There are two ways to create a new instance of the template. You can use the automated VI that does all the work for you, or you can create a new instance using a step-by-step method. The automated method is fastest and easiest. The step-by-step method gives you full control and is useful if you need to understand any part of the process. The results are nearly identical.
 
-# Creating a new instance of the template automatically
+# Creating a new instance automatically
 
 These steps will create a completely new template that will work side-by-side with the existing template.
+
+## Run the cloning tool
 
 1. Open `Template Generator\Template Tool\Clone Template Main.vi`.
 1. Run the VI.
@@ -15,10 +17,18 @@ The progress bar, along with messages, will keep you updated as the process proc
 
 Upon completion you will find a folder with your Custom Device Name in the Destination Directory location.
 
-This tool also copies all files needed for your new Custom Device to show up in the VeriStand System Explorer. These files will be located in a folder with your Custom Device Name located in your public documents directory under National Instruments\NI VeriStand [YEAR]\Custom Devices. For example if your new custom device was named My New Comms for VeriStand 2020, you will find `C:\Users\Public\Documents\National Instruments\NI VeriStand 2020\Custom Devices\My New Comms`.
+This tool also copies all files needed for your new Custom Device to show up in the VeriStand System Explorer. These files will be located in a folder with your Custom Device Name located in your public documents directory under National Instruments\NI VeriStand [YEAR]\Custom Devices. For example if your new custom device was named **My New Comms** for VeriStand 2020, you will find `C:\Users\Public\Documents\National Instruments\NI VeriStand 2020\Custom Devices\My New Comms`.
+
+## Update build specs
+
+The build specs created are fully functional, but they are not identical to the originals. Assuming you named your custom device **My New Comms**, there are differences in **My New Comms Custom Device.lvproj**:
+* Configuration Release build spec
+    1. In the **Source Files** Category, the VIs within **My New Comms System Explorer.lvlib\System Explorer** have been individually added to the **Always Included** section. If you were to add VIs to the System Explorer folder, they would not get picked up by the build spec.
+
+This looks good for a first go at the cloning tool. We may need to revisit some of this in order to get correct build settings for removing debugging, etc. and for automatically including new files in the libraries, but for now, those items can just go in the documentation.
 
 
-# Creating a new instance of the template step-by-step
+# Creating a new instance step-by-step
 
 These steps can be followed to create a new instance of the template. At the end of each major subsection the custom device should remain usable, although it won't work side-by-side with the template until the end.
 
