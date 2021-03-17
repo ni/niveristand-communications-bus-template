@@ -1,12 +1,54 @@
 # Creating a new instance of the template
 
+There are two ways to create a new instance of the template. You can use the automated VI that does all the work for you, or you can create a new instance using a step-by-step method. The automated method is fastest and easiest. The step-by-step method gives you full control and is useful if you need to understand any part of the process. The results are identical.
+
+# Creating a new instance automatically
+
+These steps will create a completely new template that will work side-by-side with the existing template.
+
+## Run the cloning tool
+
+1. Open `Template Generator\Template Tool\Clone Template Main.vi`.
+1. Run the VI.
+1. Enter a **Custom Device Name**.
+1. Choose a **Destination Directory** and press the Start button.
+
+The progress bar, along with messages, will keep you updated as the process proceeds.
+
+Upon completion you will find a folder with your Custom Device Name in the Destination Directory location.
+
+This tool also copies all files needed for your new Custom Device to show up in the VeriStand System Explorer. These files will be located in a folder with your Custom Device Name located in your public documents directory under National Instruments\NI VeriStand \<YEAR>\Custom Devices. For example if your new custom device was named **My New Comms** for VeriStand 2020, you will find `C:\Users\Public\Documents\National Instruments\NI VeriStand 2020\Custom Devices\My New Comms`.
+
+## Update build specs
+
+The build specs created are fully functional, but they are not identical to the originals. Assuming you named your custom device **My New Comms**, there are build spec differences in _**My New Comms**_ **Custom Device.lvproj**. You may want to correct these differences:
+
+* ### **Configuration Release** build spec
+
+    1. In the **Source Files** Category, the VIs within _`My New Comms`_ `  System Explorer.lvlib\System Explorer` have been individually added to the **Always Included** section. If you were to create additional VIs in the System Explorer folder, they would not get picked up by the build spec. This can be fixed by removing all the files except `Custom Device`_` My New Comms`_`.xml` from the **Always Included** section, and then adding _`My New Comms`_ `System Explorer.lvlib\System Explorer` to the **Always Included** section. Once you make this change, you must complete the next step to make sure the **Syetem Explorer** folder destination is correct.
+    1. In the **Source File Settings** Category, destination and debugging need to be updated. Select the **Source File Settings** Category and select _`My New Comms`_ `System Explorer.lvlib\System Explorer` in the Project Files tree. Make the following changes:
+        * Check the **Set destination for all contained items** checkbox and choose **My New Comms Configuration LLB** in the dropdown menu.
+        * Check the **Set VI properties for all contained items** checkbox and press the **Custom VI Properties...** button. In the **VI Properties** dialog, deselect all six checkboxes in the **Execution** section and press **OK**. 
+        * Check the **Set save settings for all contained items** checkbox. Uncheck **Use default save settings** and check **Remove block diagram**.
+    1. Press the **OK** button, and save the project.
+
+* ### **Engine Release** build spec
+
+    1. In the **Source File Settings** Category, VI properties need to be updated to remove debugging. Select the **Source File Settings** Category and select _`My New Comms`_ `Engine.lvlib\RT Driver VI.vi` in the Project Files tree. Make the following change:
+        * Press the **Custom VI Properties...** button. In the **VI Properties: RT Driver VI.vi** dialog, deselect both **Allow debugging** checkboxes in the **Execution** section and press **OK**. 
+        
+    1. Press the **OK** button, and save the project.
+<br/><br/>
+
+# Creating a new instance step-by-step
+
 These steps can be followed to create a new instance of the template. At the end of each major subsection the custom device should remain usable, although it won't work side-by-side with the template until the end.
 
 Committing your changes after each major subsection is recommended, to allow you to partially restart if mistakes are made.
 
 It is recommended that you close LabVIEW after each section involving renaming items. Issues with LabVIEW not handling renames properly have been observed after it has been open for multiple operations.
 
-## Create a base branch for new development
+### Create a base branch for new development
 
 The following will create a new branch for custom device development, without actually creating any new commits. This lets you use pull requests into the branch for all development.
 
@@ -21,7 +63,7 @@ You will then want to create a new development branch for the remaining work, wh
 
 ## Change GUIDs
 
-1. Open `Source\Utility\Replace All GUIDs.vi`, and select `Source\Custom Device\Shared\Constants.vi`, `Source\Custom Device Support\Scripting\Constants.vi` and `Source\Custom Device\Custom Device Communication Bus Template.xml`. Run the VI.
+1. Open `Template Generator\GUID Tool\Replace All GUIDs.vi`, and select `Source\Custom Device\Shared\Constants.vi`, `Source\Custom Device Support\Scripting\Constants.vi` and `Source\Custom Device\Custom Device Communication Bus Template.xml`. Run the VI.
 
 ## Update installation directory
 
