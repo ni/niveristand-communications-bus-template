@@ -24,6 +24,7 @@
 		<Item Name="Edit VI String Constant.vi" Type="VI" URL="../Edit VI String Constant.vi"/>
 		<Item Name="File Extension and New Name.vi" Type="VI" URL="../File Extension and New Name.vi"/>
 		<Item Name="Find and Replace in Text File.vi" Type="VI" URL="../Find and Replace in Text File.vi"/>
+		<Item Name="Generate Config Files.vi" Type="VI" URL="../Generate Config Files.vi"/>
 		<Item Name="Get Common Path.vi" Type="VI" URL="../Get Common Path.vi"/>
 		<Item Name="Includes Folder Auto-Populating On or Off.vi" Type="VI" URL="../Includes Folder Auto-Populating On or Off.vi"/>
 		<Item Name="Milliseconds to Minutes Seconds.vi" Type="VI" URL="../Milliseconds to Minutes Seconds.vi"/>
@@ -33,6 +34,7 @@
 		<Item Name="Rename LVLIBs in LVPROJ XML File.vi" Type="VI" URL="../Rename LVLIBs in LVPROJ XML File.vi"/>
 		<Item Name="Replace Project PPLs.vi" Type="VI" URL="../Replace Project PPLs.vi"/>
 		<Item Name="Replace VI and XML GUIDs.vi" Type="VI" URL="../Replace VI and XML GUIDs.vi"/>
+		<Item Name="Substitute Assembly Versions.vi" Type="VI" URL="../Substitute Assembly Versions.vi"/>
 		<Item Name="Update Build Specs and Build.vi" Type="VI" URL="../Update Build Specs and Build.vi"/>
 		<Item Name="Update CD Name in XML File.vi" Type="VI" URL="../Update CD Name in XML File.vi"/>
 		<Item Name="Update Support Build Specs and Build.vi" Type="VI" URL="../Update Support Build Specs and Build.vi"/>
