@@ -16,44 +16,63 @@ A utility for creating a new custom device from the template is located in this 
 2. Follow the instructions on the VI's front panel to set the custom device name and output LabVIEW project location.
 3. Navigate to the **Destination Directory** provided in the VI and explore the custom device project.
 
-## Source Layout
+After the tool completes, the new custom device will be usable from VeriStand.
 
-Uses PPLs so you don't have to do all the VeriStand stuff. (Maybe put this in a getting started/overview section?)
+## Theory of Operation
+
+The most flexible way of creating extensible architectures in LabVIEW is by using LabVIEW classes and interfaces. To create class or interface overrides, LabVIEW requires a new VI of the same name, with the same connector pane to exist. This presents challenges to creating extensible and reusable code pieces in custom devices because VeriStand requires top-level custom device libraries to be saved as `.llb` files. These files have a flat structure, which means two files of the same name can not exist in these file types.
+
+The newly generated custom device has a different file structure than one generated from the [Custom Device Wizard](https://github.com/ni/niveristand-custom-device-wizard). Instead of a single LabVIEW project in the `Source` directory, there are two projects:
+
+- Custom Device Project
+- Support Project
 
 ### Custom Device Project
 
-Custom Device is VeriStand interface shim work.
+The `Source/Custom Device/<MyName> Custom Device.lvproj` primarily exists for historical reasons. This project contains the code and build specs required for interacting with VeriStand. It builds the `.llb` files that VeriStand requires for execution.
 
-#### System Explorer
-
-##### Page Wrapper
-
-#### ActionVIOnCompile
-
-##### Execution Unit
-
-This is where they are created. Talk more about them in the support project section.
-
-#### Engine
+This project has the same structure as a project generated from the wizard, but contains minimal logic for performing work in the custom device. Most of the code is a set of wrappers that call code implemented in packed project libraries built from the support project. These libraries can be found in the `Includes` virtual folder in the project.
 
 ### Support Project
 
-Custom Device Support is where most things happen.
+The `Source/Custom Device Support/<MyName> Support.lvproj` is the project where almost all logic for the custom device's behavior will exist. This project contains the logic for interacting with hardware, encoding/decoding bus messages, System Explorer pages, and database management. It builds packed project libraries (PPLs) in the form of `Engine.lvlibp` and `System Explorer.lvlibp` files, which support hierarchical file structures. These PPLs enable the custom device author to utilize classes and interfaces to implement extensible architectures. This strategy also promotes consistency of experience across custom devices.
 
-#### Separation of Protocol and Device
+## System Explorer
+
+This template utilizes a dispatch pattern for retrieving pages and run-time menus to display in System Explorer. The custom device XML specifies `Page Wrapper.vi` as the VI to execute when an item is selected in the tree. This VI delegates to page implementations in `<MyName> System Explorer.lvlibp` from the support project.
+
+Page and run-time menu information is provided to `Page Wrapper.vi` through methods in the **System Explorer Dispatcher** interface. To add pages, a new **Page**, with new GUID, needs to be added to the custom device XML. That 
+
+### Dispatcher
+
+All **Page**s defined in the custom device XML specify `Page Wrapper.vi` as the VI to execute when an item is selected in the tree. This page delegates to actual page implementations in `<MyName> System Explorer.lvlibp` from the support project. Unless a page needs **dynamic buttons** at the top of System Explorer, there should be no need to create a new page VI in this project. Instead, page information should be added to the custom device XML and then added to the **System Explorer Dispatcher** (see below).
+
+Similarly, any run-time menus should also use the **System Explorer Dispatcher** to dynamically create right-click menus for a page.
+
+### Page Wrapper
+
+### ActionVIOnCompile
+
+### Execution Unit
+
+This is where they are created. Talk more about them in the support project section.
+
+## Engine
+
+### Separation of Protocol and Device
 
 Maybe in same getting started as PPL stuff.
 
-#### Scripting API
+### Scripting API
 
-#### System Explorer
+### System Explorer
 
-#### Engine
+### Engine
 
-##### G Interfaces
+#### G Interfaces
 
-###### Execution Unit
+##### Execution Unit
 
-###### Execution Unit Factory
+##### Execution Unit Factory
 
-##### Interface Implementation
+#### Interface Implementation
