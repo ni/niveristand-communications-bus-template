@@ -37,21 +37,23 @@ This project has the same structure as a project generated from the wizard, but 
 
 The `Source/Custom Device Support/<MyName> Support.lvproj` is the project where almost all logic for the custom device's behavior will exist. This project contains the logic for interacting with hardware, encoding/decoding bus messages, System Explorer pages, and database management. It builds packed project libraries (PPLs) in the form of `Engine.lvlibp` and `System Explorer.lvlibp` files, which support hierarchical file structures. These PPLs enable the custom device author to utilize classes and interfaces to implement extensible architectures. This strategy also promotes consistency of experience across custom devices.
 
+### Execution Unit
+
+The fundamental piece of the engine for custom devices using this template is the **Execution Unit**.
+
 ## System Explorer
 
-This template utilizes a dispatch pattern for retrieving pages and run-time menus to display in System Explorer. The custom device XML specifies `Page Wrapper.vi` as the VI to execute when an item is selected in the tree. This VI delegates to page implementations in `<MyName> System Explorer.lvlibp` from the support project.
-
-Page and run-time menu information is provided to `Page Wrapper.vi` through methods in the **System Explorer Dispatcher** interface. To add pages, a new **Page**, with new GUID, needs to be added to the custom device XML. That 
+This template utilizes a dispatch pattern for retrieving pages and run-time menus to display in System Explorer. VI wrappers in the custom device project request page and run-time menu information from a **System Explorer Dispatcher** object and display them in System Explorer.
 
 ### Dispatcher
 
-All **Page**s defined in the custom device XML specify `Page Wrapper.vi` as the VI to execute when an item is selected in the tree. This page delegates to actual page implementations in `<MyName> System Explorer.lvlibp` from the support project. Unless a page needs **dynamic buttons** at the top of System Explorer, there should be no need to create a new page VI in this project. Instead, page information should be added to the custom device XML and then added to the **System Explorer Dispatcher** (see below).
+The custom device XML specifies `Page Wrapper.vi` as the VI to execute when an item is selected in the tree. This VI delegates to page implementations in `<MyName> System Explorer.lvlibp` from the support project. To add pages, a new **Page**, with new GUID, needs to be added to the custom device XML. The VI and GUID then must be added to `System Explorer Dispatcher.lvclass:Get Page.vi`.
 
-Similarly, any run-time menus should also use the **System Explorer Dispatcher** to dynamically create right-click menus for a page.
+Similarly, any run-time menus should also use the **System Explorer Dispatcher** to dynamically create right-click menus for a page. `RunTimeMenu Wrapper.vi` asks the dispatcher which menu to disply through `System Explorer Dispatcher.lvclass:Get Menu Item VI.vi` and what items to populate in that menu through `System Explorer Dispatcher:Get Menu Items.vi`.
 
-### Page Wrapper
+**Note:** Dynamic buttons at the top of the System Explorer window can not be added through the `Page Wrapper.vi` mechanism, so any pages requiring those buttons will require a standard page to be created.
 
-### ActionVIOnCompile
+## ActionVIOnCompile
 
 ### Execution Unit
 
