@@ -53,7 +53,7 @@ This template utilizes a dispatch pattern for retrieving pages and run-time menu
 
 #### Dispatcher
 
-The custom device XML specifies `Page Wrapper.vi` as the VI to execute when an item is selected in the tree. This VI delegates to page implementations in `<MyName> System Explorer.lvlibp` from the support project. To add pages, a new **Page**, with new GUID, needs to be added to the custom device XML. The VI and GUID then must be added to `System Explorer Dispatcher.lvclass:Get Page.vi`.
+The custom device XML specifies `Page Wrapper.vi` as the VI to execute when an item is selected in the tree. This VI delegates to page implementations in `<MyName> System Explorer.lvlibp` from the support project. To add pages, a new **Page**, with new GUID, needs to be added to the [custom device XML](https://www.ni.com/documentation/en/veristand/latest/manual/custom-device-xml/). The VI and GUID then must be added to `System Explorer Dispatcher.lvclass:Get Page.vi`.
 
 ```
 <Page>
@@ -106,6 +106,14 @@ Similarly, any run-time menus should also use the **System Explorer Dispatcher**
 **Note:** Dynamic buttons at the top of the System Explorer window can not be added through the `Page Wrapper.vi` mechanism, so any pages requiring those buttons will require a standard page to be created.
 
 ### ActionVIOnCompile
+
+This template makes use of the VeriStand [ActionVIOnCompile](https://www.ni.com/documentation/en/veristand/latest/manual/custom-device-action-vi-template/) to construct the **Execution Unit(s)** and associated channels required for executing the engine code.
+
+`ActionVIOnCompile.vi` is responsible for taking all of the configuration in the system definition tree and converting those settings into a set of **Execution Units** that perform the communication bus message building and passing of those messages to the the bus, typically through a hardware driver.
+
+`ActionVIOnCompile.vi` is designed to minimize the need to modify it. It is likely a custom device author will not touch this VI at all. Instead all of the work for the **Execution Unit** construction is delegated to the **Execution Unit Factory**.
+
+![ActionVIOnCompile](Resources/ActionVIOnCompile.png)
 
 ### Execution Unit
 
