@@ -39,21 +39,73 @@ The `Source/Custom Device Support/<MyName> Support.lvproj` is the project where 
 
 ### Execution Unit
 
-The fundamental piece of the engine for custom devices using this template is the **Execution Unit**.
+The fundamental piece of the engine for custom devices using this template is the **Execution Unit**. The **Execution Unit** is a LabVIEW _Interface_ that a custom device author must implement in order to use this template. Using this interface enables the custom device author to focus almost entirely on only the code pieces necessary for implementing a specific protocol and communicating with a specific hardware device without having to think much about how it fits into VeriStand.
 
-## System Explorer
+The **Execution Unit** interface and the process for implementing it are discussed throughout this guide. The methods for this interface are shown below.
+
+![ExecutionUnit](Resources/ExecutionUnit.png)
+
+## Developing a New Custom Device
+
+### System Explorer
 
 This template utilizes a dispatch pattern for retrieving pages and run-time menus to display in System Explorer. VI wrappers in the custom device project request page and run-time menu information from a **System Explorer Dispatcher** object and display them in System Explorer.
 
-### Dispatcher
+#### Dispatcher
 
 The custom device XML specifies `Page Wrapper.vi` as the VI to execute when an item is selected in the tree. This VI delegates to page implementations in `<MyName> System Explorer.lvlibp` from the support project. To add pages, a new **Page**, with new GUID, needs to be added to the custom device XML. The VI and GUID then must be added to `System Explorer Dispatcher.lvclass:Get Page.vi`.
 
-Similarly, any run-time menus should also use the **System Explorer Dispatcher** to dynamically create right-click menus for a page. `RunTimeMenu Wrapper.vi` asks the dispatcher which menu to disply through `System Explorer Dispatcher.lvclass:Get Menu Item VI.vi` and what items to populate in that menu through `System Explorer Dispatcher:Get Menu Items.vi`.
+```
+<Page>
+	<Name>
+		<eng>Frame</eng>
+		<loc>Frame</loc>
+	</Name>
+	<GUID>12b029fd-7aaa-4aa7-9f3a-279e0ce107c0</GUID>
+	<Glyph>
+		<Type>To Application Data Dir</Type>
+		<Path>System Explorer\Glyphs\NI-XNET SignalFrame.png</Path>
+	</Glyph>
+	<Item2Launch>
+		<Type>To Common Doc Dir</Type>
+		<Path>Custom Devices\Communication Bus Template\Windows\Communication Bus Template Configuration.llb\Page Wrapper.vi</Path>
+	</Item2Launch>
+    .
+    .
+    .
+</Page>
+```
+
+![GetPageVI](Resources/GetPageVI.png)
+
+Similarly, any run-time menus should also use the **System Explorer Dispatcher** to dynamically create right-click menus for a page. `RunTimeMenu Wrapper.vi` asks the dispatcher which menu to display through `System Explorer Dispatcher.lvclass:Get Menu Item VI.vi` and what items to populate in that menu through `System Explorer Dispatcher:Get Menu Items.vi`.
+
+```
+<RunTimeMenu>
+	<MenuItem>
+		<GUID>4a264cda-93bf-4d77-92b0-38d997c67151</GUID>
+		<Type>Custom</Type>
+		<Name>
+			<eng />
+			<loc />
+		</Name>
+		<Item2Launch>
+			<Type>To Common Doc Dir</Type>
+			<Path>Custom Devices\Communication Bus Template\Windows\Communication Bus Template Configuration.llb\RunTimeMenu Wrapper.vi</Path>
+		</Item2Launch>
+		<CustomPopulation>
+			<Type>To Common Doc Dir</Type>
+			<Path>Custom Devices\Communication Bus Template\Windows\Communication Bus Template Configuration.llb\RunTimeMenu Custom Population.vi</Path>
+		</CustomPopulation>
+	</MenuItem>
+</RunTimeMenu>
+```
+
+![GetMenuItems](Resources/GetMenuItems.png)
 
 **Note:** Dynamic buttons at the top of the System Explorer window can not be added through the `Page Wrapper.vi` mechanism, so any pages requiring those buttons will require a standard page to be created.
 
-## ActionVIOnCompile
+### ActionVIOnCompile
 
 ### Execution Unit
 
