@@ -11,4 +11,6 @@
 </Property>
 	<Item Name="Execution Unit Factory.lvclass" Type="LVClass" URL="../Execution Unit Factory/Execution Unit Factory.lvclass"/>
 	<Item Name="Execution Unit.lvclass" Type="LVClass" URL="../Execution Unit/Execution Unit.lvclass"/>
+	<Item Name="Shared Resources Factory.lvclass" Type="LVClass" URL="../Shared Resources Factory/Shared Resources Factory.lvclass"/>
+	<Item Name="Shared Resources.lvclass" Type="LVClass" URL="../Shared Resources/Shared Resources.lvclass"/>
 </Library>
