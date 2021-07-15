@@ -15,6 +15,7 @@
 			<Item Name="Unflatten Asynchronous Execution Units.vi" Type="VI" URL="../Unflatten Asynchronous Execution Units.vi"/>
 			<Item Name="Unflatten Compiled Data.vi" Type="VI" URL="../Unflatten Compiled Data.vi"/>
 			<Item Name="Unflatten Inline Execution Units.vi" Type="VI" URL="../Unflatten Inline Execution Units.vi"/>
+			<Item Name="Unflatten Shared Resources.vi" Type="VI" URL="../Unflatten Shared Resources.vi"/>
 		</Item>
 		<Item Name="Run" Type="Folder">
 			<Item Name="Execution Unit.Async.vi" Type="VI" URL="../Execution Unit.Async.vi"/>
