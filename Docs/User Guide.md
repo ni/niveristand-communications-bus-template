@@ -10,9 +10,9 @@ Much of the overhead of creating custom devices is adapting LabVIEW code to corr
 
 ## Creating a New Custom Device
 
-A utility for creating a new custom device from the template is located in this repo at `Source/Template Generator`. To generate a new custom device:
+A utility for creating a new custom device from the template is located in this repo in the `Template Generator` directory. To generate a new custom device:
 
-1. Open the VI at `Source/Template Generator/Template Tool/Clone Template Main.vi`.
+1. Open the VI at `Template Generator/Template Tool/Clone Template Main.vi`.
 2. Follow the instructions on the VI's front panel to set the custom device name and output LabVIEW project location.
 3. Navigate to the **Destination Directory** provided in the VI and explore the custom device project.
 
