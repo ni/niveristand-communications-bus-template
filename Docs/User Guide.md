@@ -4,13 +4,13 @@ The template provided in this repo is intended to be used for creating VeriStand
 
 ## Overview
 
-The main goal of this template is to enable custom device authors to implement the configuration and messaging for a given protocol only once. The protocol and hardware configurations are implemented separately to more easily enable supporting multiple vendors or hardware devices in a new custom device without having to start everything from a blank custom device template.
+The main goal of this template is to enable custom device authors to implement the configuration and messaging for a given protocol only once. The protocol and hardware configurations are implemented separately to support different vendors and hardware devices in new custom devices without starting each from an empty custom device template.
 
 Much of the overhead of creating custom devices is adapting LabVIEW code to correctly interface with VeriStand. The design of this template enables custom device authors to focus more on the code to implement a communication protocol and less on how VeriStand interacts with that code. The [Developer Guide](Developer%20Guide.md) provides more theory on the design of the template.
 
 ## Creating a New Custom Device
 
-A utility for creating a new custom device from the template is located in this repo in the `Template Generator` directory. To generate a new custom device:
+A utility for creating a new custom device from the template is in this repo in the `Template Generator` directory. To generate a new custom device:
 
 1. Open the VI at `Template Generator/Template Tool/Clone Template Main.vi`.
 2. Follow the instructions on the VI's front panel to set the custom device name and output LabVIEW project location.
@@ -20,7 +20,7 @@ After the tool completes, the new custom device will be usable from VeriStand.
 
 ## Theory of Operation
 
-The most flexible way of creating extensible architectures in LabVIEW is by using LabVIEW classes and interfaces. To create class or interface overrides, LabVIEW requires a new VI of the same name, with the same connector pane to exist. This presents challenges to creating extensible and reusable code pieces in custom devices because VeriStand requires top-level custom device libraries to be saved as `.llb` files. These files have a flat structure, which means two files of the same name can not exist in these file types.
+The most flexible way of creating extensible architectures in LabVIEW is by using LabVIEW classes and interfaces. To create class or interface overrides, LabVIEW requires a new VI of the same name, with the same connector pane to exist. This presents challenges to creating extensible and reusable code pieces in custom devices because VeriStand requires top-level custom device libraries to be saved as `.llb` files. These files have a flat structure, which means two files of the same name cannot exist in these file types.
 
 The newly generated custom device has a different file structure than one generated from the [Custom Device Wizard](https://github.com/ni/niveristand-custom-device-wizard). Instead of a single LabVIEW project in the `Source` directory, there are two projects:
 
@@ -31,7 +31,7 @@ The newly generated custom device has a different file structure than one genera
 
 The `Source/Custom Device/<MyName> Custom Device.lvproj` primarily exists for historical reasons. This project contains the code and build specs required for interacting with VeriStand. It builds the `.llb` files that VeriStand requires for execution.
 
-This project has the same structure as a project generated from the wizard, but contains minimal logic for performing work in the custom device. Most of the code is a set of wrappers that call code implemented in packed project libraries built from the support project. These libraries can be found in the `Includes` virtual folder in the project.
+This project has the same structure as a project generated from the wizard but contains minimal logic for performing work in the custom device. Most of the code is a set of wrappers that call code implemented in packed project libraries built from the support project. These libraries can be found in the `Includes` virtual folder in the project.
 
 ### Support Project
 
@@ -39,7 +39,7 @@ The `Source/Custom Device Support/<MyName> Support.lvproj` is the project where 
 
 ### Execution Unit
 
-The fundamental piece of the engine for custom devices using this template is the **Execution Unit**. The **Execution Unit** is a LabVIEW _Interface_ that a custom device author must implement in order to use this template. Using this interface enables the custom device author to focus almost entirely on only the code pieces necessary for implementing a specific protocol and communicating with a specific hardware device without having to think much about how it fits into VeriStand.
+The fundamental piece of the engine for custom devices using this template is the **Execution Unit**. The **Execution Unit** is a LabVIEW _Interface_ that a custom device author must implement to use this template. Using this interface enables the custom device author to focus on the code pieces necessary for implementing a specific protocol and communicating with a specific hardware device without having to think much about how a custom device integrates into VeriStand.
 
 The **Execution Unit** interface and the process for implementing it are discussed throughout this guide. The methods for this interface are shown below.
 
@@ -115,7 +115,7 @@ Similarly, any run-time menus should also use the **System Explorer Dispatcher**
 
 This template makes use of the VeriStand [ActionVIOnCompile](https://www.ni.com/documentation/en/veristand/latest/manual/custom-device-action-vi-template/) to construct the **Execution Unit(s)** and associated channels required for executing the engine code.
 
-`ActionVIOnCompile.vi` is responsible for taking all of the configuration in the system definition tree and converting those settings into a set of **Execution Units** that perform the communication bus message building and passing of those messages to the the bus, typically through a hardware driver.
+`ActionVIOnCompile.vi` is responsible for converting all configuration in the system definition tree and converting those settings into a set of **Execution Units** that build messages and transfer those messages to communication the bus, typically through a hardware driver.
 
 `ActionVIOnCompile.vi` is designed to minimize the need to modify it. It is likely a custom device author will not touch this VI at all. Instead all of the work for the **Execution Unit** construction is delegated to the **Execution Unit Factory**.
 
@@ -123,7 +123,7 @@ This template makes use of the VeriStand [ActionVIOnCompile](https://www.ni.com/
 
 #### Execution Unit Factory
 
-The **Execution Unit Factory** uses a [factory pattern](https://en.wikipedia.org/wiki/Factory_method_pattern) to take the custom device configuration as an input and construct each of the **Execution Units** needed for running the engine code. By using the factory, the template code can handle passing all of the required information from the system definition to the engine upon deployment and the user only needs to focus on creating the individual **Execution Units** required for the application.
+The **Execution Unit Factory** uses a [factory pattern](https://en.wikipedia.org/wiki/Factory_method_pattern) to take the custom device configuration as an input and construct each of the **Execution Units** needed to run the engine code. By using the factory, the template code passes all required information from the system definition to the engine upon deployment, and the custom device developer can focus on creating the individual **Execution Units** required for the application.
 
 ![CreateExecutionUnit](Resources/CreateExecutionUnit.png)
 
@@ -143,11 +143,11 @@ Once each **Execution Unit** is initialized, the interface methods are called in
 
 ##### Designing an Execution Unit
 
-Generally, an **Execution Unit** will be defined by how the data for that unit is transmitted. Two important factors used for determining when to create a new **Execution Unit** are transmission frequency and direction. These are not the only factors, but analyzing these aspects of a communcation bus can help with **Execution Unit** design.
+Generally, an **Execution Unit** will be defined by how the data for that unit is transmitted. When designing each **Execution Unit**, consider both of the following important factors: transmission frequency and direction.
 
 A typical communication bus will support both cyclic (continuous periodic) and acyclic data transmission. Cyclic data is continuously transmitted at a constant rate. Acyclic data is only transmitted when some event or trigger occurs. Because the frequency of these transmission types depends on different factors, often each of these message types will be defined by its own **Execution Unit**.
 
-Similarly, the direction of transmission will typically have a different way of accessing the bus. For example, messages receieved from the bus into the custom device will generally call a different driver entry point than messages transmitted from the custom device to the bus. This scenario will usually necessitate different **Execution Units**.
+Similarly, the direction of transmission will typically have a different way of accessing the bus. For example, messages received from the bus into the custom device will generally call a different driver entry point than messages transmitted from the custom device to the bus. Usually, this scenario necessitates different **Execution Units**.
 
 As a good starting point, the base pool of **Execution Units** to begin with are below.
 
@@ -158,7 +158,7 @@ As a good starting point, the base pool of **Execution Units** to begin with are
 
 Not all of these will be needed for a given protocol, nor is a custom device limited to this list. The final design and number of **Execution Unit** classes is the responsibility of the custom device author and may be implemented by analyzing any number of factors specific to the bus.
 
-The **Execution Unit** does not need to define whether it executes inline or asychronous to the PCL. That is determined by the **Execution Unit Factory**.
+The **Execution Unit** does not need to define whether it executes inline with or asychronous to the PCL. That is determined by the **Execution Unit Factory**.
 
 ##### Implementing an Execution Unit
 
@@ -169,7 +169,7 @@ The **Execution Unit** interface defines the set of methods provided below. A de
 - **_Read from Hardware_** - Access any data on the bus incoming to the custom device. Perform any decoding or scaling of the data. The outputs of this method contain the channel data to be sent to VeriStand. This method is called from `Read from Inline Execution Units.vi` in the `RT Driver.vi` **Read Data from HW** case before the data values are written to VeriStand.
 - **_Write to Hardware_** - Place any data from the custom device on the bus or write data to necessary registers on the hardware. Perform any scaling or encoding of the data before writing to the hardware. This method is called from `Write to Inline Execution Units.vi` in the `RT Driver.vi` **Write Data to HW** case.
 - **_Finalize_** - Send any stop triggers or stop any timers needed by the **Execution Unit**. This method is called from `Finalize Inline Execution Units.vi.` in the `RT Driver.vi` **Close** case.
-- **_Get Identifier_** - Return a unique identifier for the **Execution Unit**. This identifier may be useful for debugging or tracing execution when mulitple **Execution Units** are present in the system. This method is not called by default in the engine.
+- **_Get Identifier_** - Return a unique identifier for the **Execution Unit**. This identifier may be useful for debugging or tracing execution when multiple **Execution Units** are present in the system. This method is not called by default in the engine.
 
 Some **Execution Units** may have empty implementations of some methods if they are not needed for that unit to perform its work.
 
@@ -177,4 +177,4 @@ Some **Execution Units** may have empty implementations of some methods if they 
 
 In some cases, common data items may be required by multiple **Execution Units**. Examples may include open hardware driver sessions or a log file reference. This template handles these cases by providing a **Shared Resources** interface and associated **Shared Resources Factory**.
 
-**Shared Resources** are initialized before any **Execution Units** and are provided as inputs to the **Execution Unit** _Intialize_ method. If an **Execution Unit** needs access to these shared resources during execution, they should be stored in the class private data during initialization. The **Execution Unit** is not responsible for closing any references to these resources. The **Shared Resources** _Finalize_ method is called after every **Execution Unit** has called its _Finalize_ method and been shut down.
+**Shared Resources** are initialized before any **Execution Units** and are provided as inputs to the **Execution Unit** _Initialize_ method. If an **Execution Unit** needs access to these shared resources during execution, they should be stored in the class private data during initialization. The **Execution Unit** is not responsible for closing any references to these resources. The **Shared Resources** _Finalize_ method is called after every **Execution Unit** has called its _Finalize_ method and been shut down.
