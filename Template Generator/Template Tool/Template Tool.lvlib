@@ -33,6 +33,7 @@
 		<Item Name="Rename Configuration LLB in LVPROJ.vi" Type="VI" URL="../Rename Configuration LLB in LVPROJ.vi"/>
 		<Item Name="Rename LLBs in XML File.vi" Type="VI" URL="../Rename LLBs in XML File.vi"/>
 		<Item Name="Rename LVLIBs in LVPROJ XML File.vi" Type="VI" URL="../Rename LVLIBs in LVPROJ XML File.vi"/>
+		<Item Name="Reparent Included PPLs.vi" Type="VI" URL="../Reparent Included PPLs.vi"/>
 		<Item Name="Replace Project PPLs.vi" Type="VI" URL="../Replace Project PPLs.vi"/>
 		<Item Name="Replace VI and XML GUIDs.vi" Type="VI" URL="../Replace VI and XML GUIDs.vi"/>
 		<Item Name="Substitute Assembly Versions.vi" Type="VI" URL="../Substitute Assembly Versions.vi"/>
