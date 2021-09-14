@@ -45,12 +45,16 @@
 		<Item Name="Get XML Item Name.vi" Type="VI" URL="../Get XML Item Name.vi"/>
 		<Item Name="Get Build Spec XML.vi" Type="VI" URL="../Get Build Spec XML.vi"/>
 		<Item Name="Find Named XML Item.vi" Type="VI" URL="../Find Named XML Item.vi"/>
+		<Item Name="Set Build Specs.vi" Type="VI" URL="../Set Build Specs.vi"/>
+		<Item Name="Find Build Specs.vi" Type="VI" URL="../Find Build Specs.vi"/>
 	</Item>
 	<Item Name="Controls" Type="Folder">
 		<Item Name="Consumer Data.ctl" Type="VI" URL="../Consumer Data.ctl"/>
 		<Item Name="Consumer State.ctl" Type="VI" URL="../Consumer State.ctl"/>
 		<Item Name="Queue Cluster.ctl" Type="VI" URL="../Queue Cluster.ctl"/>
 		<Item Name="Target XML Information.ctl" Type="VI" URL="../Target XML Information.ctl"/>
+		<Item Name="Source Specification.ctl" Type="VI" URL="../Source Specification.ctl"/>
+		<Item Name="Project Build Specs.ctl" Type="VI" URL="../Project Build Specs.ctl"/>
 	</Item>
 	<Item Name="Clone Template Main.vi" Type="VI" URL="../Clone Template Main.vi"/>
 </Library>
