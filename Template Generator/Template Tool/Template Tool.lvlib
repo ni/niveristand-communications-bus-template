@@ -48,6 +48,7 @@
 		<Item Name="Set Build Specs.vi" Type="VI" URL="../Set Build Specs.vi"/>
 		<Item Name="Find Build Specs.vi" Type="VI" URL="../Find Build Specs.vi"/>
 		<Item Name="Find Template Base Name.vi" Type="VI" URL="../Find Template Base Name.vi"/>
+		<Item Name="Find CD Install Directory.vi" Type="VI" URL="../Find CD Install Directory.vi"/>
 	</Item>
 	<Item Name="Controls" Type="Folder">
 		<Item Name="Consumer Data.ctl" Type="VI" URL="../Consumer Data.ctl"/>
