@@ -50,6 +50,7 @@
 		<Item Name="Find Template Base Name.vi" Type="VI" URL="../Find Template Base Name.vi"/>
 		<Item Name="Find XML Paths to Edit.vi" Type="VI" URL="../Find XML Paths to Edit.vi"/>
 		<Item Name="Find Build Spec Destinations.vi" Type="VI" URL="../Find Build Spec Destinations.vi"/>
+		<Item Name="Strip Template from Base Name.vi" Type="VI" URL="../Strip Template from Base Name.vi"/>
 	</Item>
 	<Item Name="Controls" Type="Folder">
 		<Item Name="Consumer Data.ctl" Type="VI" URL="../Consumer Data.ctl"/>
