@@ -47,42 +47,14 @@ build_spec = 'Engine Release'
 name = 'Linux x64 Engine PPL'
 type = 'lvBuildSpec'
 project = '{support}'
-target = 'RT CompactRIO Target - Linux x64'
+target = 'Linux x64'
 build_spec = 'Communication Bus Engine'
 
 [[build.steps]]
 name = 'Linux x64 Engine Library'
 type = 'lvBuildSpec'
 project = '{cd}'
-target = 'RT CompactRIO Target - Linux x64'
-build_spec = 'Engine Release'
-
-[[build.steps]]
-name = 'Linux ARM Engine PPL'
-type = 'lvBuildSpec'
-project = '{support}'
-target = 'RT CompactRIO Target - Linux ARM'
-build_spec = 'Communication Bus Engine'
-
-[[build.steps]]
-name = 'Linux ARM Engine Library'
-type = 'lvBuildSpec'
-project = '{cd}'
-target = 'RT CompactRIO Target - Linux ARM'
-build_spec = 'Engine Release'
-
-[[build.steps]]
-name = 'PharLap Engine PPL'
-type = 'lvBuildSpec'
-project = '{support}'
-target = 'RT PXI Target - PharLap'
-build_spec = 'Communication Bus Engine'
-
-[[build.steps]]
-name = 'PharLap Engine Library'
-type = 'lvBuildSpec'
-project = '{cd}'
-target = 'RT PXI Target - PharLap'
+target = 'Linux x64'
 build_spec = 'Engine Release'
 
 [[package]]
