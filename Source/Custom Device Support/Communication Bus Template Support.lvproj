@@ -451,9 +451,9 @@
 			<Item Name="VeriStandTestUtilities.lvlib" Type="Library" URL="../../../../niveristand-custom-device-testing-tools/VeriStandTestUtilities/VeriStandTestUtilities.lvlib"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
-			<Item Name="Communication Bus Engine" Type="Packed Library">
+			<Item Name="Engine" Type="Packed Library">
 				<Property Name="Bld_buildCacheID" Type="Str">{1292050D-A0DC-43FC-8EB3-6FC5EDB32D8A}</Property>
-				<Property Name="Bld_buildSpecName" Type="Str">Communication Bus Engine</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">Engine</Property>
 				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
 				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
 				<Property Name="Bld_localDestDir" Type="Path">../Built/Support/Windows</Property>
@@ -489,9 +489,9 @@
 				<Property Name="TgtF_targetfileName" Type="Str">Communication Bus Engine.lvlibp</Property>
 				<Property Name="TgtF_versionIndependent" Type="Bool">true</Property>
 			</Item>
-			<Item Name="Communication Bus System Explorer" Type="Packed Library">
+			<Item Name="System Explorer" Type="Packed Library">
 				<Property Name="Bld_buildCacheID" Type="Str">{9EDCC426-A584-4087-8244-A3B57E74FF5E}</Property>
-				<Property Name="Bld_buildSpecName" Type="Str">Communication Bus System Explorer</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">System Explorer</Property>
 				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
 				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
 				<Property Name="Bld_localDestDir" Type="Path">../Built/Support/Windows</Property>
@@ -693,9 +693,9 @@
 			</Item>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
-			<Item Name="Communication Bus Engine" Type="Packed Library">
+			<Item Name="Engine" Type="Packed Library">
 				<Property Name="Bld_buildCacheID" Type="Str">{9B60B8DD-65DB-42E1-BD19-0C238DAC493D}</Property>
-				<Property Name="Bld_buildSpecName" Type="Str">Communication Bus Engine</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">Engine</Property>
 				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
 				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
 				<Property Name="Bld_localDestDir" Type="Path">../Built/Support</Property>
