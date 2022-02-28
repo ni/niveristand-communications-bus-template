@@ -25,6 +25,7 @@
 		</Item>
 		<Item Name="Shut Down" Type="Folder">
 			<Item Name="Finalize Inline Execution Units.vi" Type="VI" URL="../Finalize Inline Execution Units.vi"/>
+			<Item Name="Finalize Shared Resources.vi" Type="VI" URL="../Finalize Shared Resources.vi"/>
 		</Item>
 	</Item>
 	<Item Name="Types" Type="Folder">
