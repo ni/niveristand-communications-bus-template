@@ -87,13 +87,78 @@
 			<GUID>6d83d852-1383-4c81-9895-38ca2655dae3</GUID>
 			<Glyph>
 				<Type>To Application Data Dir</Type>
-				<Path>System Explorer\Glyphs\default fpga category.png</Path>
+				<Path>System Explorer\Glyphs\daq.png</Path>
 			</Glyph>
 			<Item2Launch>
 				<Type>To Common Doc Dir</Type>
 				<Path>Custom Devices\Communication Bus Template\Windows\Communication Bus Template Configuration.llb\Page Wrapper.vi</Path>
 			</Item2Launch>
 			<RunTimeMenu>
+				<MenuItem>
+					<GUID>2CC08BD1-1AB7-468C-91D4-FED431B4E033</GUID>
+					<Type>Action</Type>
+					<Name>
+						<eng>Disable</eng>
+						<loc>Disable</loc>
+					</Name>
+					<Item2Launch>
+						<Type>To Common Doc Dir</Type>
+						<Path>Custom Devices\Communication Bus Template\Windows\Communication Bus Template Configuration.llb\EnableDisable RTM.vi</Path>
+					</Item2Launch>
+				</MenuItem>
+				<MenuItem>
+					<GUID>4a264cda-93bf-4d77-92b0-38d997c67151</GUID>
+					<Type>Custom</Type>
+					<Name>
+						<eng />
+						<loc />
+					</Name>
+					<Item2Launch>
+						<Type>To Common Doc Dir</Type>
+						<Path>Custom Devices\Communication Bus Template\Windows\Communication Bus Template Configuration.llb\RunTimeMenu Wrapper.vi</Path>
+					</Item2Launch>
+					<CustomPopulation>
+						<Type>To Common Doc Dir</Type>
+						<Path>Custom Devices\Communication Bus Template\Windows\Communication Bus Template Configuration.llb\RunTimeMenu Custom Population.vi</Path>
+					</CustomPopulation>
+				</MenuItem>
+			</RunTimeMenu>
+			<ActionVIOnLoad>
+				<Type>To Common Doc Dir</Type>
+				<Path>Custom Devices\Communication Bus Template\Windows\Communication Bus Template Configuration.llb\ActionVIOnLoad.vi</Path>
+			</ActionVIOnLoad>
+			<ActionVIOnCompile>
+				<Type>To Common Doc Dir</Type>
+				<Path>Custom Devices\Communication Bus Template\Windows\Communication Bus Template Configuration.llb\ActionVIOnCompile.vi</Path>
+			</ActionVIOnCompile>
+		</Page>
+		<Page>
+			<Name>
+				<eng>Communication Bus Template</eng>
+				<loc>Communication Bus Template</loc>
+			</Name>
+			<GUID>AB0B60A5-F604-4C3C-A8E4-523624E8891D</GUID>
+			<Glyph>
+				<Type>To Application Data Dir</Type>
+				<Path>System Explorer\Glyphs\daq_disabled.png</Path>
+			</Glyph>
+			<Item2Launch>
+				<Type>To Common Doc Dir</Type>
+				<Path>Custom Devices\Communication Bus Template\Windows\Communication Bus Template Configuration.llb\Page Wrapper.vi</Path>
+			</Item2Launch>
+			<RunTimeMenu>
+				<MenuItem>
+					<GUID>2CC08BD1-1AB7-468C-91D4-FED431B4E033</GUID>
+					<Type>Action</Type>
+					<Name>
+						<eng>Enable</eng>
+						<loc>Enable</loc>
+					</Name>
+					<Item2Launch>
+						<Type>To Common Doc Dir</Type>
+						<Path>Custom Devices\Communication Bus Template\Windows\Communication Bus Template Configuration.llb\EnableDisable RTM.vi</Path>
+					</Item2Launch>
+				</MenuItem>
 				<MenuItem>
 					<GUID>4a264cda-93bf-4d77-92b0-38d997c67151</GUID>
 					<Type>Custom</Type>

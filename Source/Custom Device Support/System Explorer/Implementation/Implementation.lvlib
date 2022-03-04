@@ -26,11 +26,13 @@
 	<Item Name="RTM" Type="Folder">
 		<Item Name="Add Database RTM.vi" Type="VI" URL="../System Explorer/RTM/Add Database RTM.vi"/>
 		<Item Name="Add Port RTM.vi" Type="VI" URL="../System Explorer/RTM/Add Port RTM.vi"/>
+		<Item Name="EnableDisable RTM.vi" Type="VI" URL="../System Explorer/RTM/EnableDisable RTM.vi"/>
 		<Item Name="Export Configuration RTM.vi" Type="VI" URL="../System Explorer/RTM/Export Configuration RTM.vi"/>
 		<Item Name="Import Configuration RTM.vi" Type="VI" URL="../System Explorer/RTM/Import Configuration RTM.vi"/>
 		<Item Name="Import Frames RTM.vi" Type="VI" URL="../System Explorer/RTM/Import Frames RTM.vi"/>
 	</Item>
 	<Item Name="SubVIs" Type="Folder">
+		<Item Name="Check if Custom Device is Enabled.vi" Type="VI" URL="../Check if Custom Device is Enabled.vi"/>
 		<Item Name="Load Help File.vi" Type="VI" URL="../System Explorer/Load Help File.vi"/>
 		<Item Name="Read Database.vi" Type="VI" URL="../System Explorer/Read Database.vi"/>
 		<Item Name="Write Database.vi" Type="VI" URL="../System Explorer/Write Database.vi"/>
