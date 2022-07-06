@@ -27,22 +27,6 @@
 				<RealTimeSystemDestination>c:\ni-rt\VeriStand\Custom Devices\Communication Bus Template\Communication Bus Template Engine Windows.llb\RT Driver VI.vi</RealTimeSystemDestination>
 			</Source>
 			<Source>
-				<SupportedTarget>Pharlap</SupportedTarget>
-				<Source>
-					<Type>To Common Doc Dir</Type>
-					<Path>Custom Devices\Communication Bus Template\PharLap\Communication Bus Template Engine Pharlap.llb\RT Driver VI.vi</Path>
-				</Source>
-				<RealTimeSystemDestination>c:\ni-rt\VeriStand\Custom Devices\Communication Bus Template\Communication Bus Template Engine Pharlap.llb\RT Driver VI.vi</RealTimeSystemDestination>
-			</Source>
-			<Source>
-				<SupportedTarget>Linux_32_ARM</SupportedTarget>
-				<Source>
-					<Type>To Common Doc Dir</Type>
-					<Path>Custom Devices\Communication Bus Template\Linux_32_ARM\Communication Bus Template Engine LinuxARM.llb\RT Driver VI.vi</Path>
-				</Source>
-				<RealTimeSystemDestination>c:\ni-rt\VeriStand\Custom Devices\Communication Bus Template\Communication Bus Template Engine LinuxARM.llb\RT Driver VI.vi</RealTimeSystemDestination>
-			</Source>
-			<Source>
 				<SupportedTarget>Linux_x64</SupportedTarget>
 				<Source>
 					<Type>To Common Doc Dir</Type>
@@ -53,22 +37,6 @@
 		</SourceDistribution>
 	</CustomDeviceVI>
 	<Dependencies>
-		<Dependency>
-			<SupportedTarget>Pharlap</SupportedTarget>
-			<Source>
-				<Type>To Common Doc Dir</Type>
-				<Path>Custom Devices\Communication Bus Template\PharLap\Communication Bus Engine.lvlibp</Path>
-			</Source>
-			<RealTimeSystemDestination>c:\ni-rt\VeriStand\Custom Devices\Communication Bus Template\Communication Bus Engine.lvlibp</RealTimeSystemDestination>
-		</Dependency>
-		<Dependency>
-			<SupportedTarget>Linux_32_ARM</SupportedTarget>
-			<Source>
-				<Type>To Common Doc Dir</Type>
-				<Path>Custom Devices\Communication Bus Template\Linux_32_ARM\Communication Bus Engine.lvlibp</Path>
-			</Source>
-			<RealTimeSystemDestination>c:\ni-rt\VeriStand\Custom Devices\Communication Bus Template\Communication Bus Engine.lvlibp</RealTimeSystemDestination>
-		</Dependency>
 		<Dependency>
 			<SupportedTarget>Linux_x64</SupportedTarget>
 			<Source>
@@ -94,18 +62,6 @@
 				<Path>Custom Devices\Communication Bus Template\Windows\Communication Bus Template Configuration.llb\Page Wrapper.vi</Path>
 			</Item2Launch>
 			<RunTimeMenu>
-				<MenuItem>
-					<GUID>2CC08BD1-1AB7-468C-91D4-FED431B4E033</GUID>
-					<Type>Action</Type>
-					<Name>
-						<eng>Disable</eng>
-						<loc>Disable</loc>
-					</Name>
-					<Item2Launch>
-						<Type>To Common Doc Dir</Type>
-						<Path>Custom Devices\Communication Bus Template\Windows\Communication Bus Template Configuration.llb\EnableDisable RTM.vi</Path>
-					</Item2Launch>
-				</MenuItem>
 				<MenuItem>
 					<GUID>4a264cda-93bf-4d77-92b0-38d997c67151</GUID>
 					<Type>Custom</Type>
@@ -147,18 +103,6 @@
 				<Path>Custom Devices\Communication Bus Template\Windows\Communication Bus Template Configuration.llb\Page Wrapper.vi</Path>
 			</Item2Launch>
 			<RunTimeMenu>
-				<MenuItem>
-					<GUID>2CC08BD1-1AB7-468C-91D4-FED431B4E033</GUID>
-					<Type>Action</Type>
-					<Name>
-						<eng>Enable</eng>
-						<loc>Enable</loc>
-					</Name>
-					<Item2Launch>
-						<Type>To Common Doc Dir</Type>
-						<Path>Custom Devices\Communication Bus Template\Windows\Communication Bus Template Configuration.llb\EnableDisable RTM.vi</Path>
-					</Item2Launch>
-				</MenuItem>
 				<MenuItem>
 					<GUID>4a264cda-93bf-4d77-92b0-38d997c67151</GUID>
 					<Type>Custom</Type>
