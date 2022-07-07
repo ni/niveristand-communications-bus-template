@@ -59,9 +59,15 @@ This template utilizes a dispatch pattern for retrieving pages and run-time menu
 
 #### Dispatcher
 
-The custom device XML specifies `Page Wrapper.vi` as the VI to execute when an item is selected in the tree. This VI delegates to page implementations in `<MyName> System Explorer.lvlibp` from the support project. To add pages, a new **Page**, with new GUID, needs to be added to the [custom device XML](https://www.ni.com/documentation/en/veristand/latest/manual/custom-device-xml/). The VI and GUID then must be added to `System Explorer Dispatcher.lvclass:Get Page.vi`.
+The custom device XML specifies `Page Wrapper.vi` as the VI to execute when an item is selected in the tree. This VI delegates to page implementations in `<MyName> System Explorer.lvlibp` from the support project.
 
-```
+To add pages:
+- Create a new GUID for the page and store as a new entry in `Constants.vi`
+- Add a new **Page** referencing the GUID to the [custom device XML](https://www.ni.com/documentation/en/veristand/latest/manual/custom-device-xml/)
+- Specify a desired **Glyph** in the custom device XML
+- Add the VI and GUID to `System Explorer Dispatcher.lvclass:Get Page.vi`.
+
+```xml
 <Page>
 	<Name>
 		<eng>Frame</eng>
@@ -86,7 +92,16 @@ The custom device XML specifies `Page Wrapper.vi` as the VI to execute when an i
 
 Similarly, any run-time menus should also use the **System Explorer Dispatcher** to dynamically create right-click menus for a page. `RunTimeMenu Wrapper.vi` asks the dispatcher which menu to display through `System Explorer Dispatcher.lvclass:Get Menu Item VI.vi` and what items to populate in that menu through `System Explorer Dispatcher:Get Menu Items.vi`.
 
-```
+To add right-click menu items:
+- Do not modify the `<RunTimeMenu>` section of the page in the custom device XML
+- For new pages with right-click menus:
+  - Add a new key-value pair to the map in `Get Menu Items.vi`, where the key is the page GUID and the value is an array of menu items available from that page
+  - Add a new key-value pair to the map of maps in `Get Menu Item VI.vi`, where the outer map key is page GUID, the inner map key is the menu item, and the value is the VI to call from System Explorer
+- For new menu items on pages with existing right-click menus:
+  - Add a new array element to the value in the map for the corresponding page's GUID in `Get Menu Items.vi`
+  - Add a new key-value pair to the map in `Get Menu Item VI.vi` corresponding to the page GUID map, the inner map key is the menu item, and the value is the VI to call from System Explorer
+
+```xml
 <RunTimeMenu>
 	<MenuItem>
 		<GUID>4a264cda-93bf-4d77-92b0-38d997c67151</GUID>
@@ -108,6 +123,8 @@ Similarly, any run-time menus should also use the **System Explorer Dispatcher**
 ```
 
 ![GetMenuItems](Resources/GetMenuItems.png)
+
+![GetMenuItemVI](Resources/GetMenuItemVI.png)
 
 **Note:** Dynamic buttons at the top of the System Explorer window can not be added through the `Page Wrapper.vi` mechanism, so any pages requiring those buttons will require a standard page to be created.
 
