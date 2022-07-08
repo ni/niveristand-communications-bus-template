@@ -461,6 +461,39 @@
 				</MenuItem>
 			</RunTimeMenu>
 		</Page>
+		<Page>
+			<Name>
+				<eng>Timing</eng>
+				<loc>Timing</loc>
+			</Name>
+			<GUID>0B8AE68D-B6C0-4D90-9EA0-A44703F3A98D</GUID>
+			<Glyph>
+				<Type>To Application Data Dir</Type>
+				<Path>System Explorer\Glyphs\timing.png</Path>
+			</Glyph>
+			<Item2Launch>
+				<Type>To Common Doc Dir</Type>
+				<Path>Custom Devices\Communication Bus Template\Windows\Communication Bus Template Configuration.llb\Page Wrapper.vi</Path>
+			</Item2Launch>
+			<RunTimeMenu>
+				<MenuItem>
+					<GUID>4a264cda-93bf-4d77-92b0-38d997c67151</GUID>
+					<Type>Custom</Type>
+					<Name>
+						<eng />
+						<loc />
+					</Name>
+					<Item2Launch>
+						<Type>To Common Doc Dir</Type>
+						<Path>Custom Devices\Communication Bus Template\Windows\Communication Bus Template Configuration.llb\RunTimeMenu Wrapper.vi</Path>
+					</Item2Launch>
+					<CustomPopulation>
+						<Type>To Common Doc Dir</Type>
+						<Path>Custom Devices\Communication Bus Template\Windows\Communication Bus Template Configuration.llb\RunTimeMenu Custom Population.vi</Path>
+					</CustomPopulation>
+				</MenuItem>
+			</RunTimeMenu>
+		</Page>
 	</Pages>
 	<CustomXML>
 		<Dummy></Dummy>
