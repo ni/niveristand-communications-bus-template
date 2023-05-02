@@ -68,9 +68,9 @@ stages:
         - controlFileName: 'control_custom_device'
           payloadMaps:
             - installLocation: 'documents\National Instruments\NI VeriStand $(lvVersion)\Custom Devices\Communication Bus Template'
-              payloadLocation: 'Source\Built'
+              payloadLocation: ''
 
         - controlFileName: 'control_scripting'
           payloadMaps:
             - installLocation: 'ni-paths-LV$(lvVersion)DIR\vi.lib\addons\VeriStand Custom Device Scripting APIs\Communication Bus Template'
-              payloadLocation: 'Source\Built\Scripting'
+              payloadLocation: 'Scripting'
