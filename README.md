@@ -10,7 +10,7 @@ LabVIEW 2020
 
 - [LabVIEW Real-Time Module 2023](https://www.ni.com/en-us/support/downloads/software-products/download.labview-real-time-module.html#345605)
 - [VeriStand Custom Device Development Tools](https://github.com/ni/niveristand-custom-device-development-tools)
-  - Latest [released package](https://github.com/ni/niveristand-custom-device-development-tools/releases) supporting LabVIEW 2020
+  - Latest [released package](https://github.com/ni/niveristand-custom-device-development-tools/releases) supporting LabVIEW 2025
   - [HTML Workshop](https://github.com/ni/niveristand-custom-device-development-tools#external)
 - [NI VeriStand Custom Device Testing Tools](https://github.com/ni/niveristand-custom-device-testing-tools)
 
